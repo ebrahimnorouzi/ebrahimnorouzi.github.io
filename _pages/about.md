@@ -8,23 +8,5 @@ redirect_from:
   - /about.html
 ---
 
-Welcome! I am a data scientist applying machine learning tools and causal
-inference techniques to remote sensing data. I am also an affiliated
-researcher with the [Data-driven Analysis of Peace Project](https://dapp-lab.org)
-and a research collaborator with the 
-[Research on International Policy Implementation Lab](https://bridgingthegapproject.org/ripil).
+Welcome! I am a Junior Researcher at [FIZ Karlsruhe](https://www.fiz-karlsruhe.de/en) with [Prof. Dr. Harald Sack](https://www.fiz-karlsruhe.de/en/forschung/lebenslauf-prof-dr-harald-sack). I hold an MSc degree in [Materials Science and Simulation (ICAMS)](https://www.icams.de/) from Ruhr University of Bochum. After completing my master’s degree, I worked as a scientific researcher at the Materials Informatics group of Fraunhofer Institute for Mechanics of Materials, [IWM](https://www.iwm.fraunhofer.de/en.html). I have a solid knowledge of the programming language Python and various data science techniques such as machine learning, statistical analysis and data visualization as well as front-end development, and database management. I acquired a deep understanding of material characterization techniques from my previous work at [the Max Planck Institute for Iron research](https://www.mpie.de/2281/en). My research interests include Machine Learning, Semantic Web, and Modelling and Simulation in Materials Science.
 
-I earned my Ph.D in Political Science from the
-[University *of* North Carolina *at* Chapel Hill](https://www.unc.edu) and my
-B.A. in Political Science from [Haverford College](https://www.haverford.edu).
-My academic work has been [published](publications) or is forthcoming in
-*International Studies Quarterly*, *Conflict Management and Peace Science*,
-*Political Science Research and Methods*, and *PS: Political Science & Politics*,
-among other outlets. This [research](research) explores the causes and
-consequences of political violence using a broad variety of methods such as
-latent variable models, geospatial analysis, and big data. While primarily
-focused on civil conflict, it also examines contentious political phenomena
-including terrorism and economic statecraft, and develops new measures of
-institutions in international relations. I have [teaching](teaching) experience
-in both quantitative methodology and international relations, and am a certified
-instructor with [The Carpentries](https://carpentries.org).
