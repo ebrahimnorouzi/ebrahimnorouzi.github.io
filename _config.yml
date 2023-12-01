@@ -57,9 +57,9 @@ yandex_site_verification :
 
 # Social Sharing
 mastodon:
-  username               : "fosstodon.org/@jayrobw"
+  username               : "sigmoid.social/@enorouzi"
 twitter:
-  username               : 
+  username               : "ebi_norouzi"
 facebook:
   username               :
   app_id                 :
@@ -90,10 +90,10 @@ author:
   location         :
   employer         :
   pubmed           :
-  orcid            : "http://orcid.org/0000-0001-9259-3883"
-  googlescholar    : "https://scholar.google.com/citations?user=fiaPSmgAAAAJ"
-  email            : "rob.williams@wustl.edu"
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  orcid            : "https://orcid.org/0000-0002-2691-6995"
+  googlescholar    : "https://scholar.google.com/citations?user=D2X7Qv0AAAAJ&hl=en"
+  email            : "norouzi.iut@gmail.com"
+  researchgate     :  "https://www.researchgate.net/profile/Ebrahim-Norouzi-3"
   uri              :
   bitbucket        :
   codepen          :
@@ -101,21 +101,21 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "jayrobwilliams"
-  gitlab           : "jayrobwilliams"
+  github           : "ebrahimnorouzi"
+  gitlab           : "ebrahimnorouzi"
   google_plus      :
   keybase          :
   instagram        :
-  impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
+  impactstory      : #
   lastfm           :
-  linkedin         :
-  mastodon         : "fosstodon.org/@jayrobw"
+  linkedin         : "https://www.linkedin.com/in/ebrahim-norouzi-37a07a108/"
+  mastodon         : "https://sigmoid.social/@enorouzi"
   pinterest        :
   soundcloud       :
-  stackoverflow    : #"https://stackoverflow.com/users/10912314/jayrobwilliams"
+  stackoverflow    : #
   steam            :
   tumblr           :
-  twitter          : 
+  twitter          : "https://twitter.com/ebi_norouzi"
   vine             :
   weibo            :
   xing             :
