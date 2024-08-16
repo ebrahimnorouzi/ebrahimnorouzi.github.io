@@ -18,4 +18,8 @@ header:
   og_image: "hobbies/spatial_weighting.png"
 ---
 
-hobbies. 
+Watercolor Painting. Follow me on [Instagram](https://www.instagram.com/ebi.n.94/)
+
+Playing the Ukulele. I'm in the learning phase and soon will publish some content as a post here or in my instagram account.
+
+Running, Ping-pong, and Swimming. Follow me on [Strava](https://www.strava.com/athletes/81973775)
