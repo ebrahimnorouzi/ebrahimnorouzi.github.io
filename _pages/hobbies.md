@@ -22,4 +22,6 @@ Watercolor Painting. Follow me on [Instagram](https://www.instagram.com/ebi.n.94
 
 Playing the Ukulele. I'm in the learning phase and soon will publish some content as a post here or in my instagram account.
 
-Running, Ping-pong, and Swimming. Follow me on [Strava](https://www.strava.com/athletes/81973775)
+Running, Cycling, and Swimming. Follow me on [Strava](https://www.strava.com/athletes/81973775)
+
+I also like watching movies (currently learning director's name and try to find my interests) and read book (I like my kindle but I'm not very good at reading books because honestly don't know which type of books are not boring for me, I tried many times and finish 4-6 books per year but need some help here). I used to cook a lot specially Persian dishes but recently due to work I prefer easy foods that do not require lot's of time for preparation. 
