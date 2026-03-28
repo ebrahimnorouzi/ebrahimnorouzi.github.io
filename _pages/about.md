@@ -8,6 +8,8 @@ redirect_from:
   - /about.html
 ---
 
+{% include kg-graph.html %}
+
 <div class="intro-highlight" markdown="1">
 I am a **Ph.D. candidate** at [FIZ Karlsruhe](https://www.fiz-karlsruhe.de/en){:target="_blank"} and [KIT &mdash; Institute AIFB](https://ise.aifb.kit.edu/59_88.php){:target="_blank"}, supervised by [Prof. Dr. Harald Sack](https://www.fiz-karlsruhe.de/de/bereiche/lebenslauf-prof-dr-Harald-sack){:target="_blank"}. My work sits at the intersection of **Knowledge Graphs**, **Large Language Models**, and **Materials Informatics**.
 </div>
@@ -19,14 +21,14 @@ I hold an MSc in [Materials Science and Simulation (ICAMS)](https://www.icams.de
 ## Research Interests
 
 <ul class="research-tags">
-  <li>🔗 Knowledge Graphs</li>
-  <li>🤖 Large Language Models</li>
-  <li>🧬 Materials Informatics</li>
-  <li>🌐 Semantic Web</li>
-  <li>📐 Ontology Engineering</li>
-  <li>🔍 Information Extraction</li>
-  <li>🧮 Modelling &amp; Simulation</li>
-  <li>📊 Data-Driven Methods</li>
+  <li>Knowledge Graphs</li>
+  <li>Large Language Models</li>
+  <li>Materials Informatics</li>
+  <li>Semantic Web</li>
+  <li>Ontology Engineering</li>
+  <li>Information Extraction</li>
+  <li>Modelling &amp; Simulation</li>
+  <li>Data-Driven Methods</li>
 </ul>
 
 ## Recent News
