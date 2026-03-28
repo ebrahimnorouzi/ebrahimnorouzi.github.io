@@ -1,17 +1,17 @@
-name: 🎓 Auto-update Publications from Google Scholar
+name: 🎓 Auto-update Publications (Semantic Scholar)
 
-# Runs on the 1st of every month at 08:00 UTC, or manually via the Actions tab
+# Runs on the 1st of every month at 08:00 UTC, or manually via "Run workflow"
 on:
   schedule:
     - cron: '0 8 1 * *'
-  workflow_dispatch:        # allows manual "Run workflow" button in GitHub UI
+  workflow_dispatch:
 
 jobs:
   update-publications:
     name: Fetch & commit new publications
     runs-on: ubuntu-latest
     permissions:
-      contents: write       # needed to push the updated markdown files
+      contents: write
 
     steps:
       - name: Checkout repository
@@ -24,22 +24,23 @@ jobs:
         with:
           python-version: '3.11'
 
+      # Only requests needed — no scholarly, no Selenium, no Google Scholar
       - name: Install dependencies
-        run: pip install scholarly
+        run: pip install requests
 
-      - name: Run publication updater
+      # Optional: if you know your Semantic Scholar author ID you can add it
+      # as a repository secret (Settings → Secrets → Actions → S2_AUTHOR_ID).
+      # On first run the script discovers it automatically from a known arXiv paper.
+      - name: Fetch publications from Semantic Scholar
+        env:
+          S2_AUTHOR_ID: ${{ secrets.S2_AUTHOR_ID }}
         run: python scripts/update_publications.py
 
-      - name: Check for changes
-        id: changes
-        run: |
-          git diff --quiet _publications/ || echo "changed=true" >> $GITHUB_OUTPUT
-
-      - name: Commit and push new publications
-        if: steps.changes.outputs.changed == 'true'
+      # Cache the discovered author ID so we don't hit the API on every run
+      - name: Commit new publications (if any)
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add _publications/
-          git commit -m "chore: auto-update publications from Google Scholar [skip ci]"
-          git push
+          git add _publications/ scripts/.s2_author_id 2>/dev/null || true
+          git diff --staged --quiet || git commit -m "chore: auto-update publications from Semantic Scholar [skip ci]"
+          git diff HEAD origin/master --quiet || git push
