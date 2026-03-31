@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
 """
-Fetch publications from Semantic Scholar + arXiv and generate Jekyll markdown files.
+Fetch publications from Semantic Scholar + arXiv + Zenodo and generate Jekyll markdown files.
 
 Sources:
   1. Semantic Scholar API  — rich metadata, citation counts, venue info
   2. arXiv API             — fallback / supplement; no auth required
+  3. Zenodo API            — posters, presentations, datasets, preprints
 
 Configuration (env vars / GitHub Secrets):
-  S2_API_KEY     — Semantic Scholar API key (higher rate limits; recommended)
-  S2_AUTHOR_ID   — Semantic Scholar author ID (skips auto-discovery)
-  ARXIV_AUTHOR   — Author name for arXiv search (e.g. "Ebrahim Norouzi")
+  S2_API_KEY       — Semantic Scholar API key (higher rate limits; recommended)
+  S2_AUTHOR_ID     — Semantic Scholar author ID (skips auto-discovery)
+  ARXIV_AUTHOR     — Author name for arXiv search (e.g. "Ebrahim Norouzi")
+  ZENODO_AUTHOR    — Author name as stored in Zenodo (e.g. "Norouzi, Ebrahim")
+  ZENODO_API_TOKEN — Zenodo personal access token (optional; raises rate limits)
 
 Dependencies: pip install requests
 """
@@ -28,6 +31,8 @@ KNOWN_ARXIV_ID   = "2408.06034"          # bootstrap paper for S2 author ID disc
 S2_AUTHOR_ID_ENV = os.getenv("S2_AUTHOR_ID", "2238727014").strip()
 S2_API_KEY       = os.getenv("S2_API_KEY", "").strip()
 ARXIV_AUTHOR     = os.getenv("ARXIV_AUTHOR", "Ebrahim Norouzi")
+ZENODO_AUTHOR    = os.getenv("ZENODO_AUTHOR", "Norouzi, Ebrahim")
+ZENODO_API_TOKEN = os.getenv("ZENODO_API_TOKEN", "").strip()
 
 OUTPUT_DIR       = Path("_publications")
 CACHE_FILE       = Path("scripts/.s2_author_id")
@@ -382,25 +387,138 @@ def run_arxiv(known: set) -> int:
     return new_count
 
 
+# ── Zenodo ───────────────────────────────────────────────────────────────────
+
+ZENODO_TYPE_LABELS = {
+    "poster":       "Poster",
+    "presentation": "Presentation",
+    "dataset":      "Dataset",
+    "software":     "Software",
+    "publication":  "Publication",
+    "image":        "Image",
+    "video":        "Video",
+    "other":        "Other",
+}
+
+
+def zenodo_headers() -> dict:
+    h = {"User-Agent": "ebrahimnorouzi-website-bot/1.0"}
+    if ZENODO_API_TOKEN:
+        h["Authorization"] = f"Bearer {ZENODO_API_TOKEN}"
+    return h
+
+
+def fetch_zenodo_records(author: str) -> list:
+    """Fetch all Zenodo records where the author name appears as a creator."""
+    records, page = [], 1
+    while True:
+        time.sleep(REQUEST_SLEEP)
+        params = {"q": f'"{author}"', "size": 25, "page": page, "sort": "mostrecent"}
+        data = get("https://zenodo.org/api/records", params=params,
+                   headers=zenodo_headers())
+        hits = data.get("hits", {}).get("hits", [])
+        author_lower = author.lower()
+        matching = [
+            h for h in hits
+            if any(author_lower in c.get("name", "").lower()
+                   for c in h.get("metadata", {}).get("creators", []))
+        ]
+        records.extend(matching)
+        if len(hits) < 25:
+            break
+        page += 1
+    return records
+
+
+def zenodo_make_markdown(record: dict) -> str:
+    meta     = record.get("metadata", {})
+    title    = (meta.get("title") or "").replace('"', '\\"').strip()
+    desc     = re.sub(r"<[^>]+>", "", meta.get("description") or "").strip()
+    desc     = re.sub(r"\s+", " ", desc)
+    creators = meta.get("creators", [])
+    authors  = ", ".join(c.get("name", "") for c in creators)
+    doi      = meta.get("doi", "")
+    url      = f"https://doi.org/{doi}" if doi else f"https://zenodo.org/record/{record['id']}"
+    date_str = (meta.get("publication_date") or "1900-01-01")[:10]
+    year     = date_str[:4]
+    rtype    = meta.get("resource_type", {})
+    rtype_label = ZENODO_TYPE_LABELS.get(rtype.get("type", ""), "Record")
+    subtype  = rtype.get("subtype", "") or rtype.get("title", "")
+    venue    = f"Zenodo ({rtype_label}{': ' + subtype if subtype else ''})"
+
+    excerpt   = textwrap.shorten(desc or title, width=280, placeholder="…").replace("'", "&#39;")
+    venue_esc = venue.replace("'", "&#39;")
+    citation  = f'{authors} ({year}). "{title}". {venue}. {doi}'.replace("'", "&#39;")
+
+    files   = record.get("files", [])
+    pdf_url = next((f["links"]["self"] for f in files if f.get("type") == "pdf"), "")
+
+    return f'''---
+title: "{title}"
+collection: publications
+permalink: /publication/{slugify(title)}/
+excerpt: '{excerpt}'
+date: {date_str}
+venue: '{venue_esc}'
+paperurl: '{url}'
+citation: '{citation}'
+citation_count: 0
+source: zenodo
+zenodo_id: {record["id"]}
+---
+{desc or title}
+
+[View on Zenodo]({url}){{:target="_blank"}}
+{f'[Download PDF]({pdf_url}){{:target="_blank"}}' if pdf_url else ''}
+
+Recommended citation: {authors} ({year}). "{title}". {venue}. <{url}>
+'''
+
+
+def run_zenodo(known: set) -> int:
+    print(f"\n── Zenodo (author: {ZENODO_AUTHOR}) ──")
+    if ZENODO_API_TOKEN:
+        print("  API token detected — using authenticated requests.")
+
+    records = fetch_zenodo_records(ZENODO_AUTHOR)
+    print(f"  Found {len(records)} records.")
+
+    new_count = 0
+    for record in records:
+        meta  = record.get("metadata", {})
+        title = (meta.get("title") or "").strip()
+        if not title or title.lower() in known:
+            continue
+        date_str = (meta.get("publication_date") or "1900-01-01")[:10]
+        filename = f"{date_str}-zenodo-{slugify(title)}.md"
+        if write_pub(filename, zenodo_make_markdown(record)):
+            known.add(title.lower())
+            new_count += 1
+
+    print(f"  Done — {new_count} new from Zenodo.")
+    return new_count
+
+
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def main():
     OUTPUT_DIR.mkdir(exist_ok=True)
     known = existing_titles()
 
-    s2_result   = run_semantic_scholar(known)
-    arxiv_result = run_arxiv(known)
+    s2_result     = run_semantic_scholar(known)
+    arxiv_result  = run_arxiv(known)
+    zenodo_result = run_zenodo(known)
 
     s2_new     = max(s2_result, 0)
     arxiv_new  = max(arxiv_result, 0)
-    total      = s2_new + arxiv_new
+    zenodo_new = max(zenodo_result, 0)
+    total      = s2_new + arxiv_new + zenodo_new
 
-    print(f"\n✓ Total new publications: {total}  (S2: {s2_new}, arXiv: {arxiv_new})")
+    print(f"\n✓ Total new publications: {total}  (S2: {s2_new}, arXiv: {arxiv_new}, Zenodo: {zenodo_new})")
 
-    # Fail the workflow if Semantic Scholar completely errored out
-    # (rate-limited with no cached ID) AND arXiv also returned nothing.
-    if s2_result == -1 and arxiv_result == 0:
-        print("\nERROR: Both sources failed. Check S2_API_KEY / S2_AUTHOR_ID secrets.")
+    # Fail if ALL sources errored — at least one must succeed.
+    if s2_result == -1 and arxiv_result == 0 and zenodo_result == 0:
+        print("\nERROR: All sources failed. Check S2_API_KEY / S2_AUTHOR_ID secrets.")
         sys.exit(1)
 
 
