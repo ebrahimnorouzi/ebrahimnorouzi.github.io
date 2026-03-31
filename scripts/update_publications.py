@@ -25,7 +25,7 @@ from pathlib import Path
 
 # ── Configuration ─────────────────────────────────────────────────────────────
 KNOWN_ARXIV_ID   = "2408.06034"          # bootstrap paper for S2 author ID discovery
-S2_AUTHOR_ID_ENV = os.getenv("S2_AUTHOR_ID", "").strip()
+S2_AUTHOR_ID_ENV = os.getenv("S2_AUTHOR_ID", "2238727014").strip()
 S2_API_KEY       = os.getenv("S2_API_KEY", "").strip()
 ARXIV_AUTHOR     = os.getenv("ARXIV_AUTHOR", "Ebrahim Norouzi")
 
