@@ -1,4 +1,4 @@
-name: 📣 Auto-sync Social Posts (Mastodon + LinkedIn)
+name: 📣 Auto-sync Social Posts (Mastodon)
 
 # Runs on the 1st of every month at 09:00 UTC, or manually from the Actions tab
 on:
@@ -25,15 +25,12 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install requests beautifulsoup4 feedparser
+        run: pip install requests beautifulsoup4
 
       - name: Fetch social posts
         env:
           MASTODON_INSTANCE: sigmoid.social
           MASTODON_USERNAME: enorouzi
-          # Set LINKEDIN_RSS_URL as a repository secret in:
-          # Settings → Secrets and variables → Actions → New repository secret
-          LINKEDIN_RSS_URL: ${{ secrets.LINKEDIN_RSS_URL }}
           MAX_POSTS: 20
         run: python scripts/fetch_social_posts.py
 
@@ -43,6 +40,6 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add _posts/
           if ! git diff --staged --quiet; then
-            git commit -m "chore: auto-sync social posts from Mastodon/LinkedIn"
+            git commit -m "chore: auto-sync social posts from Mastodon"
             git push origin HEAD:master
           fi

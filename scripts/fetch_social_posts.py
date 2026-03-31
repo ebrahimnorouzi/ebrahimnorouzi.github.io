@@ -1,26 +1,17 @@
 #!/usr/bin/env python3
 """
-Fetch posts from Mastodon and LinkedIn (via RSS) and create Jekyll _posts files.
+Fetch posts from Mastodon and create Jekyll _posts files.
 
 Usage:
     python scripts/fetch_social_posts.py
 
 Dependencies:
-    pip install requests beautifulsoup4 feedparser
+    pip install requests beautifulsoup4
 
 Configuration (edit the CONFIG block below or pass as env vars):
     MASTODON_INSTANCE  — e.g. sigmoid.social
     MASTODON_USERNAME  — e.g. enorouzi
-    LINKEDIN_RSS_URL   — RSS URL from rss.app (see README below)
     MAX_POSTS_PER_SOURCE — max posts to import per run
-
-──────────────────────────────────────────────────────────────
-How to get LinkedIn RSS:
-  1. Go to  https://rss.app  (free tier available)
-  2. Create a feed from your LinkedIn profile URL
-  3. Copy the generated RSS URL and set LINKEDIN_RSS_URL below
-  Alternatively, Zapier / n8n can also export LinkedIn posts as RSS.
-──────────────────────────────────────────────────────────────
 """
 
 import os
@@ -35,7 +26,6 @@ from pathlib import Path
 # ── Configuration ─────────────────────────────────────────────────────────────
 MASTODON_INSTANCE      = os.getenv("MASTODON_INSTANCE",  "sigmoid.social")
 MASTODON_USERNAME      = os.getenv("MASTODON_USERNAME",  "enorouzi")
-LINKEDIN_RSS_URL       = os.getenv("LINKEDIN_RSS_URL",   "")   # set via GitHub Secret
 MAX_POSTS_PER_SOURCE   = int(os.getenv("MAX_POSTS",       "20"))
 POSTS_DIR              = Path("_posts")
 MIN_CONTENT_LENGTH     = 30   # skip very short toots (boosts, reacts)
@@ -195,67 +185,10 @@ def fetch_mastodon():
     return new_count
 
 
-# ── LinkedIn (via RSS) ────────────────────────────────────────────────────────
-
-def fetch_linkedin_rss():
-    if not LINKEDIN_RSS_URL:
-        print("\n── LinkedIn: LINKEDIN_RSS_URL not set, skipping. ──")
-        print("   → Set it as a GitHub Actions secret and env var.")
-        return 0
-
-    try:
-        import feedparser
-    except ImportError:
-        print("ERROR: feedparser not installed. Run: pip install feedparser")
-        return 0
-
-    print(f"\n── LinkedIn (RSS) ──")
-
-    feed = feedparser.parse(LINKEDIN_RSS_URL)
-    if not feed.entries:
-        print("  No entries found or RSS feed is empty.")
-        return 0
-
-    seen = existing_post_ids("linkedin")
-    new_count = 0
-
-    for entry in feed.entries[:MAX_POSTS_PER_SOURCE]:
-        uid     = entry.get("id") or entry.get("link") or ""
-        title   = entry.get("title", "LinkedIn post").strip()
-        content = strip_html(entry.get("summary") or entry.get("content", [{}])[0].get("value", ""))
-        url     = entry.get("link", "")
-
-        if len(content) < MIN_CONTENT_LENGTH:
-            content = title  # use title as content if summary is empty
-
-        if not title or title == "LinkedIn post":
-            title = textwrap.shorten(content, width=70, placeholder="…") or "LinkedIn post"
-
-        pub = entry.get("published_parsed") or entry.get("updated_parsed")
-        if pub:
-            date = datetime(*pub[:6], tzinfo=timezone.utc)
-        else:
-            date = datetime.now(tz=timezone.utc)
-
-        uid_hash = hashlib.md5(uid.encode()).hexdigest()[:10]
-        if uid_hash in seen:
-            continue
-
-        tags = ["linkedin"] + [t.get("term", "") for t in entry.get("tags", [])][:4]
-        wrote = write_post(date, "linkedin", uid, title, content, url, tags)
-        if wrote:
-            new_count += 1
-
-    print(f"  Done — {new_count} new LinkedIn posts.")
-    return new_count
-
-
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
     POSTS_DIR.mkdir(exist_ok=True)
-    total = 0
-    total += fetch_mastodon()
-    total += fetch_linkedin_rss()
+    total = fetch_mastodon()
     print(f"\n✓ Total new posts: {total}")
     sys.exit(0)
