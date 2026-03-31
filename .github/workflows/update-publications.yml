@@ -1,4 +1,4 @@
-name: 🎓 Auto-update Publications (Semantic Scholar)
+name: 🎓 Auto-update Publications (Semantic Scholar + arXiv)
 
 # Runs on the 1st of every month at 08:00 UTC, or manually via "Run workflow"
 on:
@@ -24,25 +24,25 @@ jobs:
         with:
           python-version: '3.11'
 
-      # Only requests needed — no scholarly, no Selenium, no Google Scholar
       - name: Install dependencies
         run: pip install requests
 
-      # Optional: if you know your Semantic Scholar author ID you can add it
-      # as a repository secret (Settings → Secrets → Actions → S2_AUTHOR_ID).
-      # On first run the script discovers it automatically from a known arXiv paper.
-      - name: Fetch publications from Semantic Scholar
+      # Secrets to set in Settings → Secrets and variables → Actions:
+      #   S2_API_KEY   — Semantic Scholar API key (higher rate limits)
+      #   S2_AUTHOR_ID — your S2 author ID (skips auto-discovery API call)
+      - name: Fetch publications
         env:
+          S2_API_KEY:   ${{ secrets.S2_API_KEY }}
           S2_AUTHOR_ID: ${{ secrets.S2_AUTHOR_ID }}
+          ARXIV_AUTHOR: "Ebrahim Norouzi"
         run: python scripts/update_publications.py
 
-      # Cache the discovered author ID so we don't hit the API on every run
       - name: Commit new publications (if any)
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add _publications/ scripts/.s2_author_id 2>/dev/null || true
           if ! git diff --staged --quiet; then
-            git commit -m "chore: auto-update publications from Semantic Scholar"
+            git commit -m "chore: auto-update publications from Semantic Scholar + arXiv"
             git push origin HEAD:master
           fi
