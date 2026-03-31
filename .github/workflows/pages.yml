@@ -1,0 +1,70 @@
+name: 🚀 Deploy GitHub Pages
+
+on:
+  # Deploy on every push to master
+  push:
+    branches: [master]
+
+  # Re-deploy monthly (1st of month at 10:00 UTC) even without code changes
+  schedule:
+    - cron: '0 10 1 * *'
+
+  # Re-deploy automatically when publication/post update workflows finish
+  workflow_run:
+    workflows:
+      - "🎓 Auto-update Publications (Semantic Scholar)"
+      - "📣 Auto-sync Social Posts (Mastodon + LinkedIn)"
+    types: [completed]
+
+  # Allow manual trigger from the Actions tab
+  workflow_dispatch:
+
+# Allow only one concurrent deployment
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    name: Build Jekyll site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Build with Jekyll
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        env:
+          JEKYLL_ENV: production
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
