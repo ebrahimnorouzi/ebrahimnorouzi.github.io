@@ -32,6 +32,7 @@ jobs:
           MASTODON_INSTANCE: sigmoid.social
           MASTODON_USERNAME: enorouzi
           MAX_POSTS: 20
+          INCLUDE_BOOSTS: "true"
         run: python scripts/fetch_social_posts.py
 
       - name: Commit and push new posts
