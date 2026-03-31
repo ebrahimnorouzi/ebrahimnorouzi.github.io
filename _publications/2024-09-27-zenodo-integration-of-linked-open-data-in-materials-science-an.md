@@ -4,9 +4,9 @@ collection: publications
 permalink: /publication/integration-of-linked-open-data-in-materials-science-an/
 excerpt: 'Linked Open Data (LOD) offers significant advantages for the Materials Science and Engineering (MSE) domain, promoting interoperability, collaboration, and efficient knowledge discovery. Leveraging these benefits, the Materials Science and Engineering Knowledge Graph (MSE-KG)…'
 date: 2024-09-27
-venue: 'Zenodo (Presentation: Presentation)'
+venue: 'Zenodo (Presentation)'
 paperurl: 'https://doi.org/10.5281/zenodo.13846096'
-citation: 'Norouzi, Ebrahim (2024). "Integration of Linked Open Data in Materials Science and Engineering (MSE)". Zenodo (Presentation: Presentation). 10.5281/zenodo.13846096'
+citation: 'Norouzi, Ebrahim (2024). "Integration of Linked Open Data in Materials Science and Engineering (MSE)". Zenodo (Presentation). https://doi.org/10.5281/zenodo.13846096'
 citation_count: 0
 source: zenodo
 zenodo_id: 13846096
@@ -16,4 +16,4 @@ Linked Open Data (LOD) offers significant advantages for the Materials Science a
 [View on Zenodo](https://doi.org/10.5281/zenodo.13846096){:target="_blank"}
 
 
-Recommended citation: Norouzi, Ebrahim (2024). "Integration of Linked Open Data in Materials Science and Engineering (MSE)". Zenodo (Presentation: Presentation). <https://doi.org/10.5281/zenodo.13846096>
+Recommended citation: Norouzi, Ebrahim (2024). "Integration of Linked Open Data in Materials Science and Engineering (MSE)". Zenodo (Presentation). <https://doi.org/10.5281/zenodo.13846096>

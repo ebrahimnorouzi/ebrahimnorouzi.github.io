@@ -4,9 +4,9 @@ collection: publications
 permalink: /publication/d34-first-report-on-domain-ontology-requirements-and-sp/
 excerpt: 'OntoCommons aims at working towards interoperability by means of harmonization with respect to upper-level ontologies and facilitating agreement in domain ontology development. As part of the effort of work package 3, an objective of OntoCommons is to collect and formalize…'
 date: 2022-03-04
-venue: 'Zenodo (Publication: deliverable)'
+venue: 'Zenodo (Project deliverable)'
 paperurl: 'https://doi.org/10.5281/zenodo.10501026'
-citation: 'Sarkar, Arkopaul, Amdouni, Emna, SANFILIPPO, EMILIO MARIA, Goldbeck, Gerhard, KARRAY, HEDI, Borgo, Stefano, Friis, Jesper, Poveda-Villalon, María, norouzi, ebrahim, Esnaola-Gonzalez, Iker, Chiacchiera, Silvia, Jinzhi, Lu, Correia, Ana (2022). "D3.4 – First report on domain ontology requirements and specifications". Zenodo (Publication: deliverable). 10.5281/zenodo.10501026'
+citation: 'Sarkar, Arkopaul, Amdouni, Emna, SANFILIPPO, EMILIO MARIA, Goldbeck, Gerhard, KARRAY, HEDI, Borgo, Stefano, Friis, Jesper, Poveda-Villalon, María, norouzi, ebrahim, Esnaola-Gonzalez, Iker, Chiacchiera, Silvia, Jinzhi, Lu, Correia, Ana (2022). "D3.4 – First report on domain ontology requirements and specifications". Zenodo (Project deliverable). https://doi.org/10.5281/zenodo.10501026'
 citation_count: 0
 source: zenodo
 zenodo_id: 10501026
@@ -16,4 +16,4 @@ OntoCommons aims at working towards interoperability by means of harmonization w
 [View on Zenodo](https://doi.org/10.5281/zenodo.10501026){:target="_blank"}
 
 
-Recommended citation: Sarkar, Arkopaul, Amdouni, Emna, SANFILIPPO, EMILIO MARIA, Goldbeck, Gerhard, KARRAY, HEDI, Borgo, Stefano, Friis, Jesper, Poveda-Villalon, María, norouzi, ebrahim, Esnaola-Gonzalez, Iker, Chiacchiera, Silvia, Jinzhi, Lu, Correia, Ana (2022). "D3.4 – First report on domain ontology requirements and specifications". Zenodo (Publication: deliverable). <https://doi.org/10.5281/zenodo.10501026>
+Recommended citation: Sarkar, Arkopaul, Amdouni, Emna, SANFILIPPO, EMILIO MARIA, Goldbeck, Gerhard, KARRAY, HEDI, Borgo, Stefano, Friis, Jesper, Poveda-Villalon, María, norouzi, ebrahim, Esnaola-Gonzalez, Iker, Chiacchiera, Silvia, Jinzhi, Lu, Correia, Ana (2022). "D3.4 – First report on domain ontology requirements and specifications". Zenodo (Project deliverable). <https://doi.org/10.5281/zenodo.10501026>

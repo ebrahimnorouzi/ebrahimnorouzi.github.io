@@ -4,9 +4,9 @@ collection: publications
 permalink: /publication/representing-mse-research-metadata-using-the-nfdi-matwe/
 excerpt: 'NFDI-MatWerk (National Research Data Infrastructure for Materials Science and Engineering) is a German initiative focused on developing a digital infrastructure that integrates decentralized data, metadata, workflows, and a materials ontology to improve interoperability and…'
 date: 2025-09-18
-venue: 'Zenodo (Poster: Poster)'
+venue: 'Zenodo (Poster)'
 paperurl: 'https://doi.org/10.5281/zenodo.17200080'
-citation: 'Beygi Nasrabadi, Hossein, Norouzi, Ebrahim, Kostiantyn, Hubaiev, Waitelonis, Jörg, Sack, Harald (2025). "Representing MSE Research Metadata Using the NFDI MatWerk Ontology: Patterns and Use cases". Zenodo (Poster: Poster). 10.5281/zenodo.17200080'
+citation: 'Beygi Nasrabadi, Hossein, Norouzi, Ebrahim, Kostiantyn, Hubaiev, Waitelonis, Jörg, Sack, Harald (2025). "Representing MSE Research Metadata Using the NFDI MatWerk Ontology: Patterns and Use cases". Zenodo (Poster). https://doi.org/10.5281/zenodo.17200080'
 citation_count: 0
 source: zenodo
 zenodo_id: 17200080
@@ -16,4 +16,4 @@ NFDI-MatWerk (National Research Data Infrastructure for Materials Science and En
 [View on Zenodo](https://doi.org/10.5281/zenodo.17200080){:target="_blank"}
 
 
-Recommended citation: Beygi Nasrabadi, Hossein, Norouzi, Ebrahim, Kostiantyn, Hubaiev, Waitelonis, Jörg, Sack, Harald (2025). "Representing MSE Research Metadata Using the NFDI MatWerk Ontology: Patterns and Use cases". Zenodo (Poster: Poster). <https://doi.org/10.5281/zenodo.17200080>
+Recommended citation: Beygi Nasrabadi, Hossein, Norouzi, Ebrahim, Kostiantyn, Hubaiev, Waitelonis, Jörg, Sack, Harald (2025). "Representing MSE Research Metadata Using the NFDI MatWerk Ontology: Patterns and Use cases". Zenodo (Poster). <https://doi.org/10.5281/zenodo.17200080>

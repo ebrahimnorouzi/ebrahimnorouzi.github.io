@@ -4,9 +4,9 @@ collection: publications
 permalink: /publication/description-of-ontology-metadata-with-nfdicore/
 excerpt: 'Ontologies play a central role in enabling sharing and reusing of knowledge on the Semantic Web. However, discovering suitable ontologies remains a major challenge, largely due to fragmented and insufficient metadata. Existing metadata schemas often suffer from limited scope,…'
 date: 2025-08-29
-venue: 'Zenodo (Poster: Poster)'
+venue: 'Zenodo (Poster)'
 paperurl: 'https://doi.org/10.5281/zenodo.17158443'
-citation: 'Hubaiev, Kostiantyn, Beygi Nasrabadi, Hossein, Norouzi, Ebrahim, Singh, Gunjan, Waitelonis, Jörg, Sack, Harald (2025). "Description of Ontology Metadata with NFDIcore". Zenodo (Poster: Poster). 10.5281/zenodo.17158443'
+citation: 'Hubaiev, Kostiantyn, Beygi Nasrabadi, Hossein, Norouzi, Ebrahim, Singh, Gunjan, Waitelonis, Jörg, Sack, Harald (2025). "Description of Ontology Metadata with NFDIcore". Zenodo (Poster). https://doi.org/10.5281/zenodo.17158443'
 citation_count: 0
 source: zenodo
 zenodo_id: 17158443
@@ -16,4 +16,4 @@ Ontologies play a central role in enabling sharing and reusing of knowledge on t
 [View on Zenodo](https://doi.org/10.5281/zenodo.17158443){:target="_blank"}
 
 
-Recommended citation: Hubaiev, Kostiantyn, Beygi Nasrabadi, Hossein, Norouzi, Ebrahim, Singh, Gunjan, Waitelonis, Jörg, Sack, Harald (2025). "Description of Ontology Metadata with NFDIcore". Zenodo (Poster: Poster). <https://doi.org/10.5281/zenodo.17158443>
+Recommended citation: Hubaiev, Kostiantyn, Beygi Nasrabadi, Hossein, Norouzi, Ebrahim, Singh, Gunjan, Waitelonis, Jörg, Sack, Harald (2025). "Description of Ontology Metadata with NFDIcore". Zenodo (Poster). <https://doi.org/10.5281/zenodo.17158443>

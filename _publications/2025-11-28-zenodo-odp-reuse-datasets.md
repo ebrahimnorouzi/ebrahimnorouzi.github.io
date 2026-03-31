@@ -4,9 +4,9 @@ collection: publications
 permalink: /publication/odp-reuse-datasets/
 excerpt: 'The ODP-Reuse dataset collection provides a curated suite of benchmark datasets for studying and evaluating the reuse of Ontology Design Patterns (ODPs) in ontologies. Each dataset in this collection corresponds to a distinct discovery source&mdash;(i) Paper &amp; Repository…'
 date: 2025-11-28
-venue: 'Zenodo (Dataset: Dataset)'
+venue: 'Zenodo (Dataset)'
 paperurl: 'https://doi.org/10.5281/zenodo.17751741'
-citation: 'Norouzi, Ebrahim, Hertling, Sven, Waitelonis, Jörg, Sack, Harald (2025). "ODP-Reuse Datasets". Zenodo (Dataset: Dataset). 10.5281/zenodo.17751741'
+citation: 'Norouzi, Ebrahim, Hertling, Sven, Waitelonis, Jörg, Sack, Harald (2025). "ODP-Reuse Datasets". Zenodo (Dataset). https://doi.org/10.5281/zenodo.17751741'
 citation_count: 0
 source: zenodo
 zenodo_id: 17751741
@@ -16,4 +16,4 @@ The ODP-Reuse dataset collection provides a curated suite of benchmark datasets 
 [View on Zenodo](https://doi.org/10.5281/zenodo.17751741){:target="_blank"}
 
 
-Recommended citation: Norouzi, Ebrahim, Hertling, Sven, Waitelonis, Jörg, Sack, Harald (2025). "ODP-Reuse Datasets". Zenodo (Dataset: Dataset). <https://doi.org/10.5281/zenodo.17751741>
+Recommended citation: Norouzi, Ebrahim, Hertling, Sven, Waitelonis, Jörg, Sack, Harald (2025). "ODP-Reuse Datasets". Zenodo (Dataset). <https://doi.org/10.5281/zenodo.17751741>

@@ -4,9 +4,9 @@ collection: publications
 permalink: /publication/community-driven-development-of-infrastructure-use-case/
 excerpt: 'Digital transformation in Materials Science and Engineering (MSE) hinges on scalable, interoperable, and community-driven research data infrastructures. To achieve this, NFDI-MatWerk introduces Infrastructure Use Cases (IUCs). These IUCs stem from a requirement analysis of the…'
 date: 2025-08-04
-venue: 'Zenodo (Publication: conferencepaper)'
+venue: 'Zenodo (Conference paper)'
 paperurl: 'https://doi.org/10.5281/zenodo.16736133'
-citation: 'Azocar Guzman, Abril, Gedsun, Angelika, Menon, Sarath, Kruzikova, Pavlina, Rejiba, Khalil, Shakeel, Yusra, Siemer, Niklas, Kuhbach, Markus, Forti, Mariano, Avila Calderon, Luis, Bayani, Amirhossein, Saxena, Alaukik, Han, Ying, Norouzi, Ebrahim, Olbricht, Jurgen, Hammerschmidt, Thomas, Aversa, Rossella, Kerzel, Ulrich, Korte-Kerzel, Sandra, Skrotzki, Birgit, Sandfeld, Stefan, Hickel, Tilmann, Eberl, Chris (2025). "Community-Driven Development of Infrastructure Use Cases in NFDI-MatWerk". Zenodo (Publication: conferencepaper). 10.5281/zenodo.16736133'
+citation: 'Azocar Guzman, Abril, Gedsun, Angelika, Menon, Sarath, Kruzikova, Pavlina, Rejiba, Khalil, Shakeel, Yusra, Siemer, Niklas, Kuhbach, Markus, Forti, Mariano, Avila Calderon, Luis, Bayani, Amirhossein, Saxena, Alaukik, Han, Ying, Norouzi, Ebrahim, Olbricht, Jurgen, Hammerschmidt, Thomas, Aversa, Rossella, Kerzel, Ulrich, Korte-Kerzel, Sandra, Skrotzki, Birgit, Sandfeld, Stefan, Hickel, Tilmann, Eberl, Chris (2025). "Community-Driven Development of Infrastructure Use Cases in NFDI-MatWerk". Zenodo (Conference paper). https://doi.org/10.5281/zenodo.16736133'
 citation_count: 0
 source: zenodo
 zenodo_id: 16736133
@@ -16,4 +16,4 @@ Digital transformation in Materials Science and Engineering (MSE) hinges on scal
 [View on Zenodo](https://doi.org/10.5281/zenodo.16736133){:target="_blank"}
 
 
-Recommended citation: Azocar Guzman, Abril, Gedsun, Angelika, Menon, Sarath, Kruzikova, Pavlina, Rejiba, Khalil, Shakeel, Yusra, Siemer, Niklas, Kuhbach, Markus, Forti, Mariano, Avila Calderon, Luis, Bayani, Amirhossein, Saxena, Alaukik, Han, Ying, Norouzi, Ebrahim, Olbricht, Jurgen, Hammerschmidt, Thomas, Aversa, Rossella, Kerzel, Ulrich, Korte-Kerzel, Sandra, Skrotzki, Birgit, Sandfeld, Stefan, Hickel, Tilmann, Eberl, Chris (2025). "Community-Driven Development of Infrastructure Use Cases in NFDI-MatWerk". Zenodo (Publication: conferencepaper). <https://doi.org/10.5281/zenodo.16736133>
+Recommended citation: Azocar Guzman, Abril, Gedsun, Angelika, Menon, Sarath, Kruzikova, Pavlina, Rejiba, Khalil, Shakeel, Yusra, Siemer, Niklas, Kuhbach, Markus, Forti, Mariano, Avila Calderon, Luis, Bayani, Amirhossein, Saxena, Alaukik, Han, Ying, Norouzi, Ebrahim, Olbricht, Jurgen, Hammerschmidt, Thomas, Aversa, Rossella, Kerzel, Ulrich, Korte-Kerzel, Sandra, Skrotzki, Birgit, Sandfeld, Stefan, Hickel, Tilmann, Eberl, Chris (2025). "Community-Driven Development of Infrastructure Use Cases in NFDI-MatWerk". Zenodo (Conference paper). <https://doi.org/10.5281/zenodo.16736133>

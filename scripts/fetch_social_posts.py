@@ -160,21 +160,20 @@ def fetch_mastodon():
         # Boosts (reblogs) carry content inside status["reblog"]
         is_boost = status.get("reblog") is not None
         if is_boost:
-            reblog   = status["reblog"]
-            raw_html = reblog.get("content", "")
-            content  = strip_html(raw_html)
+            reblog         = status["reblog"]
+            raw_html       = reblog.get("content", "")
+            content        = strip_html(raw_html)
             boosted_author = reblog.get("account", {}).get("acct", "")
-            boost_url = reblog.get("url", "")
+            # Use the original post's URL (not the /activity reblog endpoint)
+            boost_url      = reblog.get("url", "")
+            # Use the original post's publication date, not the boost action date
+            created_at     = reblog.get("created_at", "") or status.get("created_at", "")
         else:
-            raw_html = status.get("content", "")
-            content  = strip_html(raw_html)
+            raw_html       = status.get("content", "")
+            content        = strip_html(raw_html)
             boosted_author = ""
-            boost_url = ""
-
-        if len(content) < MIN_CONTENT_LENGTH:
-            continue
-
-        created_at = status.get("created_at", "")
+            boost_url      = ""
+            created_at     = status.get("created_at", "")
         try:
             date = datetime.fromisoformat(created_at.replace("Z", "+00:00"))
         except Exception:
@@ -196,7 +195,8 @@ def fetch_mastodon():
         tags = [t["name"] for t in source_status.get("tags", [])]
         tags = (["mastodon", "boost"] if is_boost else ["mastodon"]) + tags[:5]
 
-        url = status.get("url", "") or boost_url
+        # For boosts, link to the original post; for own posts use the status URL
+        url = boost_url if is_boost else status.get("url", "")
         if is_boost and boosted_author:
             content = f"*Boosted from [@{boosted_author}]({boost_url})*\n\n{content}"
 

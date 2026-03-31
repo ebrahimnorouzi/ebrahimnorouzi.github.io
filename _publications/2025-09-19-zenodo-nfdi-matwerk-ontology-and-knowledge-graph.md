@@ -4,9 +4,9 @@ collection: publications
 permalink: /publication/nfdi-matwerk-ontology-and-knowledge-graph/
 excerpt: 'The NFDI MatWerk Ontology (MWO) and the accompanying Materials Science and Engineering Knowledge Graph (MSE-KG) are central pillars of the NFDI-MatWerk initiative, a national research data infrastructure project in Germany [1]. Their joint purpose is to establish a semantically…'
 date: 2025-09-19
-venue: 'Zenodo (Presentation: Presentation)'
+venue: 'Zenodo (Presentation)'
 paperurl: 'https://doi.org/10.5281/zenodo.17159604'
-citation: 'Norouzi, Ebrahim, Beygi Nasrabadi, Hossein, Kostiantyn Hubaiev, Waitelonis, Jörg, Sack, Harald (2025). "NFDI MatWerk Ontology and Knowledge Graph". Zenodo (Presentation: Presentation). 10.5281/zenodo.17159604'
+citation: 'Norouzi, Ebrahim, Beygi Nasrabadi, Hossein, Kostiantyn Hubaiev, Waitelonis, Jörg, Sack, Harald (2025). "NFDI MatWerk Ontology and Knowledge Graph". Zenodo (Presentation). https://doi.org/10.5281/zenodo.17159604'
 citation_count: 0
 source: zenodo
 zenodo_id: 17159604
@@ -16,4 +16,4 @@ The NFDI MatWerk Ontology (MWO) and the accompanying Materials Science and Engin
 [View on Zenodo](https://doi.org/10.5281/zenodo.17159604){:target="_blank"}
 
 
-Recommended citation: Norouzi, Ebrahim, Beygi Nasrabadi, Hossein, Kostiantyn Hubaiev, Waitelonis, Jörg, Sack, Harald (2025). "NFDI MatWerk Ontology and Knowledge Graph". Zenodo (Presentation: Presentation). <https://doi.org/10.5281/zenodo.17159604>
+Recommended citation: Norouzi, Ebrahim, Beygi Nasrabadi, Hossein, Kostiantyn Hubaiev, Waitelonis, Jörg, Sack, Harald (2025). "NFDI MatWerk Ontology and Knowledge Graph". Zenodo (Presentation). <https://doi.org/10.5281/zenodo.17159604>

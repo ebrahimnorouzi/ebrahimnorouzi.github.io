@@ -4,9 +4,9 @@ collection: publications
 permalink: /publication/extreme-design-for-digital-humanities-tilting-at-ontolo/
 excerpt: 'This paper is a workshop proposal (abstract) for the DHd conference 2025.Ontologies and knowledge graphs (KGs) have become irreplaceable instruments in the toolkit of digital humanities (DH) research. They offer ways to represent and interconnect a myriad of heterogeneous…'
 date: 2025-01-29
-venue: 'Zenodo (Publication: conferencepaper)'
+venue: 'Zenodo (Conference paper)'
 paperurl: 'https://doi.org/10.5281/zenodo.14760438'
-citation: 'Ondraszek, Sarah Rebecca, Norouzi, Ebrahim, Söhn, Linnaea Charlotte, Steller, Jonatan Jalle, Schrade, Torsten, Sack, Harald (2025). "eXtreme Design for Digital Humanities – Tilting at Ontological Windmills with Patterns and Principles?". Zenodo (Publication: conferencepaper). 10.5281/zenodo.14760438'
+citation: 'Ondraszek, Sarah Rebecca, Norouzi, Ebrahim, Söhn, Linnaea Charlotte, Steller, Jonatan Jalle, Schrade, Torsten, Sack, Harald (2025). "eXtreme Design for Digital Humanities – Tilting at Ontological Windmills with Patterns and Principles?". Zenodo (Conference paper). https://doi.org/10.5281/zenodo.14760438'
 citation_count: 0
 source: zenodo
 zenodo_id: 14760438
@@ -16,4 +16,4 @@ This paper is a workshop proposal (abstract) for the DHd conference 2025.Ontolog
 [View on Zenodo](https://doi.org/10.5281/zenodo.14760438){:target="_blank"}
 
 
-Recommended citation: Ondraszek, Sarah Rebecca, Norouzi, Ebrahim, Söhn, Linnaea Charlotte, Steller, Jonatan Jalle, Schrade, Torsten, Sack, Harald (2025). "eXtreme Design for Digital Humanities – Tilting at Ontological Windmills with Patterns and Principles?". Zenodo (Publication: conferencepaper). <https://doi.org/10.5281/zenodo.14760438>
+Recommended citation: Ondraszek, Sarah Rebecca, Norouzi, Ebrahim, Söhn, Linnaea Charlotte, Steller, Jonatan Jalle, Schrade, Torsten, Sack, Harald (2025). "eXtreme Design for Digital Humanities – Tilting at Ontological Windmills with Patterns and Principles?". Zenodo (Conference paper). <https://doi.org/10.5281/zenodo.14760438>
