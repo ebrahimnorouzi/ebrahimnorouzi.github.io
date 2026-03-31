@@ -4,9 +4,9 @@ collection: publications
 permalink: /publication/the-mse-knowledge-graph-centralizing-metadata-for-enhan/
 excerpt: 'The multiscale nature of materials and varied investigative methods in Materials Science and Engineering (MSE) lead to highly diverse data structures and formats. Metadata often lacks consistency across applications and is stored in unstructured formats, limiting…'
 date: 2026-01-12
-venue: 'Zenodo (Poster: Poster)'
+venue: 'Zenodo (Poster)'
 paperurl: 'https://doi.org/10.5281/zenodo.18221882'
-citation: 'Norouzi, Ebrahim (2026). "The MSE Knowledge Graph: Centralizing Metadata for Enhanced Data Integration". Zenodo (Poster: Poster). 10.5281/zenodo.18221882'
+citation: 'Norouzi, Ebrahim (2026). "The MSE Knowledge Graph: Centralizing Metadata for Enhanced Data Integration". Zenodo (Poster). https://doi.org/10.5281/zenodo.18221882'
 citation_count: 0
 source: zenodo
 zenodo_id: 18221882
@@ -16,4 +16,4 @@ The multiscale nature of materials and varied investigative methods in Materials
 [View on Zenodo](https://doi.org/10.5281/zenodo.18221882){:target="_blank"}
 
 
-Recommended citation: Norouzi, Ebrahim (2026). "The MSE Knowledge Graph: Centralizing Metadata for Enhanced Data Integration". Zenodo (Poster: Poster). <https://doi.org/10.5281/zenodo.18221882>
+Recommended citation: Norouzi, Ebrahim (2026). "The MSE Knowledge Graph: Centralizing Metadata for Enhanced Data Integration". Zenodo (Poster). <https://doi.org/10.5281/zenodo.18221882>

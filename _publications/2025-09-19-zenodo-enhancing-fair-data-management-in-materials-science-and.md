@@ -4,9 +4,9 @@ collection: publications
 permalink: /publication/enhancing-fair-data-management-in-materials-science-and/
 excerpt: 'The Materials Science and Engineering Knowledge Graph (MSE-KG) [1] serves as a central knowledge base for integrating and structuring research data within the NFDI-MatWerk [2]. It provides a semantic backbone that connects datasets, research outputs, institutions, and…'
 date: 2025-09-19
-venue: 'Zenodo (Poster: Poster)'
+venue: 'Zenodo (Poster)'
 paperurl: 'https://doi.org/10.5281/zenodo.17156142'
-citation: 'Norouzi, Ebrahim, Abdildina, Gulzaure, Shakeel, Yusra, Waitelonis, Jörg, Sack, Harald (2025). "Enhancing FAIR Data Management in Materials Science and Engineering (MSE): Integrating FAIR Digital Objects into the MSE Knowledge Graph". Zenodo (Poster: Poster). 10.5281/zenodo.17156142'
+citation: 'Norouzi, Ebrahim, Abdildina, Gulzaure, Shakeel, Yusra, Waitelonis, Jörg, Sack, Harald (2025). "Enhancing FAIR Data Management in Materials Science and Engineering (MSE): Integrating FAIR Digital Objects into the MSE Knowledge Graph". Zenodo (Poster). https://doi.org/10.5281/zenodo.17156142'
 citation_count: 0
 source: zenodo
 zenodo_id: 17156142
@@ -16,4 +16,4 @@ The Materials Science and Engineering Knowledge Graph (MSE-KG) [1] serves as a c
 [View on Zenodo](https://doi.org/10.5281/zenodo.17156142){:target="_blank"}
 
 
-Recommended citation: Norouzi, Ebrahim, Abdildina, Gulzaure, Shakeel, Yusra, Waitelonis, Jörg, Sack, Harald (2025). "Enhancing FAIR Data Management in Materials Science and Engineering (MSE): Integrating FAIR Digital Objects into the MSE Knowledge Graph". Zenodo (Poster: Poster). <https://doi.org/10.5281/zenodo.17156142>
+Recommended citation: Norouzi, Ebrahim, Abdildina, Gulzaure, Shakeel, Yusra, Waitelonis, Jörg, Sack, Harald (2025). "Enhancing FAIR Data Management in Materials Science and Engineering (MSE): Integrating FAIR Digital Objects into the MSE Knowledge Graph". Zenodo (Poster). <https://doi.org/10.5281/zenodo.17156142>

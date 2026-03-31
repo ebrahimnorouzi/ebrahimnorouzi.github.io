@@ -4,9 +4,9 @@ collection: publications
 permalink: /publication/nfdi-matwerk-ahod-2026-workshop-knowledge-graph-mse-kg/
 excerpt: 'The NFDI-MatWerk AHoD 2026 workshop on Knowledge Graphs, presented from an MSE-KG developers&rsquo; perspective, focused on practical experiences and challenges in building and maintaining the Materials Science and Engineering Knowledge Graph (MSE-KG). The session highlighted…'
 date: 2026-03-25
-venue: 'Zenodo (Presentation: Presentation)'
+venue: 'Zenodo (Presentation)'
 paperurl: 'https://doi.org/10.5281/zenodo.19220043'
-citation: 'Beygi Nasrabadi, Hossein, Norouzi, Ebrahim (2026). "NFDI-MatWerk AHoD 2026: Workshop Knowledge graph (MSE-KG developers prespective)". Zenodo (Presentation: Presentation). 10.5281/zenodo.19220043'
+citation: 'Beygi Nasrabadi, Hossein, Norouzi, Ebrahim (2026). "NFDI-MatWerk AHoD 2026: Workshop Knowledge graph (MSE-KG developers prespective)". Zenodo (Presentation). https://doi.org/10.5281/zenodo.19220043'
 citation_count: 0
 source: zenodo
 zenodo_id: 19220043
@@ -16,4 +16,4 @@ The NFDI-MatWerk AHoD 2026 workshop on Knowledge Graphs, presented from an MSE-K
 [View on Zenodo](https://doi.org/10.5281/zenodo.19220043){:target="_blank"}
 
 
-Recommended citation: Beygi Nasrabadi, Hossein, Norouzi, Ebrahim (2026). "NFDI-MatWerk AHoD 2026: Workshop Knowledge graph (MSE-KG developers prespective)". Zenodo (Presentation: Presentation). <https://doi.org/10.5281/zenodo.19220043>
+Recommended citation: Beygi Nasrabadi, Hossein, Norouzi, Ebrahim (2026). "NFDI-MatWerk AHoD 2026: Workshop Knowledge graph (MSE-KG developers prespective)". Zenodo (Presentation). <https://doi.org/10.5281/zenodo.19220043>

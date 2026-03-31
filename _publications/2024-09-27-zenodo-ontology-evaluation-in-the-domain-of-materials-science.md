@@ -4,9 +4,9 @@ collection: publications
 permalink: /publication/ontology-evaluation-in-the-domain-of-materials-science/
 excerpt: 'Ontologies have the potential to be widely re-used in the domain of materials science for the purpose of describing experiments, processes, properties of materials, and experimental and computational workflows [1, 2]. There are online repositories and portals that offer access…'
 date: 2024-09-27
-venue: 'Zenodo (Presentation: Presentation)'
+venue: 'Zenodo (Presentation)'
 paperurl: 'https://doi.org/10.5281/zenodo.13846098'
-citation: 'Norouzi, Ebrahim (2024). "Ontology Evaluation in the domain of Materials Science and Engineering". Zenodo (Presentation: Presentation). 10.5281/zenodo.13846098'
+citation: 'Norouzi, Ebrahim (2024). "Ontology Evaluation in the domain of Materials Science and Engineering". Zenodo (Presentation). https://doi.org/10.5281/zenodo.13846098'
 citation_count: 0
 source: zenodo
 zenodo_id: 13846098
@@ -16,4 +16,4 @@ Ontologies have the potential to be widely re-used in the domain of materials sc
 [View on Zenodo](https://doi.org/10.5281/zenodo.13846098){:target="_blank"}
 
 
-Recommended citation: Norouzi, Ebrahim (2024). "Ontology Evaluation in the domain of Materials Science and Engineering". Zenodo (Presentation: Presentation). <https://doi.org/10.5281/zenodo.13846098>
+Recommended citation: Norouzi, Ebrahim (2024). "Ontology Evaluation in the domain of Materials Science and Engineering". Zenodo (Presentation). <https://doi.org/10.5281/zenodo.13846098>
