@@ -174,10 +174,14 @@ def fetch_mastodon():
             boosted_author = ""
             boost_url      = ""
             created_at     = status.get("created_at", "")
+        if len(content) < MIN_CONTENT_LENGTH:
+            continue
+
         try:
             date = datetime.fromisoformat(created_at.replace("Z", "+00:00"))
         except Exception:
-            date = datetime.now(tz=timezone.utc)
+            print(f"  SKIP: unparseable date for status {sid} — {created_at!r}")
+            continue  # never fall back to today's date
 
         # Build title
         first_line = content.split("\n")[0]
