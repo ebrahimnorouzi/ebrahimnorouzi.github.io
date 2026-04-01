@@ -1,9 +1,9 @@
 name: 📣 Auto-sync Social Posts (Mastodon)
 
-# Runs on the 1st of every month at 09:00 UTC, or manually from the Actions tab
+# Runs every Monday at 09:00 UTC, or manually from the Actions tab
 on:
   schedule:
-    - cron: '0 9 1 * *'
+    - cron: '0 9 * * 1'
   workflow_dispatch:
 
 jobs:
