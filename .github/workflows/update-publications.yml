@@ -1,9 +1,9 @@
 name: 🎓 Auto-update Publications (Semantic Scholar + arXiv + Zenodo)
 
-# Runs every Monday at 08:00 UTC, or manually via "Run workflow"
+# Runs on the 1st of every month at 08:00 UTC, or manually via "Run workflow"
 on:
   schedule:
-    - cron: '0 8 * * 1'
+    - cron: '0 8 1 * *'
   workflow_dispatch:
 
 jobs:
