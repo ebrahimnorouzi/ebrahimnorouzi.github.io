@@ -27,8 +27,9 @@ from pathlib import Path
 MASTODON_INSTANCE      = os.getenv("MASTODON_INSTANCE",  "sigmoid.social")
 MASTODON_USERNAME      = os.getenv("MASTODON_USERNAME",  "enorouzi")
 MAX_POSTS_PER_SOURCE   = int(os.getenv("MAX_POSTS",       "20"))
+INCLUDE_BOOSTS         = os.getenv("INCLUDE_BOOSTS", "true").lower() == "true"
 POSTS_DIR              = Path("_posts")
-MIN_CONTENT_LENGTH     = 30   # skip very short toots (boosts, reacts)
+MIN_CONTENT_LENGTH     = 30   # skip very short toots
 # ─────────────────────────────────────────────────────────────────────────────
 
 
@@ -130,14 +131,15 @@ def fetch_mastodon():
         print(f"  ERROR: could not look up account — {e}")
         return 0
 
-    # Fetch public statuses
+    # Fetch public statuses (including boosts if enabled)
+    print(f"  Including boosts: {INCLUDE_BOOSTS}")
     try:
         r = requests.get(
             f"https://{MASTODON_INSTANCE}/api/v1/accounts/{account_id}/statuses",
             params={
                 "limit": MAX_POSTS_PER_SOURCE,
                 "exclude_replies": "true",
-                "exclude_reblogs": "true",
+                "exclude_reblogs": "false" if INCLUDE_BOOSTS else "true",
             },
             timeout=20
         )
@@ -151,32 +153,53 @@ def fetch_mastodon():
     new_count = 0
 
     for status in statuses:
-        sid     = str(status.get("id", ""))
-        raw_html = status.get("content", "")
-        content  = strip_html(raw_html)
-
-        if len(content) < MIN_CONTENT_LENGTH:
-            continue
+        sid = str(status.get("id", ""))
         if hashlib.md5(sid.encode()).hexdigest()[:10] in seen:
             continue
 
-        created_at = status.get("created_at", "")
+        # Boosts (reblogs) carry content inside status["reblog"]
+        is_boost = status.get("reblog") is not None
+        if is_boost:
+            reblog         = status["reblog"]
+            raw_html       = reblog.get("content", "")
+            content        = strip_html(raw_html)
+            boosted_author = reblog.get("account", {}).get("acct", "")
+            # Use the original post's URL (not the /activity reblog endpoint)
+            boost_url      = reblog.get("url", "")
+            # Use the original post's publication date, not the boost action date
+            created_at     = reblog.get("created_at", "") or status.get("created_at", "")
+        else:
+            raw_html       = status.get("content", "")
+            content        = strip_html(raw_html)
+            boosted_author = ""
+            boost_url      = ""
+            created_at     = status.get("created_at", "")
         try:
             date = datetime.fromisoformat(created_at.replace("Z", "+00:00"))
         except Exception:
             date = datetime.now(tz=timezone.utc)
 
-        # Build title from first line of content
+        # Build title
         first_line = content.split("\n")[0]
         title = textwrap.shorten(first_line, width=70, placeholder="…")
-        if not title:
+        if is_boost:
+            if not title:
+                title = f"Boost from @{boosted_author} — {date.strftime('%Y-%m-%d')}"
+            else:
+                title = f"Boost: {title}"
+        elif not title:
             title = f"Mastodon post {date.strftime('%Y-%m-%d')}"
 
-        # Extract hashtags as tags
-        tags = [t["name"] for t in status.get("tags", [])]
-        tags = ["mastodon"] + tags[:5]
+        # Tags
+        source_status = status["reblog"] if is_boost else status
+        tags = [t["name"] for t in source_status.get("tags", [])]
+        tags = (["mastodon", "boost"] if is_boost else ["mastodon"]) + tags[:5]
 
-        url = status.get("url", "")
+        # For boosts, link to the original post; for own posts use the status URL
+        url = boost_url if is_boost else status.get("url", "")
+        if is_boost and boosted_author:
+            content = f"*Boosted from [@{boosted_author}]({boost_url})*\n\n{content}"
+
         wrote = write_post(date, "mastodon", sid, title, content, url, tags)
         if wrote:
             new_count += 1

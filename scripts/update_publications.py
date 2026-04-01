@@ -389,18 +389,6 @@ def run_arxiv(known: set) -> int:
 
 # ── Zenodo ───────────────────────────────────────────────────────────────────
 
-ZENODO_TYPE_LABELS = {
-    "poster":       "Poster",
-    "presentation": "Presentation",
-    "dataset":      "Dataset",
-    "software":     "Software",
-    "publication":  "Publication",
-    "image":        "Image",
-    "video":        "Video",
-    "other":        "Other",
-}
-
-
 def zenodo_headers() -> dict:
     h = {"User-Agent": "ebrahimnorouzi-website-bot/1.0"}
     if ZENODO_API_TOKEN:
@@ -409,7 +397,7 @@ def zenodo_headers() -> dict:
 
 
 def fetch_zenodo_records(author: str) -> list:
-    """Fetch all Zenodo records where author name appears as a creator."""
+    """Fetch all Zenodo records where the author name appears as a creator."""
     records, page = [], 1
     while True:
         time.sleep(REQUEST_SLEEP)
@@ -442,16 +430,17 @@ def zenodo_make_markdown(record: dict) -> str:
     date_str = (meta.get("publication_date") or "1900-01-01")[:10]
     year     = date_str[:4]
     rtype    = meta.get("resource_type", {})
-    rtype_label = ZENODO_TYPE_LABELS.get(rtype.get("type", ""), "Record")
-    subtype  = rtype.get("subtype", "") or rtype.get("title", "")
-    venue    = f"Zenodo ({rtype_label}{': ' + subtype if subtype else ''})"
+    # rtype["title"] is already the human-readable label ("Presentation",
+    # "Conference paper", "Dataset", etc.) — use it directly to avoid
+    # duplicates like "Zenodo (Presentation: Presentation)".
+    venue    = f"Zenodo ({rtype.get('title', 'Record')})"
 
-    excerpt  = textwrap.shorten(desc or title, width=280, placeholder="…").replace("'", "&#39;")
+    excerpt   = textwrap.shorten(desc or title, width=280, placeholder="…").replace("'", "&#39;")
     venue_esc = venue.replace("'", "&#39;")
-    citation  = f'{authors} ({year}). "{title}". {venue}. {doi}'.replace("'", "&#39;")
+    doi_url   = f"https://doi.org/{doi}" if doi else url
+    citation  = f'{authors} ({year}). "{title}". {venue}. {doi_url}'.replace("'", "&#39;")
 
-    # Find PDF download link if available
-    files = record.get("files", [])
+    files   = record.get("files", [])
     pdf_url = next((f["links"]["self"] for f in files if f.get("type") == "pdf"), "")
 
     return f'''---
