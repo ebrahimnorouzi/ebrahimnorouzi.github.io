@@ -352,11 +352,26 @@ h1,h2,h3,h4,h5,h6 {
   }
 }
 
+.author__urls-wrapper {
+  position: relative;
+}
+
 .author__urls {
   border-radius: var(--radius) !important;
   border: 1px solid var(--border) !important;
   box-shadow: var(--sm) !important;
   background: var(--surface) !important;
+
+  // On mobile the theme sets z-index: -1 which causes the dropdown to render
+  // behind main page content. Override to a high positive value so it floats
+  // above everything else when opened.
+  @media (max-width: 924px) {
+    z-index: 200 !important;
+    position: absolute !important;
+    width: 100% !important;
+    left: 0 !important;
+    right: auto !important;
+  }
 
   @media (min-width: 925px) {
     border: none !important; box-shadow: none !important; background: transparent !important;
@@ -846,6 +861,21 @@ table {
   .pub-venue { max-width: 200px; }
   .kg-hero { border-radius: 0; }
   #kg-svg { height: 280px !important; }
+
+  // Add clear visual break between page content and footer/sitemap
+  #main {
+    padding-bottom: 2.5em;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .page__footer {
+    // Reinforce the gradient stripe height on mobile for visibility
+    &::before {
+      height: 3px !important;
+    }
+    margin-top: 0 !important;
+    padding-top: 1.5em;
+  }
 }
 
 
