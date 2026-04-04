@@ -1,3 +1,27 @@
 <!-- start custom footer snippets -->
 <a href="/sitemap/">Sitemap</a>
+
+<script>
+(function() {
+  var toggle = document.getElementById('dark-mode-toggle');
+  var icon = document.getElementById('dark-mode-icon');
+  var html = document.documentElement;
+
+  // Check saved preference or system preference
+  var saved = localStorage.getItem('darkMode');
+  if (saved === 'true' || (saved === null && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    html.classList.add('dark-mode');
+    if (icon) icon.className = 'fas fa-sun';
+  }
+
+  if (toggle) {
+    toggle.addEventListener('click', function() {
+      html.classList.toggle('dark-mode');
+      var isDark = html.classList.contains('dark-mode');
+      localStorage.setItem('darkMode', isDark);
+      if (icon) icon.className = isDark ? 'fas fa-sun' : 'fas fa-moon';
+    });
+  }
+})();
+</script>
 <!-- end custom footer snippets -->

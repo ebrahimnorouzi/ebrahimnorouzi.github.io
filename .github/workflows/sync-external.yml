@@ -40,6 +40,11 @@ jobs:
           STRAVA_REFRESH_TOKEN: ${{ secrets.STRAVA_REFRESH_TOKEN }}
         run: python scripts/fetch_strava_activities.py
 
+      - name: Fetch Scholar citation metrics
+        env:
+          S2_AUTHOR_ID: "2238727014"
+        run: python scripts/fetch_scholar_metrics.py
+
       - name: Fetch Spotify data
         if: ${{ env.SPOTIFY_CLIENT_ID != '' }}
         env:

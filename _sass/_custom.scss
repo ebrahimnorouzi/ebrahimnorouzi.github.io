@@ -1488,3 +1488,228 @@ table {
   .music-artists-grid { grid-template-columns: repeat(2, 1fr); }
   .strava-stats-grid { grid-template-columns: 1fr; }
 }
+
+
+/* ==========================================================================
+   SCHOLAR CITATION METRICS BAR
+   ========================================================================== */
+.scholar-metrics-bar {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  margin: 1.5em 0 .5em;
+  flex-wrap: wrap;
+}
+
+.scholar-metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none !important;
+  padding: .6em 1.2em;
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--xs);
+  transition: var(--ease);
+  min-width: 80px;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--sm);
+    border-color: rgba(15,184,160,.3);
+  }
+}
+
+.scholar-metric__value {
+  font-family: 'Space Grotesk',sans-serif;
+  font-weight: 800;
+  font-size: 1.4em;
+  color: var(--navy);
+  line-height: 1.2;
+}
+
+.scholar-metric__label {
+  font-size: .7em;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+
+/* ==========================================================================
+   DARK MODE TOGGLE BUTTON
+   ========================================================================== */
+.dark-mode-toggle {
+  background: rgba(255,255,255,.12) !important;
+  border: 1px solid rgba(255,255,255,.18) !important;
+  border-radius: 50% !important;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white !important;
+  cursor: pointer;
+  transition: var(--ease);
+  flex-shrink: 0;
+  margin-left: .5em;
+  font-size: .9em;
+  padding: 0;
+
+  &:hover {
+    background: rgba(255,255,255,.22) !important;
+    transform: rotate(20deg);
+  }
+}
+
+
+/* ==========================================================================
+   DARK MODE
+   ========================================================================== */
+html.dark-mode {
+  --navy:         #e8ecf4;
+  --navy-mid:     #c8d0e0;
+  --bg:           #0d1117;
+  --surface:      #161b22;
+  --surface-2:    #1c2333;
+  --surface-3:    #21283b;
+  --text:         #d0d7e5;
+  --text-2:       #9aa5bb;
+  --text-muted:   #6a7894;
+  --border:       #2a3346;
+  --border-lt:    #232d40;
+
+  --xs: 0 1px 3px rgba(0,0,0,.2);
+  --sm: 0 2px 10px rgba(0,0,0,.25), 0 1px 2px rgba(0,0,0,.15);
+  --md: 0 6px 24px rgba(0,0,0,.3), 0 2px 6px rgba(0,0,0,.2);
+  --lg: 0 16px 48px rgba(0,0,0,.35), 0 4px 14px rgba(0,0,0,.25);
+
+  body {
+    background-color: var(--bg) !important;
+    color: var(--text) !important;
+
+    &::before {
+      background-image: radial-gradient(circle, rgba(255,255,255,.03) 1px, transparent 1px);
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 { color: var(--navy) !important; }
+
+  .page__content {
+    p { color: var(--text); }
+    a { color: #0fb8a0 !important;
+      &:hover { color: #3dd4b8 !important; }
+    }
+    h2 { color: var(--navy); border-bottom-color: #0fb8a0; }
+    h3 { color: var(--navy); }
+    code {
+      background: var(--surface-3);
+      color: var(--text);
+      border-color: var(--border);
+    }
+    blockquote {
+      background: var(--surface-2);
+      color: var(--text-2);
+    }
+  }
+
+  .archive__item {
+    background: var(--surface);
+    border-color: var(--border);
+    &:hover { border-color: rgba(15,184,160,.3); }
+  }
+
+  .archive__item-title a { color: var(--text) !important; }
+  .archive__item-excerpt { color: var(--text-2) !important; }
+  .archive__subtitle { color: var(--navy) !important; border-bottom-color: #0fb8a0; }
+
+  .intro-highlight {
+    background: linear-gradient(135deg, rgba(15,184,160,.06), rgba(91,108,249,.08));
+    border-color: rgba(15,184,160,.2);
+  }
+
+  .pub-venue {
+    background: rgba(15,184,160,.08);
+    color: #3dd4b8;
+    border-color: rgba(15,184,160,.2);
+  }
+
+  .pub-actions a.btn-paper {
+    background: #0fb8a0;
+    border-color: #0fb8a0;
+  }
+  .pub-actions a.btn-code,
+  .pub-actions a.btn-cite {
+    border-color: var(--border);
+    color: var(--text-2) !important;
+  }
+
+  .author__name { color: var(--navy) !important; }
+  .author__bio { color: var(--text-2) !important; }
+  .author__urls a { color: var(--text-2) !important; }
+
+  .author__urls-wrapper button {
+    background: #0fb8a0 !important;
+    border-color: #0fb8a0 !important;
+  }
+
+  .page__title { color: var(--navy) !important; }
+  .page__meta { color: var(--text-muted) !important; }
+
+  .page__footer {
+    background: #080d14 !important;
+  }
+
+  table {
+    thead { background: #1c2333; }
+    tbody tr {
+      border-bottom-color: var(--border);
+      &:hover { background: var(--surface-2); }
+    }
+    tbody td { color: var(--text); }
+  }
+
+  .toc {
+    background: var(--surface-2) !important;
+    border-color: var(--border) !important;
+    a { color: var(--text-2) !important; }
+  }
+
+  .scholar-metric {
+    background: var(--surface);
+    border-color: var(--border);
+  }
+  .scholar-metric__value { color: var(--navy); }
+
+  .research-tags li {
+    background: linear-gradient(135deg, #0fb8a0, #09987f);
+  }
+
+  // Cards in dark mode
+  .repo-card, .strava-stat-card, .strava-activity-card, .gallery-card,
+  .book-card, .cert-card, .music-artist-card, .link-card, .strava-type-card,
+  .music-track-card:hover {
+    background: var(--surface);
+    border-color: var(--border);
+  }
+
+  .repo-card__name a, .strava-activity-name a, .cert-card__title a,
+  .book-card__title, .link-card__title, .music-track-name,
+  .music-artist-name { color: var(--navy) !important; }
+
+  .repo-topic {
+    background: var(--surface-3);
+    border-color: var(--border);
+  }
+
+  // Author profile sidebar on mobile
+  @media (max-width: 924px) {
+    .author__urls {
+      background: var(--surface) !important;
+      border-color: var(--border) !important;
+    }
+    .author__urls li { border-bottom-color: var(--border) !important; }
+  }
+}
