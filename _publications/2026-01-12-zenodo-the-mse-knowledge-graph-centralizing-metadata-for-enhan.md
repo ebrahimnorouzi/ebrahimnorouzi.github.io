@@ -6,7 +6,7 @@ excerpt: 'The multiscale nature of materials and varied investigative methods in
 date: 2026-01-12
 venue: 'Zenodo (Poster)'
 paperurl: 'https://doi.org/10.5281/zenodo.18221882'
-citation: 'Norouzi, Ebrahim (2026). "The MSE Knowledge Graph: Centralizing Metadata for Enhanced Data Integration". Zenodo (Poster). https://doi.org/10.5281/zenodo.18221882'
+citation: 'Norouzi, Ebrahim (2026). "The MSE Knowledge Graph: Centralizing Metadata for Enhanced Data Integration". Zenodo (Poster).'
 citation_count: 0
 source: zenodo
 zenodo_id: 18221882
@@ -16,4 +16,4 @@ The multiscale nature of materials and varied investigative methods in Materials
 [View on Zenodo](https://doi.org/10.5281/zenodo.18221882){:target="_blank"}
 
 
-Recommended citation: Norouzi, Ebrahim (2026). "The MSE Knowledge Graph: Centralizing Metadata for Enhanced Data Integration". Zenodo (Poster). <https://doi.org/10.5281/zenodo.18221882>
+Recommended citation: Norouzi, Ebrahim (2026). "The MSE Knowledge Graph: Centralizing Metadata for Enhanced Data Integration". Zenodo (Poster). https://doi.org/10.5281/zenodo.18221882

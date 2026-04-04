@@ -6,7 +6,7 @@ excerpt: 'Linked Open Data (LOD) offers significant advantages for the Materials
 date: 2024-09-27
 venue: 'Zenodo (Presentation)'
 paperurl: 'https://doi.org/10.5281/zenodo.13846096'
-citation: 'Norouzi, Ebrahim (2024). "Integration of Linked Open Data in Materials Science and Engineering (MSE)". Zenodo (Presentation). https://doi.org/10.5281/zenodo.13846096'
+citation: 'Norouzi, Ebrahim (2024). "Integration of Linked Open Data in Materials Science and Engineering (MSE)". Zenodo (Presentation).'
 citation_count: 0
 source: zenodo
 zenodo_id: 13846096
@@ -16,4 +16,4 @@ Linked Open Data (LOD) offers significant advantages for the Materials Science a
 [View on Zenodo](https://doi.org/10.5281/zenodo.13846096){:target="_blank"}
 
 
-Recommended citation: Norouzi, Ebrahim (2024). "Integration of Linked Open Data in Materials Science and Engineering (MSE)". Zenodo (Presentation). <https://doi.org/10.5281/zenodo.13846096>
+Recommended citation: Norouzi, Ebrahim (2024). "Integration of Linked Open Data in Materials Science and Engineering (MSE)". Zenodo (Presentation). https://doi.org/10.5281/zenodo.13846096

@@ -6,7 +6,7 @@ excerpt: 'The Materials Science and Engineering Knowledge Graph (MSE-KG) [1] ser
 date: 2025-09-19
 venue: 'Zenodo (Poster)'
 paperurl: 'https://doi.org/10.5281/zenodo.17156142'
-citation: 'Norouzi, Ebrahim, Abdildina, Gulzaure, Shakeel, Yusra, Waitelonis, Jörg, Sack, Harald (2025). "Enhancing FAIR Data Management in Materials Science and Engineering (MSE): Integrating FAIR Digital Objects into the MSE Knowledge Graph". Zenodo (Poster). https://doi.org/10.5281/zenodo.17156142'
+citation: 'Norouzi, Ebrahim, Abdildina, Gulzaure, Shakeel, Yusra, Waitelonis, Jörg, Sack, Harald (2025). "Enhancing FAIR Data Management in Materials Science and Engineering (MSE): Integrating FAIR Digital Objects into the MSE Knowledge Graph". Zenodo (Poster).'
 citation_count: 0
 source: zenodo
 zenodo_id: 17156142
@@ -16,4 +16,4 @@ The Materials Science and Engineering Knowledge Graph (MSE-KG) [1] serves as a c
 [View on Zenodo](https://doi.org/10.5281/zenodo.17156142){:target="_blank"}
 
 
-Recommended citation: Norouzi, Ebrahim, Abdildina, Gulzaure, Shakeel, Yusra, Waitelonis, Jörg, Sack, Harald (2025). "Enhancing FAIR Data Management in Materials Science and Engineering (MSE): Integrating FAIR Digital Objects into the MSE Knowledge Graph". Zenodo (Poster). <https://doi.org/10.5281/zenodo.17156142>
+Recommended citation: Norouzi, Ebrahim, Abdildina, Gulzaure, Shakeel, Yusra, Waitelonis, Jörg, Sack, Harald (2025). "Enhancing FAIR Data Management in Materials Science and Engineering (MSE): Integrating FAIR Digital Objects into the MSE Knowledge Graph". Zenodo (Poster). https://doi.org/10.5281/zenodo.17156142

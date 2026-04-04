@@ -6,7 +6,7 @@ excerpt: 'The NFDI MatWerk Ontology (MWO) and the accompanying Materials Science
 date: 2025-09-19
 venue: 'Zenodo (Presentation)'
 paperurl: 'https://doi.org/10.5281/zenodo.17159604'
-citation: 'Norouzi, Ebrahim, Beygi Nasrabadi, Hossein, Kostiantyn Hubaiev, Waitelonis, Jörg, Sack, Harald (2025). "NFDI MatWerk Ontology and Knowledge Graph". Zenodo (Presentation). https://doi.org/10.5281/zenodo.17159604'
+citation: 'Norouzi, Ebrahim, Beygi Nasrabadi, Hossein, Kostiantyn Hubaiev, Waitelonis, Jörg, Sack, Harald (2025). "NFDI MatWerk Ontology and Knowledge Graph". Zenodo (Presentation).'
 citation_count: 0
 source: zenodo
 zenodo_id: 17159604
@@ -16,4 +16,4 @@ The NFDI MatWerk Ontology (MWO) and the accompanying Materials Science and Engin
 [View on Zenodo](https://doi.org/10.5281/zenodo.17159604){:target="_blank"}
 
 
-Recommended citation: Norouzi, Ebrahim, Beygi Nasrabadi, Hossein, Kostiantyn Hubaiev, Waitelonis, Jörg, Sack, Harald (2025). "NFDI MatWerk Ontology and Knowledge Graph". Zenodo (Presentation). <https://doi.org/10.5281/zenodo.17159604>
+Recommended citation: Norouzi, Ebrahim, Beygi Nasrabadi, Hossein, Kostiantyn Hubaiev, Waitelonis, Jörg, Sack, Harald (2025). "NFDI MatWerk Ontology and Knowledge Graph". Zenodo (Presentation). https://doi.org/10.5281/zenodo.17159604

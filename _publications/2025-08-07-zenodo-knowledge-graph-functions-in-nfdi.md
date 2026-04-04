@@ -6,7 +6,7 @@ excerpt: 'The dataset contains use case examples from Knowledge Graph (KG) proje
 date: 2025-08-07
 venue: 'Zenodo (Dataset)'
 paperurl: 'https://doi.org/10.5281/zenodo.16759011'
-citation: 'Shigapov, Renat, Schubotz, Moritz, Fliegl, Heike, Norouzi, Ebrahim, Fortmann-Grote, Carsten, Becker, Markus, Rossenova, Lozana, Tietz, Tabea, Posthumus, Etienne, Zapilko, Benjamin, Dietze, Stefan, Degbelo, Auriol, Grieb, Jonas, Rebecca Ondraszek, Sarah, Voss, Jakob, Thiery, Florian, W. Mees, Allard, Goedicke, Michael, Kaplan, Angelika, Limani, Fidan, Gesese, Genet-Asefa, Schimmler, Sonja, Auer, Sören, Ackermann, Marcel R., Simons, Olaf, Elhossary, Muhammad (2025). "Knowledge Graph Functions in NFDI". Zenodo (Dataset). https://doi.org/10.5281/zenodo.16759011'
+citation: 'Shigapov, Renat, Schubotz, Moritz, Fliegl, Heike, Norouzi, Ebrahim, Fortmann-Grote, Carsten, Becker, Markus, Rossenova, Lozana, Tietz, Tabea, Posthumus, Etienne, Zapilko, Benjamin, Dietze, Stefan, Degbelo, Auriol, Grieb, Jonas, Rebecca Ondraszek, Sarah, Voss, Jakob, Thiery, Florian, W. Mees, Allard, Goedicke, Michael, Kaplan, Angelika, Limani, Fidan, Gesese, Genet-Asefa, Schimmler, Sonja, Auer, Sören, Ackermann, Marcel R., Simons, Olaf, Elhossary, Muhammad (2025). "Knowledge Graph Functions in NFDI". Zenodo (Dataset).'
 citation_count: 0
 source: zenodo
 zenodo_id: 16759011
@@ -16,4 +16,4 @@ The dataset contains use case examples from Knowledge Graph (KG) projects across
 [View on Zenodo](https://doi.org/10.5281/zenodo.16759011){:target="_blank"}
 
 
-Recommended citation: Shigapov, Renat, Schubotz, Moritz, Fliegl, Heike, Norouzi, Ebrahim, Fortmann-Grote, Carsten, Becker, Markus, Rossenova, Lozana, Tietz, Tabea, Posthumus, Etienne, Zapilko, Benjamin, Dietze, Stefan, Degbelo, Auriol, Grieb, Jonas, Rebecca Ondraszek, Sarah, Voss, Jakob, Thiery, Florian, W. Mees, Allard, Goedicke, Michael, Kaplan, Angelika, Limani, Fidan, Gesese, Genet-Asefa, Schimmler, Sonja, Auer, Sören, Ackermann, Marcel R., Simons, Olaf, Elhossary, Muhammad (2025). "Knowledge Graph Functions in NFDI". Zenodo (Dataset). <https://doi.org/10.5281/zenodo.16759011>
+Recommended citation: Shigapov, Renat, Schubotz, Moritz, Fliegl, Heike, Norouzi, Ebrahim, Fortmann-Grote, Carsten, Becker, Markus, Rossenova, Lozana, Tietz, Tabea, Posthumus, Etienne, Zapilko, Benjamin, Dietze, Stefan, Degbelo, Auriol, Grieb, Jonas, Rebecca Ondraszek, Sarah, Voss, Jakob, Thiery, Florian, W. Mees, Allard, Goedicke, Michael, Kaplan, Angelika, Limani, Fidan, Gesese, Genet-Asefa, Schimmler, Sonja, Auer, Sören, Ackermann, Marcel R., Simons, Olaf, Elhossary, Muhammad (2025). "Knowledge Graph Functions in NFDI". Zenodo (Dataset). https://doi.org/10.5281/zenodo.16759011

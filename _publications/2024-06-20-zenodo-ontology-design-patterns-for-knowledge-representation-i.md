@@ -6,7 +6,7 @@ excerpt: 'In Materials Science and Engineering (MSE), effective knowledge repres
 date: 2024-06-20
 venue: 'Zenodo (Poster)'
 paperurl: 'https://doi.org/10.5281/zenodo.12189132'
-citation: 'Norouzi, Ebrahim (2024). "Ontology Design Patterns for Knowledge Representation in Materials Science". Zenodo (Poster). https://doi.org/10.5281/zenodo.12189132'
+citation: 'Norouzi, Ebrahim (2024). "Ontology Design Patterns for Knowledge Representation in Materials Science". Zenodo (Poster).'
 citation_count: 0
 source: zenodo
 zenodo_id: 12189132
@@ -16,4 +16,4 @@ In Materials Science and Engineering (MSE), effective knowledge representation p
 [View on Zenodo](https://doi.org/10.5281/zenodo.12189132){:target="_blank"}
 
 
-Recommended citation: Norouzi, Ebrahim (2024). "Ontology Design Patterns for Knowledge Representation in Materials Science". Zenodo (Poster). <https://doi.org/10.5281/zenodo.12189132>
+Recommended citation: Norouzi, Ebrahim (2024). "Ontology Design Patterns for Knowledge Representation in Materials Science". Zenodo (Poster). https://doi.org/10.5281/zenodo.12189132

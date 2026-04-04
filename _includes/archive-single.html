@@ -70,7 +70,7 @@
           </a>
         {% endif %}
         {% if post.citation %}
-          <a href="{{ base_path }}{{ post.url }}" class="btn-cite" title="{{ post.citation }}">
+          <a href="{{ base_path }}{{ post.url }}" class="btn-cite" title="{{ post.citation | replace: '"', '&quot;' }}">
             <i class="fas fa-quote-right" aria-hidden="true"></i> Cite
           </a>
         {% endif %}
