@@ -15,6 +15,9 @@ main:
   - title: "Posts"
     url: /posts/
 
+  - title: "Bluesky"
+    url: /bluesky/
+
   - title: "Gallery"
     url: /gallery/
 
