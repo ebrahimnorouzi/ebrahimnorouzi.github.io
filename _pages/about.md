@@ -46,6 +46,10 @@ I hold an MSc in [Materials Science and Simulation (ICAMS)](https://www.icams.de
   <li>Semantic Web</li>
   <li>Ontology Engineering</li>
   <li>Information Extraction</li>
-  <li>Modelling &amp; Simulation</li>
-  <li>Data-Driven Methods</li>
 </ul>
+
+<div style="text-align:center; margin-top:2em;">
+  <a href="mailto:norouzi.iut@gmail.com" class="btn btn--primary" style="font-size:.95em; padding:.6em 1.8em;">
+    <i class="fas fa-envelope"></i>&nbsp; Get in Touch
+  </a>
+</div>
