@@ -48,8 +48,8 @@ I hold an MSc in [Materials Science and Simulation (ICAMS)](https://www.icams.de
   <li>Information Extraction</li>
 </ul>
 
-<div style="text-align:center; margin-top:2em;">
-  <a href="mailto:norouzi.iut@gmail.com" class="btn btn--primary" style="font-size:.95em; padding:.6em 1.8em;">
+<div style="text-align:center; margin:2.5em 0 3em;">
+  <a href="mailto:norouzi.iut@gmail.com" class="contact-btn">
     <i class="fas fa-envelope"></i>&nbsp; Get in Touch
   </a>
 </div>
