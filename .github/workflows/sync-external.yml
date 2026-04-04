@@ -1,0 +1,59 @@
+name: "🔄 Sync External Data (GitHub, Strava, Spotify)"
+
+# Runs on the 1st of every month at 08:00 UTC, or manually
+on:
+  schedule:
+    - cron: '0 8 1 * *'
+  workflow_dispatch:
+
+jobs:
+  sync-github:
+    name: Sync GitHub repos
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests pyyaml
+
+      - name: Fetch GitHub repos
+        env:
+          GITHUB_USERNAME: ebrahimnorouzi
+          MAX_REPOS: 30
+          EXCLUDE_FORKS: "false"
+        run: python scripts/fetch_github_repos.py
+
+      - name: Fetch Strava activities
+        if: ${{ env.STRAVA_CLIENT_ID != '' }}
+        env:
+          STRAVA_CLIENT_ID: ${{ secrets.STRAVA_CLIENT_ID }}
+          STRAVA_CLIENT_SECRET: ${{ secrets.STRAVA_CLIENT_SECRET }}
+          STRAVA_REFRESH_TOKEN: ${{ secrets.STRAVA_REFRESH_TOKEN }}
+        run: python scripts/fetch_strava_activities.py
+
+      - name: Fetch Spotify data
+        if: ${{ env.SPOTIFY_CLIENT_ID != '' }}
+        env:
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+          SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+        run: python scripts/fetch_spotify.py
+
+      - name: Commit and push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add _data/
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: auto-sync external data (GitHub, Strava, Spotify)"
+            git push origin HEAD:master
+          fi

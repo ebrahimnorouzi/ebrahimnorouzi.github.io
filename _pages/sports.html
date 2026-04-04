@@ -1,0 +1,113 @@
+---
+permalink: /sports/
+title: "Sports & Fitness"
+author_profile: true
+---
+
+{% include base_path %}
+
+<div class="intro-highlight" markdown="1">
+Running, cycling, and swimming — auto-synced from [Strava](https://www.strava.com/athletes/81973775){:target="_blank"}.
+</div>
+
+{% if site.data.strava_activities.stats %}
+{% assign stats = site.data.strava_activities.stats %}
+
+<div class="strava-stats-grid">
+  <div class="strava-stat-card">
+    <div class="strava-stat-icon"><i class="fas fa-fire"></i></div>
+    <div class="strava-stat-value">{{ stats.total_activities }}</div>
+    <div class="strava-stat-label">Activities</div>
+  </div>
+  <div class="strava-stat-card">
+    <div class="strava-stat-icon"><i class="fas fa-road"></i></div>
+    <div class="strava-stat-value">{{ stats.total_distance_km }} km</div>
+    <div class="strava-stat-label">Total Distance</div>
+  </div>
+  <div class="strava-stat-card">
+    <div class="strava-stat-icon"><i class="fas fa-clock"></i></div>
+    <div class="strava-stat-value">{{ stats.total_time_hours }} h</div>
+    <div class="strava-stat-label">Moving Time</div>
+  </div>
+  <div class="strava-stat-card">
+    <div class="strava-stat-icon"><i class="fas fa-mountain"></i></div>
+    <div class="strava-stat-value">{{ stats.total_elevation_m }} m</div>
+    <div class="strava-stat-label">Elevation Gain</div>
+  </div>
+</div>
+
+<!-- By activity type -->
+{% if stats.by_type.size > 0 %}
+<h2>By Activity Type</h2>
+<div class="strava-type-grid">
+  {% for type_entry in stats.by_type %}
+    {% assign type_name = type_entry[0] %}
+    {% assign type_stats = type_entry[1] %}
+    <div class="strava-type-card">
+      <span class="strava-type-icon">
+        {% case type_name %}
+          {% when "Run" or "TrailRun" %}<i class="fas fa-running"></i>
+          {% when "Ride" or "VirtualRide" or "GravelRide" %}<i class="fas fa-biking"></i>
+          {% when "Swim" %}<i class="fas fa-swimmer"></i>
+          {% when "Hike" or "Walk" %}<i class="fas fa-hiking"></i>
+          {% when "WeightTraining" %}<i class="fas fa-dumbbell"></i>
+          {% else %}<i class="fas fa-heartbeat"></i>
+        {% endcase %}
+      </span>
+      <strong>{{ type_name }}</strong>
+      <span class="strava-type-count">{{ type_stats.count }} activities</span>
+      <span class="strava-type-dist">{{ type_stats.distance_km }} km</span>
+    </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+{% endif %}
+
+<!-- Activity list -->
+{% if site.data.strava_activities.activities.size > 0 %}
+<h2>Recent Activities</h2>
+<div class="strava-activity-list">
+  {% for a in site.data.strava_activities.activities limit:30 %}
+  <div class="strava-activity-card">
+    <div class="strava-activity-header">
+      <span class="strava-activity-type">
+        {% case a.type %}
+          {% when "Run" or "TrailRun" %}<i class="fas fa-running"></i>
+          {% when "Ride" or "VirtualRide" or "GravelRide" %}<i class="fas fa-biking"></i>
+          {% when "Swim" %}<i class="fas fa-swimmer"></i>
+          {% when "Hike" or "Walk" %}<i class="fas fa-hiking"></i>
+          {% when "WeightTraining" %}<i class="fas fa-dumbbell"></i>
+          {% else %}<i class="fas fa-heartbeat"></i>
+        {% endcase %}
+        {{ a.type }}
+      </span>
+      <span class="strava-activity-date">{{ a.date | date: "%b %d, %Y" }}</span>
+    </div>
+    <h3 class="strava-activity-name">
+      <a href="{{ a.strava_url }}" target="_blank">{{ a.name }}</a>
+    </h3>
+    <div class="strava-activity-metrics">
+      {% if a.distance_km > 0 %}
+      <span><i class="fas fa-road"></i> {{ a.distance_km }} km</span>
+      {% endif %}
+      <span><i class="fas fa-clock"></i> {{ a.moving_time_min | divided_by: 60 | floor }}h {{ a.moving_time_min | modulo: 60 | round }}m</span>
+      {% if a.elevation_gain_m > 0 %}
+      <span><i class="fas fa-mountain"></i> {{ a.elevation_gain_m }} m</span>
+      {% endif %}
+      {% if a.average_heartrate %}
+      <span><i class="fas fa-heartbeat"></i> {{ a.average_heartrate }} bpm</span>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+{% else %}
+<p style="color:var(--text-muted); text-align:center; margin-top:3em;">
+  <i class="fas fa-running" style="font-size:2em; display:block; margin-bottom:.5em;"></i>
+  Activities will appear here once Strava is connected.<br>
+  Add <code>STRAVA_CLIENT_ID</code>, <code>STRAVA_CLIENT_SECRET</code>, and <code>STRAVA_REFRESH_TOKEN</code> as GitHub Secrets.<br>
+  Follow on <a href="https://www.strava.com/athletes/81973775" target="_blank">Strava</a>.
+</p>
+{% endif %}

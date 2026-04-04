@@ -2,15 +2,42 @@
 main:
   - title: "Publications"
     url: /publications/
-    
+
   - title: "Teaching"
     url: /teaching/
+
+  - title: "Projects"
+    url: /projects/
+
+  - title: "Sports"
+    url: /sports/
+
+  - title: "Posts"
+    url: /posts/
+
+  - title: "Gallery"
+    url: /gallery/
+
+  - title: "Reading"
+    url: /reading/
+
+  - title: "Music"
+    url: /music/
+
+  - title: "Certificates"
+    url: /certificates/
+
+  - title: "Now"
+    url: /now/
+
+  - title: "Links"
+    url: /links/
+
+  - title: "Talks Map"
+    url: /talkmap.html
 
   - title: "Hobbies"
     url: /hobbies/
 
-  - title: "Posts"
-    url: /posts/
-    
   - title: "CV"
     url: /cv/

@@ -1,0 +1,45 @@
+---
+permalink: /gallery/
+title: "Gallery"
+author_profile: true
+---
+
+{% include base_path %}
+
+<div class="intro-highlight" markdown="1">
+A curated collection of watercolor paintings, photography, and creative moments. Follow on [Instagram](https://www.instagram.com/ebi.n.94/){:target="_blank"}.
+</div>
+
+{% if site.data.gallery.size > 0 %}
+
+{% assign categories = site.data.gallery | group_by: "category" %}
+{% for cat in categories %}
+<h2>{{ cat.name }}</h2>
+<div class="gallery-grid">
+  {% for item in cat.items %}
+  <div class="gallery-card">
+    <div class="gallery-card__img-wrap">
+      <img src="{{ base_path }}/images/gallery/{{ item.image }}" alt="{{ item.caption }}" loading="lazy">
+    </div>
+    {% if item.caption %}
+    <div class="gallery-card__caption">
+      {{ item.caption }}
+      {% if item.date %}<span class="gallery-card__date">{{ item.date }}</span>{% endif %}
+    </div>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>
+{% endfor %}
+
+{% else %}
+
+<div class="gallery-placeholder">
+  <p style="color:var(--text-muted); text-align:center; margin-top:2em;">
+    <i class="fas fa-palette" style="font-size:2em; display:block; margin-bottom:.5em;"></i>
+    Gallery items can be added to <code>_data/gallery.yml</code> and images placed in <code>images/gallery/</code>.<br>
+    You can export from Instagram or add photos manually.
+  </p>
+</div>
+
+{% endif %}

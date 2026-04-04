@@ -1,0 +1,14 @@
+# Gallery — edit this file to add items
+# Place images in images/gallery/
+# category: groups items into sections (e.g., Watercolors, Photography)
+
+# Add gallery items below:
+# - category: "Watercolors"
+#   image: "painting-01.jpg"
+#   caption: "Sunset over Karlsruhe"
+#   date: "2024-03-15"
+#
+# - category: "Photography"
+#   image: "photo-01.jpg"
+#   caption: "Morning run through the park"
+#   date: "2024-05-20"

@@ -1,0 +1,58 @@
+---
+permalink: /music/
+title: "Music"
+author_profile: true
+---
+
+{% include base_path %}
+
+<div class="intro-highlight" markdown="1">
+What I've been listening to lately. Synced from Spotify via GitHub Actions.
+</div>
+
+{% if site.data.spotify.top_tracks.size > 0 or site.data.spotify.top_artists.size > 0 %}
+
+{% if site.data.spotify.top_artists.size > 0 %}
+<h2>Top Artists</h2>
+<div class="music-artists-grid">
+  {% for artist in site.data.spotify.top_artists limit:12 %}
+  <a href="{{ artist.url }}" target="_blank" class="music-artist-card">
+    {% if artist.image %}
+    <img src="{{ artist.image }}" alt="{{ artist.name }}" loading="lazy" class="music-artist-img">
+    {% else %}
+    <div class="music-artist-img music-artist-placeholder"><i class="fas fa-music"></i></div>
+    {% endif %}
+    <span class="music-artist-name">{{ artist.name }}</span>
+    {% if artist.genres.size > 0 %}
+    <span class="music-artist-genre">{{ artist.genres | first }}</span>
+    {% endif %}
+  </a>
+  {% endfor %}
+</div>
+{% endif %}
+
+{% if site.data.spotify.top_tracks.size > 0 %}
+<h2>Top Tracks</h2>
+<div class="music-track-list">
+  {% for track in site.data.spotify.top_tracks limit:20 %}
+  <div class="music-track-card">
+    <span class="music-track-rank">{{ forloop.index }}</span>
+    {% if track.album_image %}
+    <img src="{{ track.album_image }}" alt="{{ track.album }}" loading="lazy" class="music-track-img">
+    {% endif %}
+    <div class="music-track-info">
+      <a href="{{ track.url }}" target="_blank" class="music-track-name">{{ track.name }}</a>
+      <span class="music-track-artist">{{ track.artist }}</span>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+{% else %}
+<p style="color:var(--text-muted); text-align:center; margin-top:3em;">
+  <i class="fas fa-headphones-alt" style="font-size:2em; display:block; margin-bottom:.5em;"></i>
+  Music data will appear here once Spotify is connected.<br>
+  Add <code>SPOTIFY_CLIENT_ID</code>, <code>SPOTIFY_CLIENT_SECRET</code>, and <code>SPOTIFY_REFRESH_TOKEN</code> as GitHub Secrets.
+</p>
+{% endif %}

@@ -1,0 +1,27 @@
+# Reading list — edit this file to add/update books
+# status: reading | finished | want-to-read
+# cover: optional image filename in images/books/
+# rating: 1-5 (optional, for finished books)
+
+- title: "Ontology Engineering"
+  author: "Keet, C. Maria"
+  status: "finished"
+  rating: 5
+  notes: "Essential reference for my PhD work on ontology design patterns."
+  url: "https://people.cs.uct.ac.za/~mkeet/OEbook/"
+
+- title: "Knowledge Graphs"
+  author: "Hogan et al."
+  status: "finished"
+  rating: 5
+  notes: "Comprehensive overview of knowledge graph fundamentals."
+  url: "https://kgbook.org/"
+
+# Add more books below:
+# - title: "Book Title"
+#   author: "Author Name"
+#   status: "reading"
+#   rating: 4
+#   notes: "Short note about the book"
+#   url: "https://..."
+#   cover: "book-cover.jpg"
