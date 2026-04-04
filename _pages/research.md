@@ -19,7 +19,7 @@ Materials science generates vast amounts of heterogeneous data — from lab expe
 The **Materials Science and Engineering Knowledge Graph** is the central output of my PhD — a large-scale, FAIR-compliant knowledge graph that integrates metadata from materials science research.
 </div>
 
-The MSE-KG connects researchers, organizations, datasets, publications, and experimental workflows into a single queryable graph. It is built on top of the [NFDI-MatWerk Ontology (MWO)](https://github.com/nfdi-matwerk/mwo){:target="_blank"} and the [NFDIcore](https://nfdicore.2005.2s.2.2.2) ontology framework.
+The MSE-KG connects researchers, organizations, datasets, publications, and experimental workflows into a single queryable graph. It is built on top of the [NFDI-MatWerk Ontology (MWO)](https://ise-fizkarlsruhe.github.io/mwo/){:target="_blank"} and the [NFDIcore](https://ise-fizkarlsruhe.github.io/nfdicore/){:target="_blank"} ontology framework.
 
 **Key contributions:**
 - Centralized metadata management for the NFDI-MatWerk consortium
@@ -27,7 +27,7 @@ The MSE-KG connects researchers, organizations, datasets, publications, and expe
 - Integration with external sources (Wikidata, ORCID, ROR, DataCite)
 - Won "Best Demo" at NFDI-MatWerk AHoD 2026
 
-[MSE-KG Website](https://nfdi.fiz-karlsruhe.de/matwerk/){:target="_blank"} | [Publication](/publication/semantic-representation-of-processes-with-ontology-desi/){:target="_blank"}
+[MSE-KG Website](https://nfdi.fiz-karlsruhe.de/matwerk/){:target="_blank"} | [SPARQL Endpoint](https://nfdi.fiz-karlsruhe.de/matwerk/sparql){:target="_blank"} | [GitHub](https://github.com/ISE-FIZKarlsruhe/matwerk){:target="_blank"}
 
 ## Ontology Design Patterns for Materials Science
 
@@ -53,7 +53,7 @@ The **MWO** is a BFO-compliant domain ontology I co-developed for research data 
 - Provide domain-specific classes for materials, processes, and properties
 - Enable interoperability across NFDI consortia (MatWerk, Culture, DS, Memory, Chem)
 
-[MWO v3.0.0 on GitHub](https://github.com/nfdi-matwerk/mwo){:target="_blank"} | [Publication](/publications/){:target="_blank"}
+[MWO Documentation](https://ise-fizkarlsruhe.github.io/mwo/){:target="_blank"} | [NFDIcore Documentation](https://ise-fizkarlsruhe.github.io/nfdicore/){:target="_blank"}
 
 ## Chemotion Knowledge Graph
 
@@ -80,7 +80,7 @@ I'm also exploring how **Large Language Models** can assist with:
 |---------|------|-------------|
 | [NFDI-MatWerk](https://nfdi-matwerk.de/){:target="_blank"} | Researcher | National research data infrastructure for materials science |
 | [AI4DiTraRe](https://ditrare.ise.fiz-karlsruhe.de/){:target="_blank"} | Researcher | AI for Digital Transformation in Research |
-| [PMD](https://www.2.2materialdigital.de/){:target="_blank"} | Contributor | Platform MaterialDigital — core ontology (PMDco) |
+| [PMD](https://www.materialdigital.de/){:target="_blank"} | Contributor | Platform MaterialDigital — core ontology (PMDco) |
 
 ---
 
