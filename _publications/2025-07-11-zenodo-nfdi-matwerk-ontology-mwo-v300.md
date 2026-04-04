@@ -6,7 +6,7 @@ excerpt: 'The National Research Data Infrastructure (NFDI) is a German initiativ
 date: 2025-07-11
 venue: 'Zenodo (Poster)'
 paperurl: 'https://doi.org/10.5281/zenodo.15861747'
-citation: 'Beygi Nasrabadi, Hossein, Norouzi, Ebrahim, Habuiev, Kostya, Waitelonis, Jörg, Sack, Harald (2025). "NFDI MatWerk Ontology (MWO) V3.0.0". Zenodo (Poster). https://doi.org/10.5281/zenodo.15861747'
+citation: 'Beygi Nasrabadi, Hossein, Norouzi, Ebrahim, Habuiev, Kostya, Waitelonis, Jörg, Sack, Harald (2025). "NFDI MatWerk Ontology (MWO) V3.0.0". Zenodo (Poster).'
 citation_count: 0
 source: zenodo
 zenodo_id: 15861747
@@ -16,4 +16,4 @@ The National Research Data Infrastructure (NFDI) is a German initiative aimed at
 [View on Zenodo](https://doi.org/10.5281/zenodo.15861747){:target="_blank"}
 
 
-Recommended citation: Beygi Nasrabadi, Hossein, Norouzi, Ebrahim, Habuiev, Kostya, Waitelonis, Jörg, Sack, Harald (2025). "NFDI MatWerk Ontology (MWO) V3.0.0". Zenodo (Poster). <https://doi.org/10.5281/zenodo.15861747>
+Recommended citation: Beygi Nasrabadi, Hossein, Norouzi, Ebrahim, Habuiev, Kostya, Waitelonis, Jörg, Sack, Harald (2025). "NFDI MatWerk Ontology (MWO) V3.0.0". Zenodo (Poster). https://doi.org/10.5281/zenodo.15861747

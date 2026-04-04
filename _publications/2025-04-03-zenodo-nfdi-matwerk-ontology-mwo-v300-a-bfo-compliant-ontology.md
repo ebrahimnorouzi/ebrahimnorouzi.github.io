@@ -6,7 +6,7 @@ excerpt: 'The National Research Data Infrastructure (NFDI) is a German initiativ
 date: 2025-04-03
 venue: 'Zenodo (Presentation)'
 paperurl: 'https://doi.org/10.5281/zenodo.15209743'
-citation: 'Beygi Nasrabadi, Hossein, Norouzi, Ebrahim, Habuiev, Kostya, Waitelonis, Jörg, Sack, Harald (2025). "NFDI MatWerk Ontology (MWO) V3.0.0: A BFO-Compliant Ontology for Materials Science and Engineering". Zenodo (Presentation). https://doi.org/10.5281/zenodo.15209743'
+citation: 'Beygi Nasrabadi, Hossein, Norouzi, Ebrahim, Habuiev, Kostya, Waitelonis, Jörg, Sack, Harald (2025). "NFDI MatWerk Ontology (MWO) V3.0.0: A BFO-Compliant Ontology for Materials Science and Engineering". Zenodo (Presentation).'
 citation_count: 0
 source: zenodo
 zenodo_id: 15209743
@@ -16,4 +16,4 @@ The National Research Data Infrastructure (NFDI) is a German initiative aiming t
 [View on Zenodo](https://doi.org/10.5281/zenodo.15209743){:target="_blank"}
 
 
-Recommended citation: Beygi Nasrabadi, Hossein, Norouzi, Ebrahim, Habuiev, Kostya, Waitelonis, Jörg, Sack, Harald (2025). "NFDI MatWerk Ontology (MWO) V3.0.0: A BFO-Compliant Ontology for Materials Science and Engineering". Zenodo (Presentation). <https://doi.org/10.5281/zenodo.15209743>
+Recommended citation: Beygi Nasrabadi, Hossein, Norouzi, Ebrahim, Habuiev, Kostya, Waitelonis, Jörg, Sack, Harald (2025). "NFDI MatWerk Ontology (MWO) V3.0.0: A BFO-Compliant Ontology for Materials Science and Engineering". Zenodo (Presentation). https://doi.org/10.5281/zenodo.15209743

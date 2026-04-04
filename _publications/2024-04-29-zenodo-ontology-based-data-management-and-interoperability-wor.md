@@ -6,7 +6,7 @@ excerpt: 'The rapidly evolving field of catalysis research generates a vast spec
 date: 2024-04-29
 venue: 'Zenodo (Working paper)'
 paperurl: 'https://doi.org/10.5281/zenodo.11082928'
-citation: 'Kockmann, Norbert, Behr, Alexander S., Borgelt, Hendrik, Dörr, Mark, Linke, David, Moustakas, Nikolaos G., Khatamirad, Mohammad, Schunk, Stephan A., Hanf, Schirin, Norouzi, Ebrahim, Saraci, Erisa, Heßelmann, Matthias, Zimmer, Stephan, Wiesner, Florian, Wessling, Matthias, Petrenko, Taras, Dikova, Yuliia, Khare, Rachit, Trunschke, Annette, Schumann, Julia, Angeli, Sofia, Gossler, Hendrik, Deutschmann, Olaf, Lenz, Richard (2024). "Ontology-based Data Management and Interoperability:  Workflow for Catalysis and Process Research Data". Zenodo (Working paper). https://doi.org/10.5281/zenodo.11082928'
+citation: 'Kockmann, Norbert, Behr, Alexander S., Borgelt, Hendrik, Dörr, Mark, Linke, David, Moustakas, Nikolaos G., Khatamirad, Mohammad, Schunk, Stephan A., Hanf, Schirin, Norouzi, Ebrahim, Saraci, Erisa, Heßelmann, Matthias, Zimmer, Stephan, Wiesner, Florian, Wessling, Matthias, Petrenko, Taras, Dikova, Yuliia, Khare, Rachit, Trunschke, Annette, Schumann, Julia, Angeli, Sofia, Gossler, Hendrik, Deutschmann, Olaf, Lenz, Richard (2024). "Ontology-based Data Management and Interoperability:  Workflow for Catalysis and Process Research Data". Zenodo (Working paper).'
 citation_count: 0
 source: zenodo
 zenodo_id: 11082928
@@ -16,4 +16,4 @@ The rapidly evolving field of catalysis research generates a vast spectrum of da
 [View on Zenodo](https://doi.org/10.5281/zenodo.11082928){:target="_blank"}
 
 
-Recommended citation: Kockmann, Norbert, Behr, Alexander S., Borgelt, Hendrik, Dörr, Mark, Linke, David, Moustakas, Nikolaos G., Khatamirad, Mohammad, Schunk, Stephan A., Hanf, Schirin, Norouzi, Ebrahim, Saraci, Erisa, Heßelmann, Matthias, Zimmer, Stephan, Wiesner, Florian, Wessling, Matthias, Petrenko, Taras, Dikova, Yuliia, Khare, Rachit, Trunschke, Annette, Schumann, Julia, Angeli, Sofia, Gossler, Hendrik, Deutschmann, Olaf, Lenz, Richard (2024). "Ontology-based Data Management and Interoperability:  Workflow for Catalysis and Process Research Data". Zenodo (Working paper). <https://doi.org/10.5281/zenodo.11082928>
+Recommended citation: Kockmann, Norbert, Behr, Alexander S., Borgelt, Hendrik, Dörr, Mark, Linke, David, Moustakas, Nikolaos G., Khatamirad, Mohammad, Schunk, Stephan A., Hanf, Schirin, Norouzi, Ebrahim, Saraci, Erisa, Heßelmann, Matthias, Zimmer, Stephan, Wiesner, Florian, Wessling, Matthias, Petrenko, Taras, Dikova, Yuliia, Khare, Rachit, Trunschke, Annette, Schumann, Julia, Angeli, Sofia, Gossler, Hendrik, Deutschmann, Olaf, Lenz, Richard (2024). "Ontology-based Data Management and Interoperability:  Workflow for Catalysis and Process Research Data". Zenodo (Working paper). https://doi.org/10.5281/zenodo.11082928

@@ -6,7 +6,7 @@ excerpt: 'This paper is a workshop proposal (abstract) for the DHd conference 20
 date: 2025-01-29
 venue: 'Zenodo (Conference paper)'
 paperurl: 'https://doi.org/10.5281/zenodo.14760438'
-citation: 'Ondraszek, Sarah Rebecca, Norouzi, Ebrahim, Söhn, Linnaea Charlotte, Steller, Jonatan Jalle, Schrade, Torsten, Sack, Harald (2025). "eXtreme Design for Digital Humanities – Tilting at Ontological Windmills with Patterns and Principles?". Zenodo (Conference paper). https://doi.org/10.5281/zenodo.14760438'
+citation: 'Ondraszek, Sarah Rebecca, Norouzi, Ebrahim, Söhn, Linnaea Charlotte, Steller, Jonatan Jalle, Schrade, Torsten, Sack, Harald (2025). "eXtreme Design for Digital Humanities – Tilting at Ontological Windmills with Patterns and Principles?". Zenodo (Conference paper).'
 citation_count: 0
 source: zenodo
 zenodo_id: 14760438
@@ -16,4 +16,4 @@ This paper is a workshop proposal (abstract) for the DHd conference 2025.Ontolog
 [View on Zenodo](https://doi.org/10.5281/zenodo.14760438){:target="_blank"}
 
 
-Recommended citation: Ondraszek, Sarah Rebecca, Norouzi, Ebrahim, Söhn, Linnaea Charlotte, Steller, Jonatan Jalle, Schrade, Torsten, Sack, Harald (2025). "eXtreme Design for Digital Humanities – Tilting at Ontological Windmills with Patterns and Principles?". Zenodo (Conference paper). <https://doi.org/10.5281/zenodo.14760438>
+Recommended citation: Ondraszek, Sarah Rebecca, Norouzi, Ebrahim, Söhn, Linnaea Charlotte, Steller, Jonatan Jalle, Schrade, Torsten, Sack, Harald (2025). "eXtreme Design for Digital Humanities – Tilting at Ontological Windmills with Patterns and Principles?". Zenodo (Conference paper). https://doi.org/10.5281/zenodo.14760438

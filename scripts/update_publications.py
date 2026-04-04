@@ -437,8 +437,7 @@ def zenodo_make_markdown(record: dict) -> str:
 
     excerpt   = textwrap.shorten(desc or title, width=280, placeholder="…").replace("'", "&#39;")
     venue_esc = venue.replace("'", "&#39;")
-    doi_url   = f"https://doi.org/{doi}" if doi else url
-    citation  = f'{authors} ({year}). "{title}". {venue}. {doi_url}'.replace("'", "&#39;")
+    citation  = f'{authors} ({year}). "{title}". {venue}.'.replace("'", "&#39;")
 
     files   = record.get("files", [])
     pdf_url = next((f["links"]["self"] for f in files if f.get("type") == "pdf"), "")
@@ -461,7 +460,7 @@ zenodo_id: {record["id"]}
 [View on Zenodo]({url}){{:target="_blank"}}
 {f'[Download PDF]({pdf_url}){{:target="_blank"}}' if pdf_url else ''}
 
-Recommended citation: {authors} ({year}). "{title}". {venue}. <{url}>
+Recommended citation: {authors} ({year}). "{title}". {venue}. {url}
 '''
 
 

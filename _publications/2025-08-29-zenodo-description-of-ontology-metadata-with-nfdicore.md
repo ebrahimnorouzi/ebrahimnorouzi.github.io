@@ -6,7 +6,7 @@ excerpt: 'Ontologies play a central role in enabling sharing and reusing of know
 date: 2025-08-29
 venue: 'Zenodo (Poster)'
 paperurl: 'https://doi.org/10.5281/zenodo.17158443'
-citation: 'Hubaiev, Kostiantyn, Beygi Nasrabadi, Hossein, Norouzi, Ebrahim, Singh, Gunjan, Waitelonis, Jörg, Sack, Harald (2025). "Description of Ontology Metadata with NFDIcore". Zenodo (Poster). https://doi.org/10.5281/zenodo.17158443'
+citation: 'Hubaiev, Kostiantyn, Beygi Nasrabadi, Hossein, Norouzi, Ebrahim, Singh, Gunjan, Waitelonis, Jörg, Sack, Harald (2025). "Description of Ontology Metadata with NFDIcore". Zenodo (Poster).'
 citation_count: 0
 source: zenodo
 zenodo_id: 17158443
@@ -16,4 +16,4 @@ Ontologies play a central role in enabling sharing and reusing of knowledge on t
 [View on Zenodo](https://doi.org/10.5281/zenodo.17158443){:target="_blank"}
 
 
-Recommended citation: Hubaiev, Kostiantyn, Beygi Nasrabadi, Hossein, Norouzi, Ebrahim, Singh, Gunjan, Waitelonis, Jörg, Sack, Harald (2025). "Description of Ontology Metadata with NFDIcore". Zenodo (Poster). <https://doi.org/10.5281/zenodo.17158443>
+Recommended citation: Hubaiev, Kostiantyn, Beygi Nasrabadi, Hossein, Norouzi, Ebrahim, Singh, Gunjan, Waitelonis, Jörg, Sack, Harald (2025). "Description of Ontology Metadata with NFDIcore". Zenodo (Poster). https://doi.org/10.5281/zenodo.17158443
