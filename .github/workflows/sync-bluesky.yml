@@ -1,0 +1,45 @@
+name: "🦋 Auto-sync Bluesky Posts"
+
+# Runs on the 1st of every month at 09:30 UTC, or manually
+on:
+  schedule:
+    - cron: '30 9 1 * *'
+  workflow_dispatch:
+
+jobs:
+  sync-bluesky:
+    name: Fetch & commit Bluesky posts
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Fetch Bluesky posts
+        env:
+          BLUESKY_HANDLE: norouzi-iut.bsky.social
+          MAX_POSTS: 30
+          INCLUDE_REPOSTS: "true"
+        run: python scripts/fetch_bluesky_posts.py
+
+      - name: Commit and push new posts
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add _posts/
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: auto-sync Bluesky posts"
+            git push origin HEAD:master
+          fi

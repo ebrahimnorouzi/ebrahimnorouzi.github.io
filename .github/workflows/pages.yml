@@ -15,6 +15,7 @@ on:
       - "🎓 Auto-update Publications (Semantic Scholar)"
       - "📣 Auto-sync Social Posts (Mastodon + LinkedIn)"
       - "🔄 Sync External Data (GitHub, Strava, Spotify)"
+      - "🦋 Auto-sync Bluesky Posts"
     types: [completed]
 
   # Allow manual trigger from the Actions tab
