@@ -1,0 +1,34 @@
+# Blogroll & Links — edit this file to add entries
+# category: groups links into sections
+# icon: FontAwesome class (optional)
+
+- category: "Semantic Web & Knowledge Graphs"
+  title: "W3C Semantic Web"
+  url: "https://www.w3.org/standards/semanticweb/"
+  description: "W3C standards for the Semantic Web"
+  icon: "fas fa-project-diagram"
+
+- category: "Semantic Web & Knowledge Graphs"
+  title: "Protege"
+  url: "https://protege.stanford.edu/"
+  description: "Free, open-source ontology editor"
+  icon: "fas fa-sitemap"
+
+- category: "Research Tools"
+  title: "Semantic Scholar"
+  url: "https://www.semanticscholar.org/"
+  description: "AI-powered research tool for scientific literature"
+  icon: "fas fa-search"
+
+- category: "Research Tools"
+  title: "Connected Papers"
+  url: "https://www.connectedpapers.com/"
+  description: "Visual tool for exploring academic papers"
+  icon: "fas fa-project-diagram"
+
+# Add more links below:
+# - category: "Category Name"
+#   title: "Link Title"
+#   url: "https://..."
+#   description: "Short description"
+#   icon: "fas fa-icon-name"

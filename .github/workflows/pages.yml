@@ -14,6 +14,7 @@ on:
     workflows:
       - "🎓 Auto-update Publications (Semantic Scholar)"
       - "📣 Auto-sync Social Posts (Mastodon + LinkedIn)"
+      - "🔄 Sync External Data (GitHub, Strava, Spotify)"
     types: [completed]
 
   # Allow manual trigger from the Actions tab

@@ -1,0 +1,84 @@
+---
+permalink: /projects/
+title: "GitHub Projects"
+author_profile: true
+---
+
+{% include base_path %}
+
+<div class="intro-highlight" markdown="1">
+Open-source projects and repositories — auto-synced from [GitHub](https://github.com/ebrahimnorouzi){:target="_blank"} via GitHub Actions.
+</div>
+
+{% if site.data.github_repos.size > 0 %}
+
+<!-- Language color map -->
+{% assign lang_colors = "Python:#3572A5,Jupyter Notebook:#DA5B0B,JavaScript:#f1e05a,TypeScript:#3178c6,HTML:#e34c26,CSS:#563d7c,Java:#b07219,Shell:#89e051,Ruby:#701516,Go:#00ADD8,Rust:#dea584,C++:#f34b7d,C:#555555,SCSS:#c6538c,SPARQL:#0C4597" | split: "," %}
+
+<div class="repo-grid">
+{% for repo in site.data.github_repos %}
+  {% unless repo.fork %}
+  <div class="repo-card{% if repo.stars > 0 %} repo-card--starred{% endif %}">
+    <div class="repo-card__header">
+      <h3 class="repo-card__name">
+        <i class="fab fa-fw fa-github"></i>
+        <a href="{{ repo.url }}" target="_blank">{{ repo.name }}</a>
+      </h3>
+      {% if repo.stars > 0 %}
+      <span class="repo-card__stars" title="{{ repo.stars }} stars">
+        <i class="fas fa-star"></i> {{ repo.stars }}
+      </span>
+      {% endif %}
+    </div>
+
+    {% if repo.description != "" %}
+    <p class="repo-card__desc">{{ repo.description }}</p>
+    {% endif %}
+
+    <div class="repo-card__meta">
+      {% if repo.language != "" %}
+      <span class="repo-card__lang">
+        {% assign lang_color = "#8a9cc0" %}
+        {% for lc in lang_colors %}
+          {% assign parts = lc | split: ":" %}
+          {% if parts[0] == repo.language %}
+            {% assign lang_color = parts[1] %}
+          {% endif %}
+        {% endfor %}
+        <span class="lang-dot" style="background:{{ lang_color }}"></span>
+        {{ repo.language }}
+      </span>
+      {% endif %}
+
+      {% if repo.forks > 0 %}
+      <span class="repo-card__forks" title="{{ repo.forks }} forks">
+        <i class="fas fa-code-branch"></i> {{ repo.forks }}
+      </span>
+      {% endif %}
+
+      {% if repo.homepage != "" %}
+      <a href="{{ repo.homepage }}" target="_blank" class="repo-card__homepage" title="Project homepage">
+        <i class="fas fa-external-link-alt"></i> Demo
+      </a>
+      {% endif %}
+    </div>
+
+    {% if repo.topics.size > 0 %}
+    <div class="repo-card__topics">
+      {% for topic in repo.topics %}
+      <span class="repo-topic">{{ topic }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+  {% endunless %}
+{% endfor %}
+</div>
+
+{% else %}
+<p style="color:var(--text-muted); text-align:center; margin-top:3em;">
+  <i class="fab fa-github" style="font-size:2em; display:block; margin-bottom:.5em;"></i>
+  Repositories will appear here after the next GitHub Actions sync.<br>
+  You can also visit <a href="https://github.com/ebrahimnorouzi" target="_blank">github.com/ebrahimnorouzi</a> directly.
+</p>
+{% endif %}

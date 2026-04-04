@@ -1,0 +1,66 @@
+---
+permalink: /reading/
+title: "Reading List"
+author_profile: true
+---
+
+{% include base_path %}
+
+<div class="intro-highlight" markdown="1">
+Books I'm reading, have read, or want to read. Recommendations welcome!
+</div>
+
+{% if site.data.reading.size > 0 %}
+
+{% assign statuses = "reading,finished,want-to-read" | split: "," %}
+{% assign status_labels = "Currently Reading,Finished,Want to Read" | split: "," %}
+{% assign status_icons = "fa-book-open,fa-check-circle,fa-bookmark" | split: "," %}
+
+{% for i in (0..2) %}
+  {% assign st = statuses[i] %}
+  {% assign books = site.data.reading | where: "status", st %}
+  {% if books.size > 0 %}
+  <h2><i class="fas {{ status_icons[i] }}"></i> {{ status_labels[i] }}</h2>
+  <div class="book-grid">
+    {% for book in books %}
+    <div class="book-card{% if st == 'reading' %} book-card--reading{% endif %}">
+      {% if book.cover %}
+      <div class="book-card__cover">
+        <img src="{{ base_path }}/images/books/{{ book.cover }}" alt="{{ book.title }}" loading="lazy">
+      </div>
+      {% endif %}
+      <div class="book-card__info">
+        <h3 class="book-card__title">{{ book.title }}</h3>
+        <p class="book-card__author">{{ book.author }}</p>
+        {% if book.rating %}
+        <div class="book-card__rating">
+          {% for star in (1..5) %}
+            {% if star <= book.rating %}
+              <i class="fas fa-star"></i>
+            {% else %}
+              <i class="far fa-star"></i>
+            {% endif %}
+          {% endfor %}
+        </div>
+        {% endif %}
+        {% if book.notes %}
+        <p class="book-card__notes">{{ book.notes }}</p>
+        {% endif %}
+        {% if book.url %}
+        <a href="{{ book.url }}" target="_blank" class="book-card__link">
+          <i class="fas fa-external-link-alt"></i> View
+        </a>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+{% endfor %}
+
+{% else %}
+<p style="color:var(--text-muted); text-align:center; margin-top:3em;">
+  <i class="fas fa-book" style="font-size:2em; display:block; margin-bottom:.5em;"></i>
+  Add books to <code>_data/reading.yml</code> and optional covers to <code>images/books/</code>.
+</p>
+{% endif %}

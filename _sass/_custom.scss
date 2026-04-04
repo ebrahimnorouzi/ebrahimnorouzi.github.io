@@ -892,3 +892,599 @@ table {
 }
 
 .container:hover .overlay { opacity: .25; }
+
+
+/* ==========================================================================
+   GITHUB PROJECTS — Repo Cards
+   ========================================================================== */
+.repo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1em;
+  margin-top: 1.5em;
+}
+
+.repo-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.2em 1.4em;
+  box-shadow: var(--xs);
+  transition: var(--ease);
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    box-shadow: var(--md);
+    transform: translateY(-3px);
+    border-color: rgba(15,184,160,.3);
+  }
+
+  &--starred { border-left: 3px solid var(--amber); }
+}
+
+.repo-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: .5em;
+}
+
+.repo-card__name {
+  font-family: 'Space Grotesk',sans-serif !important;
+  font-size: .95em !important;
+  font-weight: 700;
+  margin: 0 0 .3em !important;
+
+  a { color: var(--navy) !important; text-decoration: none !important;
+    &:hover { color: #0fb8a0 !important; }
+  }
+  i { color: var(--text-muted); font-size: .9em; }
+}
+
+.repo-card__stars {
+  font-size: .78em;
+  font-weight: 700;
+  color: var(--amber);
+  white-space: nowrap;
+  i { margin-right: .2em; }
+}
+
+.repo-card__desc {
+  font-size: .84em;
+  color: var(--text-2);
+  line-height: 1.55;
+  margin: 0 0 .7em;
+  flex-grow: 1;
+}
+
+.repo-card__meta {
+  display: flex;
+  align-items: center;
+  gap: .9em;
+  font-size: .78em;
+  color: var(--text-muted);
+}
+
+.repo-card__lang {
+  display: flex;
+  align-items: center;
+  gap: .35em;
+  font-weight: 600;
+}
+
+.lang-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.repo-card__forks { color: var(--text-muted); i { margin-right: .2em; } }
+
+.repo-card__homepage {
+  color: var(--teal) !important;
+  font-weight: 600;
+  text-decoration: none !important;
+  &:hover { color: var(--teal-h) !important; }
+}
+
+.repo-card__topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35em;
+  margin-top: .7em;
+}
+
+.repo-topic {
+  background: var(--surface-3);
+  color: var(--indigo);
+  font-size: .7em;
+  font-weight: 600;
+  padding: .15em .55em;
+  border-radius: var(--pill);
+  border: 1px solid var(--border-lt);
+}
+
+
+/* ==========================================================================
+   STRAVA / SPORTS
+   ========================================================================== */
+.strava-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1em;
+  margin: 1.5em 0 2em;
+}
+
+.strava-stat-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.2em 1em;
+  text-align: center;
+  box-shadow: var(--xs);
+  transition: var(--ease);
+
+  &:hover { transform: translateY(-3px); box-shadow: var(--md); }
+}
+
+.strava-stat-icon {
+  font-size: 1.5em;
+  color: #fc4c02; /* Strava orange */
+  margin-bottom: .3em;
+}
+
+.strava-stat-value {
+  font-family: 'Space Grotesk',sans-serif;
+  font-weight: 800;
+  font-size: 1.4em;
+  color: var(--navy);
+}
+
+.strava-stat-label {
+  font-size: .78em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  font-weight: 600;
+}
+
+.strava-type-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .8em;
+  margin: 1em 0 2em;
+}
+
+.strava-type-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--pill);
+  padding: .5em 1.1em;
+  display: flex;
+  align-items: center;
+  gap: .5em;
+  font-size: .85em;
+  box-shadow: var(--xs);
+}
+
+.strava-type-icon { color: #fc4c02; }
+.strava-type-count { color: var(--text-muted); font-size: .85em; }
+.strava-type-dist { color: var(--teal); font-weight: 600; font-size: .85em; }
+
+.strava-activity-list { margin-top: 1em; }
+
+.strava-activity-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1em 1.3em;
+  margin-bottom: .7em;
+  box-shadow: var(--xs);
+  transition: var(--ease);
+
+  &:hover { transform: translateY(-2px); box-shadow: var(--sm); border-color: rgba(252,76,2,.25); }
+}
+
+.strava-activity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: .3em;
+}
+
+.strava-activity-type {
+  font-size: .75em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color: #fc4c02;
+  i { margin-right: .3em; }
+}
+
+.strava-activity-date {
+  font-size: .75em;
+  color: var(--text-muted);
+}
+
+.strava-activity-name {
+  font-family: 'Space Grotesk',sans-serif !important;
+  font-size: .95em !important;
+  font-weight: 700;
+  margin: 0 0 .4em !important;
+  a { color: var(--navy) !important; text-decoration: none !important;
+    &:hover { color: #fc4c02 !important; }
+  }
+}
+
+.strava-activity-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  font-size: .82em;
+  color: var(--text-2);
+  i { color: var(--text-muted); margin-right: .25em; }
+}
+
+
+/* ==========================================================================
+   GALLERY
+   ========================================================================== */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1em;
+  margin: 1em 0 2em;
+}
+
+.gallery-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--xs);
+  transition: var(--ease);
+
+  &:hover { transform: translateY(-3px); box-shadow: var(--md); }
+}
+
+.gallery-card__img-wrap {
+  overflow: hidden;
+  aspect-ratio: 4/3;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .35s ease;
+  }
+
+  &:hover img { transform: scale(1.05); }
+}
+
+.gallery-card__caption {
+  padding: .7em 1em;
+  font-size: .85em;
+  color: var(--text-2);
+  line-height: 1.45;
+}
+
+.gallery-card__date {
+  display: block;
+  font-size: .8em;
+  color: var(--text-muted);
+  margin-top: .2em;
+}
+
+
+/* ==========================================================================
+   READING LIST — Book Cards
+   ========================================================================== */
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1em;
+  margin: 1em 0 2em;
+}
+
+.book-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1em 1.3em;
+  display: flex;
+  gap: 1em;
+  box-shadow: var(--xs);
+  transition: var(--ease);
+
+  &:hover { transform: translateY(-2px); box-shadow: var(--sm); }
+  &--reading { border-left: 3px solid var(--teal); }
+}
+
+.book-card__cover {
+  flex-shrink: 0;
+  width: 70px;
+  img {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: var(--xs);
+  }
+}
+
+.book-card__info { flex-grow: 1; }
+
+.book-card__title {
+  font-family: 'Space Grotesk',sans-serif !important;
+  font-size: .9em !important;
+  font-weight: 700;
+  margin: 0 0 .2em !important;
+  color: var(--navy);
+}
+
+.book-card__author {
+  font-size: .82em;
+  color: var(--text-muted);
+  margin: 0 0 .4em;
+}
+
+.book-card__rating {
+  color: var(--amber);
+  font-size: .8em;
+  margin-bottom: .3em;
+  .far { color: var(--border); }
+}
+
+.book-card__notes {
+  font-size: .82em;
+  color: var(--text-2);
+  line-height: 1.5;
+  margin: 0 0 .3em;
+}
+
+.book-card__link {
+  font-size: .78em;
+  font-weight: 600;
+  color: var(--teal) !important;
+  text-decoration: none !important;
+  &:hover { color: var(--teal-h) !important; }
+}
+
+
+/* ==========================================================================
+   CERTIFICATES
+   ========================================================================== */
+.cert-list { margin: 1em 0 2em; }
+
+.cert-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1em 1.3em;
+  margin-bottom: .7em;
+  display: flex;
+  align-items: flex-start;
+  gap: 1em;
+  box-shadow: var(--xs);
+  transition: var(--ease);
+
+  &:hover { transform: translateY(-2px); box-shadow: var(--sm); }
+}
+
+.cert-card__icon {
+  font-size: 1.5em;
+  flex-shrink: 0;
+  width: 36px;
+  text-align: center;
+  padding-top: .1em;
+}
+
+.cert-card__info { flex-grow: 1; }
+
+.cert-card__title {
+  font-family: 'Space Grotesk',sans-serif !important;
+  font-size: .92em !important;
+  font-weight: 700;
+  margin: 0 0 .2em !important;
+  a { color: var(--navy) !important; text-decoration: none !important;
+    &:hover { color: var(--teal) !important; }
+  }
+}
+
+.cert-card__meta {
+  font-size: .8em;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.cert-card__platform { font-weight: 600; color: var(--text-2); }
+
+.cert-card__credential {
+  font-size: .75em;
+  color: var(--text-muted);
+  margin: .2em 0 0;
+  i { margin-right: .3em; }
+}
+
+
+/* ==========================================================================
+   MUSIC / SPOTIFY
+   ========================================================================== */
+.music-artists-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1em;
+  margin: 1em 0 2em;
+}
+
+.music-artist-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: .8em;
+  text-align: center;
+  text-decoration: none !important;
+  box-shadow: var(--xs);
+  transition: var(--ease);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .4em;
+
+  &:hover { transform: translateY(-3px); box-shadow: var(--md); border-color: #1DB954; }
+}
+
+.music-artist-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: var(--sm);
+}
+
+.music-artist-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface-3);
+  color: var(--text-muted);
+  font-size: 1.5em;
+}
+
+.music-artist-name {
+  font-family: 'Space Grotesk',sans-serif;
+  font-weight: 700;
+  font-size: .85em;
+  color: var(--navy);
+}
+
+.music-artist-genre {
+  font-size: .72em;
+  color: var(--text-muted);
+  text-transform: capitalize;
+}
+
+.music-track-list { margin: 1em 0; }
+
+.music-track-card {
+  display: flex;
+  align-items: center;
+  gap: .8em;
+  padding: .6em .8em;
+  border-radius: var(--radius);
+  transition: background .15s;
+
+  &:hover { background: var(--surface-3); }
+}
+
+.music-track-rank {
+  font-family: 'Space Grotesk',sans-serif;
+  font-weight: 700;
+  font-size: .85em;
+  color: var(--text-muted);
+  width: 24px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.music-track-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: var(--xs);
+}
+
+.music-track-info { display: flex; flex-direction: column; min-width: 0; }
+
+.music-track-name {
+  font-weight: 600;
+  font-size: .88em;
+  color: var(--navy) !important;
+  text-decoration: none !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  &:hover { color: #1DB954 !important; }
+}
+
+.music-track-artist {
+  font-size: .78em;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* ==========================================================================
+   LINKS / BLOGROLL
+   ========================================================================== */
+.links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: .8em;
+  margin: 1em 0 2em;
+}
+
+.link-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1em 1.3em;
+  text-decoration: none !important;
+  box-shadow: var(--xs);
+  transition: var(--ease);
+  display: block;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--sm);
+    border-color: rgba(15,184,160,.3);
+    .link-card__title { color: var(--teal) !important; }
+  }
+}
+
+.link-card__header {
+  display: flex;
+  align-items: center;
+  gap: .5em;
+  margin-bottom: .3em;
+  i { color: var(--teal); font-size: 1.1em; flex-shrink: 0; }
+}
+
+.link-card__title {
+  font-family: 'Space Grotesk',sans-serif !important;
+  font-size: .9em !important;
+  font-weight: 700;
+  margin: 0 !important;
+  color: var(--navy) !important;
+  transition: color .18s;
+}
+
+.link-card__desc {
+  font-size: .82em;
+  color: var(--text-2);
+  line-height: 1.5;
+  margin: 0;
+}
+
+
+/* ==========================================================================
+   RESPONSIVE — NEW PAGES
+   ========================================================================== */
+@media (max-width: 768px) {
+  .repo-grid { grid-template-columns: 1fr; }
+  .strava-stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  .music-artists-grid { grid-template-columns: repeat(3, 1fr); }
+  .book-grid { grid-template-columns: 1fr; }
+  .links-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid { grid-template-columns: 1fr; }
+  .music-artists-grid { grid-template-columns: repeat(2, 1fr); }
+  .strava-stats-grid { grid-template-columns: 1fr; }
+}
