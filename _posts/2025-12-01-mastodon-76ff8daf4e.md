@@ -1,10 +1,10 @@
 ---
 layout: "single"
-title: "Boost: We are happy that our new paper "NFDI MatWerk Ontology (MWO): A BFO-…"
+title: "Boost: We are happy that our new paper \"NFDI MatWerk Ontology (MWO): A BFO-…"
 date: "2025-12-01T11:27:06.661000+00:00"
 categories: "mastodon"
 tags: "mastodon, boost, openaccess, ontologies, semanticweb, nfdimatwerk, bfo"
-excerpt: "*Boosted from [@fizise](https://sigmoid.social/@fizise/115644067129092907)* We are happy that our new paper "NFDI MatWerk Ontology (MWO): A BFO-Compliant Ontology for Research Data Management in…"
+excerpt: "*Boosted from [@fizise](https://sigmoid.social/@fizise/115644067129092907)* We are happy that our new paper \"NFDI MatWerk Ontology (MWO): A BFO-Compliant Ontology for Research Data Management in…"
 source: "mastodon"
 source_url: "https://sigmoid.social/@fizise/115644067129092907"
 ---

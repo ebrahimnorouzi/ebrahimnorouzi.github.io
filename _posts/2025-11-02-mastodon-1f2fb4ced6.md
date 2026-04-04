@@ -1,10 +1,10 @@
 ---
 layout: "single"
-title: "Boost: First contribution of our team is by @tabea presenting " Knowledge…"
+title: "Boost: First contribution of our team is by @tabea presenting \" Knowledge…"
 date: "2025-11-02T01:12:21.512000+00:00"
 categories: "mastodon"
 tags: "mastodon, boost, scik2025, iswc2025"
-excerpt: "*Boosted from [@fizise](https://sigmoid.social/@fizise/115477442822535921)* First contribution of our team is by @tabea presenting " Knowledge Representation and Discovery for Cultural Heritage…"
+excerpt: "*Boosted from [@fizise](https://sigmoid.social/@fizise/115477442822535921)* First contribution of our team is by @tabea presenting \" Knowledge Representation and Discovery for Cultural Heritage…"
 source: "mastodon"
 source_url: "https://sigmoid.social/@fizise/115477442822535921"
 ---

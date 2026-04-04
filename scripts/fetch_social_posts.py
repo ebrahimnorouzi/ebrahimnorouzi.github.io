@@ -56,7 +56,7 @@ def strip_html(raw: str) -> str:
 def frontmatter(**kv) -> str:
     lines = ["---"]
     for k, v in kv.items():
-        v_str = str(v).replace("'", "&#39;")
+        v_str = str(v).replace('"', '\\"').replace("'", "&#39;")
         lines.append(f'{k}: "{v_str}"')
     lines.append("---\n")
     return "\n".join(lines)
