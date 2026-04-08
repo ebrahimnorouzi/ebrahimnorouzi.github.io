@@ -1,8 +1,8 @@
 name: Ebrahim Norouzi
-total_citations: 128
-h_index: 6
-i10_index: 5
-paper_count: 37
+total_citations: 24
+h_index: 3
+i10_index: 0
+paper_count: 10
 top_papers:
 - title: 'The landscape of ontologies in materials science and engineering: A survey
     and evaluation'
@@ -11,9 +11,15 @@ top_papers:
 - title: 'From Floppy Disks to 5-Star LOD: FAIR Research Infrastructure for NFDI4Culture'
   citations: 8
   year: 2023
-- title: Performance Evaluation of Upper-Level Ontologies in Developing Materials
+- title: Performance Evaluation of Upper‐Level Ontologies in Developing Materials
     Science Ontologies and Knowledge Graphs
   citations: 3
   year: 2024
-last_updated: '2026-04-04'
-source: google_scholar
+- title: 'ConExion: Concept Extraction with Large Language Models'
+  citations: 2
+  year: 2025
+- title: Knowledge Graph Based RDM Solutions NFDI4Culture - NFDI-MatWerk - NFDI4DataScience
+  citations: 2
+  year: 2023
+last_updated: '2026-04-08'
+source: semantic_scholar
