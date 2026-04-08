@@ -23,7 +23,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install requests pyyaml
+        run: pip install requests pyyaml beautifulsoup4
 
       - name: Fetch GitHub repos
         env:
