@@ -1,9 +1,9 @@
 name: 📣 Auto-sync Social Posts (Mastodon)
 
-# Runs on the 1st of every month at 09:00 UTC, or manually from the Actions tab
+# Runs daily at 09:00 UTC, or manually from the Actions tab
 on:
   schedule:
-    - cron: '0 9 1 * *'
+    - cron: '0 9 * * *'
   workflow_dispatch:
 
 jobs:
@@ -36,6 +36,7 @@ jobs:
         run: python scripts/fetch_social_posts.py
 
       - name: Commit and push new posts
+        id: commit
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -43,4 +44,11 @@ jobs:
           if ! git diff --staged --quiet; then
             git commit -m "chore: auto-sync social posts from Mastodon"
             git push origin HEAD:master
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: Trigger Deploy GitHub Pages
+        if: steps.commit.outputs.changed == 'true'
+        run: gh workflow run pages.yml --ref master
+        env:
+          GH_TOKEN: ${{ github.token }}

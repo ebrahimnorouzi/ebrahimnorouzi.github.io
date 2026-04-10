@@ -12,8 +12,8 @@ on:
   # Re-deploy automatically when publication/post update workflows finish
   workflow_run:
     workflows:
-      - "🎓 Auto-update Publications (Semantic Scholar)"
-      - "📣 Auto-sync Social Posts (Mastodon + LinkedIn)"
+      - "🎓 Auto-update Publications (Semantic Scholar + arXiv + Zenodo)"
+      - "📣 Auto-sync Social Posts (Mastodon)"
       - "🔄 Sync External Data (GitHub, Strava, Spotify)"
       - "🦋 Auto-sync Bluesky Posts"
     types: [completed]
