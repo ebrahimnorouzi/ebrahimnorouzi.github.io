@@ -1,14 +1,42 @@
-# Gallery — edit this file to add items
-# Place images in images/gallery/
-# category: groups items into sections (e.g., Watercolors, Photography)
-
-# Add gallery items below:
-# - category: "Watercolors"
-#   image: "painting-01.jpg"
-#   caption: "Sunset over Karlsruhe"
-#   date: "2024-03-15"
-#
-# - category: "Photography"
-#   image: "photo-01.jpg"
-#   caption: "Morning run through the park"
-#   date: "2024-05-20"
+- category: Instagram
+  image: ec56b7fa.jpg
+  caption: ''
+- category: Instagram
+  image: 140f2f59.jpg
+  caption: ''
+- category: Instagram
+  image: c3fd3531.jpg
+  caption: ''
+- category: Instagram
+  image: 53a0f28a.jpg
+  caption: ''
+- category: Instagram
+  image: cf6cc6a5.jpg
+  caption: ''
+- category: Instagram
+  image: 35afb2bd.jpg
+  caption: ''
+- category: Instagram
+  image: f9cef900.jpg
+  caption: ''
+- category: Instagram
+  image: 2821f143.jpg
+  caption: ''
+- category: Instagram
+  image: 23faf3b0.jpg
+  caption: ''
+- category: Instagram
+  image: 16d4e608.jpg
+  caption: ''
+- category: Instagram
+  image: 43016d03.jpg
+  caption: ''
+- category: Instagram
+  image: f439059c.jpg
+  caption: ''
+- category: Instagram
+  image: adcb0a7c.jpg
+  caption: ''
+- category: Instagram
+  image: d2e0232d.png
+  caption: ''
