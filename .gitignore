@@ -5,3 +5,5 @@ images/posts/*.sty
 _source/*_cache
 .Rproj.user
 .claude
+__pycache__/
+*.pyc
