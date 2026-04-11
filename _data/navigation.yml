@@ -30,17 +30,11 @@ main:
   - title: "Music"
     url: /music/
 
-  - title: "Certificates"
-    url: /certificates/
-
   - title: "Now"
     url: /now/
 
   - title: "Links"
     url: /links/
-
-  - title: "Talks Map"
-    url: /talkmap.html
 
   - title: "Hobbies"
     url: /hobbies/
