@@ -16,19 +16,14 @@ This is a [now page](https://nownownow.com/about){:target="_blank"} — a snapsh
 
 ## Building
 
-- Contributing to **PMDco** (Platform MaterialDigital Core Ontology) v3.0.0
-- Developing the **Chemotion Knowledge Graph** for experimental chemistry data
+- Contributing to **MWO Ontology**
+- Developing the **MSE Knowledge Graph** and **Chemotion Knowledge Graph**.
 - Maintaining open-source tools for ontology evaluation in materials science
 
 ## Learning
 
-- Improving my ukulele playing
 - Exploring watercolor techniques
 - Training for upcoming running events
-
-## Reading
-
-- *(Update this section with what you're currently reading)*
 
 ---
 
