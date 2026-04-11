@@ -293,6 +293,11 @@ def download_gdrive_folder(url: str, dest: Path) -> Path:
 
     Requires the `gdown` package. The folder must be shared with
     "Anyone with the link can view" for this to work without auth.
+
+    Google Drive rate-limits individual file lookups, so `gdown` may raise
+    near the end of a large folder with "Cannot retrieve the public link".
+    We treat that as non-fatal: whatever files did land on disk still get
+    processed.
     """
     try:
         import gdown
@@ -305,13 +310,22 @@ def download_gdrive_folder(url: str, dest: Path) -> Path:
     print(f"    url → {url}")
     print(f"    dest → {dest}")
 
-    gdown.download_folder(
-        url=url,
-        output=str(dest),
-        quiet=False,
-        use_cookies=False,
-        remaining_ok=True,
-    )
+    try:
+        gdown.download_folder(
+            url=url,
+            output=str(dest),
+            quiet=False,
+            use_cookies=False,
+            remaining_ok=True,
+        )
+    except Exception as e:
+        # Count files that did make it through before the error.
+        downloaded = sum(1 for _ in dest.rglob("*") if _.is_file())
+        print(f"  WARNING: gdown raised during download: {e}")
+        print(f"  Proceeding with {downloaded} files already downloaded.")
+        if downloaded == 0:
+            raise
+
     return dest
 
 
