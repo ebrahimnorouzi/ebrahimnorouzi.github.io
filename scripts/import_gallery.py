@@ -1,35 +1,37 @@
 #!/usr/bin/env python3
 """
-Import Instagram export images into the Jekyll gallery and optionally bulk-post to Bluesky.
+Import Instagram export images into the Jekyll gallery from Google Drive.
 
-This script reads images from a local directory (downloaded from Google Drive / Instagram export)
-and:
+This script downloads a shared Google Drive folder that contains an Instagram
+data export (or a plain folder of images) and:
   1. Copies images to images/gallery/
   2. Updates _data/gallery.yml with entries
   3. Optionally posts each image to Bluesky (requires BLUESKY_HANDLE + BLUESKY_APP_PASSWORD)
 
+The Google Drive folder URL MUST be provided via the GDRIVE_INSTAGRAM_EXPORT_URL
+environment variable (set it as a secret). Without it the script exits with an
+error — there is no other way to point it at a source.
+
 Instagram Export Structure (from "Download Your Information"):
-  export_dir/
+  <gdrive folder>/
     media/posts/YYYYMMDD/
       *.jpg
     content/posts_1.json   (captions, dates, etc.)
 
-Google Drive approach:
-  Just put your images in a folder and pass the path. Captions are extracted from
-  filenames or you can provide a captions.json file.
+Plain folder of images also works (captions.json optional).
 
 Usage:
-    # From Instagram export:
-    python scripts/import_gallery.py --source instagram --input ~/Downloads/instagram-export/
+    export GDRIVE_INSTAGRAM_EXPORT_URL="https://drive.google.com/drive/folders/<id>?usp=sharing"
+    python scripts/import_gallery.py
 
-    # From a plain folder of images (Google Drive):
-    python scripts/import_gallery.py --source folder --input ~/Drive/my-photos/
+    # preview without writing
+    python scripts/import_gallery.py --dry-run
 
-    # Also post to Bluesky:
-    python scripts/import_gallery.py --source folder --input ~/Drive/my-photos/ --post-bluesky
+    # also post to Bluesky
+    python scripts/import_gallery.py --post-bluesky
 
 Dependencies:
-    pip install requests pyyaml pillow
+    pip install gdown requests pyyaml pillow
 """
 
 import os
@@ -38,6 +40,7 @@ import sys
 import json
 import shutil
 import hashlib
+import tempfile
 import argparse
 from datetime import datetime, timezone
 from pathlib import Path
@@ -46,6 +49,7 @@ GALLERY_IMG_DIR = Path("images/gallery")
 DATA_DIR = Path("_data")
 GALLERY_YML = DATA_DIR / "gallery.yml"
 MAX_IMAGE_WIDTH = 1600  # resize large images for web
+GDRIVE_ENV_VAR = "GDRIVE_INSTAGRAM_EXPORT_URL"
 
 
 def load_existing_gallery():
@@ -284,86 +288,132 @@ def post_to_bluesky(image_path: Path, caption: str):
         return False
 
 
+def download_gdrive_folder(url: str, dest: Path) -> Path:
+    """Download a publicly-shared Google Drive folder to `dest`.
+
+    Requires the `gdown` package. The folder must be shared with
+    "Anyone with the link can view" for this to work without auth.
+    """
+    try:
+        import gdown
+    except ImportError:
+        print("  ERROR: gdown is not installed. Run: pip install gdown")
+        raise
+
+    dest.mkdir(parents=True, exist_ok=True)
+    print(f"  Downloading Google Drive folder...")
+    print(f"    url → {url}")
+    print(f"    dest → {dest}")
+
+    gdown.download_folder(
+        url=url,
+        output=str(dest),
+        quiet=False,
+        use_cookies=False,
+        remaining_ok=True,
+    )
+    return dest
+
+
+def resolve_export_root(tmp_dir: Path) -> Path:
+    """If gdown downloaded into a single subdirectory, descend into it."""
+    entries = [p for p in tmp_dir.iterdir() if not p.name.startswith(".")]
+    if len(entries) == 1 and entries[0].is_dir():
+        return entries[0]
+    return tmp_dir
+
+
 def main():
-    parser = argparse.ArgumentParser(description="Import images into Jekyll gallery")
-    parser.add_argument("--source", choices=["instagram", "folder"], default="folder",
-                        help="Source type: 'instagram' for IG export, 'folder' for plain directory")
-    parser.add_argument("--input", required=True, help="Path to source directory")
+    parser = argparse.ArgumentParser(
+        description="Import Instagram export from Google Drive into the Jekyll gallery"
+    )
     parser.add_argument("--category", default="", help="Override category for all images")
     parser.add_argument("--post-bluesky", action="store_true",
                         help="Also post each image to Bluesky")
     parser.add_argument("--dry-run", action="store_true", help="Preview without making changes")
     args = parser.parse_args()
 
-    input_dir = Path(args.input).expanduser()
-    if not input_dir.exists():
-        print(f"ERROR: Input directory not found: {input_dir}")
+    # Gallery is driven ONLY by the secret env var — no local-path fallback.
+    gdrive_url = os.getenv(GDRIVE_ENV_VAR, "").strip()
+    if not gdrive_url:
+        print(f"ERROR: {GDRIVE_ENV_VAR} environment variable is not set.")
+        print(f"       Set it to the shared link of the Google Drive folder that")
+        print(f"       contains the Instagram export, then re-run. Example:")
+        print(f"       export {GDRIVE_ENV_VAR}=\"https://drive.google.com/drive/folders/<id>?usp=sharing\"")
         sys.exit(1)
 
-    print(f"\n── Import Gallery ({args.source}) ──")
-    print(f"  Source: {input_dir}")
+    print(f"\n── Import Gallery (Google Drive) ──")
 
-    # Parse items
-    if args.source == "instagram":
+    with tempfile.TemporaryDirectory(prefix="ig-export-") as tmp:
+        tmp_path = Path(tmp)
+        try:
+            download_gdrive_folder(gdrive_url, tmp_path)
+        except Exception as e:
+            print(f"  ERROR downloading Google Drive folder: {e}")
+            sys.exit(1)
+
+        input_dir = resolve_export_root(tmp_path)
+
+        # Try Instagram export structure first; fall back to a plain folder of images.
         items = parse_instagram_export(input_dir)
-    else:
-        items = parse_folder(input_dir)
+        if not items:
+            print("  No Instagram export structure found — parsing as plain folder.")
+            items = parse_folder(input_dir)
 
-    print(f"  Found {len(items)} images")
+        print(f"  Found {len(items)} images")
 
-    if not items:
-        print("  No images found.")
-        sys.exit(0)
+        if not items:
+            print("  No images found.")
+            sys.exit(0)
 
-    if args.dry_run:
+        if args.dry_run:
+            for item in items:
+                cat = args.category or item["category"]
+                print(f"  [dry-run] {item['path'].name} → {cat}: {item['caption'][:60]}")
+            sys.exit(0)
+
+        # Load existing gallery
+        existing = load_existing_gallery()
+        existing_images = {e.get("image", "") for e in existing if isinstance(e, dict)}
+
+        new_count = 0
         for item in items:
+            # Generate unique filename
+            img_hash = hashlib.md5(item["path"].read_bytes()[:4096]).hexdigest()[:8]
+            ext = item["path"].suffix.lower()
+            if ext in (".heic", ".webp"):
+                ext = ".jpg"
+            dest_name = f"{img_hash}{ext}"
+
+            if dest_name in existing_images:
+                print(f"  [skip] {item['path'].name} already in gallery")
+                continue
+
+            # Copy image
+            gallery_img = copy_and_resize_image(item["path"], dest_name)
+
+            # Add to gallery data
             cat = args.category or item["category"]
-            print(f"  [dry-run] {item['path'].name} → {cat}: {item['caption'][:60]}")
-        sys.exit(0)
+            entry = {
+                "category": cat,
+                "image": gallery_img,
+                "caption": item["caption"],
+            }
+            if item["date"]:
+                entry["date"] = item["date"]
 
-    # Load existing gallery
-    import yaml
-    existing = load_existing_gallery()
-    existing_images = {e.get("image", "") for e in existing if isinstance(e, dict)}
+            existing.append(entry)
+            existing_images.add(dest_name)
+            new_count += 1
 
-    new_count = 0
-    for item in items:
-        # Generate unique filename
-        img_hash = hashlib.md5(item["path"].read_bytes()[:4096]).hexdigest()[:8]
-        ext = item["path"].suffix.lower()
-        if ext in (".heic", ".webp"):
-            ext = ".jpg"
-        dest_name = f"{img_hash}{ext}"
+            # Post to Bluesky if requested
+            if args.post_bluesky:
+                dest_path = GALLERY_IMG_DIR / dest_name
+                post_to_bluesky(dest_path, item["caption"])
 
-        if dest_name in existing_images:
-            print(f"  [skip] {item['path'].name} already in gallery")
-            continue
-
-        # Copy image
-        gallery_img = copy_and_resize_image(item["path"], dest_name)
-
-        # Add to gallery data
-        cat = args.category or item["category"]
-        entry = {
-            "category": cat,
-            "image": gallery_img,
-            "caption": item["caption"],
-        }
-        if item["date"]:
-            entry["date"] = item["date"]
-
-        existing.append(entry)
-        existing_images.add(dest_name)
-        new_count += 1
-
-        # Post to Bluesky if requested
-        if args.post_bluesky:
-            dest_path = GALLERY_IMG_DIR / dest_name
-            post_to_bluesky(dest_path, item["caption"])
-
-    # Save updated gallery
-    save_gallery(existing)
-    print(f"\n✓ Imported {new_count} new images into gallery.")
+        # Save updated gallery
+        save_gallery(existing)
+        print(f"\n✓ Imported {new_count} new images into gallery.")
 
 
 if __name__ == "__main__":
