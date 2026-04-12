@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 <div class="intro-highlight" markdown="1">
-I am a **Ph.D. candidate** at [FIZ Karlsruhe](https://www.fiz-karlsruhe.de/en){:target="_blank"} and [KIT &mdash; Institute AIFB](https://ise.aifb.kit.edu/59_88.php){:target="_blank"}, supervised by [Prof. Dr. Harald Sack](https://www.fiz-karlsruhe.de/de/bereiche/lebenslauf-prof-dr-Harald-sack){:target="_blank"}. My work sits at the intersection of **Knowledge Graphs**, **Large Language Models**, and **Materials Informatics**.
+I am a **Ph.D. candidate** at [FIZ Karlsruhe](https://www.fiz-karlsruhe.de/en){:target="_blank"} and [KIT &mdash; Institute AIFB](https://ise.aifb.kit.edu/59_88.php){:target="_blank"}, supervised by [Prof. Dr. Harald Sack](https://www.fiz-karlsruhe.de/de/bereiche/lebenslauf-prof-dr-Harald-sack){:target="_blank"}. I'm interested in the intersection of **Knowledge Graphs**, **Large Language Models**, and **Materials Informatics**.
 </div>
 
 {% if site.data.scholar_metrics %}
@@ -35,7 +35,7 @@ I am a **Ph.D. candidate** at [FIZ Karlsruhe](https://www.fiz-karlsruhe.de/en){:
 
 ## Background
 
-I hold an MSc in [Materials Science and Simulation (ICAMS)](https://www.icams.de/){:target="_blank"} from Ruhr University Bochum. After graduating, I was a scientific researcher in the Materials Informatics group at [Fraunhofer IWM](https://www.iwm.fraunhofer.de/en.html){:target="_blank"} and previously worked at the [Max Planck Institute for Iron Research](https://www.mpie.de/2281/en){:target="_blank"}. I have a strong background in Python, machine learning, knowledge graph engineering, ontology design, and materials characterization.
+I hold an MSc in [Materials Science and Simulation (ICAMS)](https://www.icams.de/){:target="_blank"} from Ruhr University Bochum. After graduating, I was a scientific researcher in the Materials Informatics group at [Fraunhofer IWM](https://www.iwm.fraunhofer.de/en.html){:target="_blank"} and previously worked at the [Max Planck Institute for Iron Research](https://www.mpie.de/2281/en){:target="_blank"}. I have a strong background in machine learning, knowledge graph engineering, ontology design, and materials characterization.
 
 ## Research Interests
 
