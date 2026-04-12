@@ -16,7 +16,7 @@ Materials science generates vast amounts of heterogeneous data — from lab expe
 ## MSE Knowledge Graph (MSE-KG)
 
 <div class="intro-highlight" markdown="1">
-The **Materials Science and Engineering Knowledge Graph** is the central output of my PhD — a large-scale, FAIR-compliant knowledge graph that integrates metadata from materials science research.
+The **Materials Science and Engineering Knowledge Graph** is the central output of the NFDI-MatWerk, FAIR-compliant knowledge graph that integrates metadata from materials science research.
 </div>
 
 The MSE-KG connects researchers, organizations, datasets, publications, and experimental workflows into a single queryable graph. It is built on top of the [NFDI-MatWerk Ontology (MWO)](https://ise-fizkarlsruhe.github.io/mwo/){:target="_blank"} and the [NFDIcore](https://ise-fizkarlsruhe.github.io/nfdicore/){:target="_blank"} ontology framework.
