@@ -1,34 +1,406 @@
 stats:
   total_activities: 50
-  total_distance_km: 97.2
-  total_time_hours: 78.9
-  total_elevation_m: 1122.0
+  total_distance_km: 321.7
+  total_time_hours: 64.4
+  total_elevation_m: 3689.0
   by_type:
+    Swim:
+      count: 7
+      distance_km: 10.8
+      time_hours: 5.3
+    Hike:
+      count: 3
+      distance_km: 26.9
+      time_hours: 6.7
     RockClimbing:
-      count: 37
+      count: 23
       distance_km: 0.0
-      time_hours: 66.7
+      time_hours: 32.0
+    Ride:
+      count: 10
+      distance_km: 266.6
+      time_hours: 15.0
+    Tennis:
+      count: 1
+      distance_km: 0.0
+      time_hours: 0.3
+    Run:
+      count: 3
+      distance_km: 17.5
+      time_hours: 2.2
     WeightTraining:
       count: 1
       distance_km: 0.0
       time_hours: 1.2
-    Ride:
-      count: 3
-      distance_km: 63.9
-      time_hours: 4.1
     Pilates:
       count: 2
       distance_km: 0.0
       time_hours: 1.7
-    Run:
-      count: 6
-      distance_km: 33.3
-      time_hours: 4.3
-    HighIntensityIntervalTraining:
-      count: 1
-      distance_km: 0.0
-      time_hours: 0.8
 activities:
+- name: Evening Swim
+  type: Swim
+  date: '2026-05-30T18:12:02Z'
+  distance_km: 2.35
+  moving_time_min: 28.4
+  elapsed_time_min: 34.7
+  elevation_gain_m: 0.0
+  average_speed_kmh: 5.0
+  max_speed_kmh: 11.4
+  average_heartrate: 135.4
+  max_heartrate: 160.0
+  kudos: 3
+  polyline: '}}vkHexbn@ULUDKFEJCPB^BJOLCDEl@GV@d@GP?ZEVp@?^SVEl@g@KDG?'
+  strava_url: https://www.strava.com/activities/18718866805
+- name: Lunch Hike
+  type: Hike
+  date: '2026-05-30T11:29:16Z'
+  distance_km: 9.79
+  moving_time_min: 146.1
+  elapsed_time_min: 197.3
+  elevation_gain_m: 357.0
+  average_speed_kmh: 4.0
+  max_speed_kmh: 11.1
+  average_heartrate: 105.2
+  max_heartrate: 154.0
+  kudos: 3
+  polyline: eewkH}gcn@DTh@F]?_Aj@b@?`A[IHGdAP^?x@Ln@GrARn@HQIJQvBDlAW`DDxAMnCVzBK~@PjEArAIz@@n@MJItAChFGj@MP@^GjAm@hDMJYrCo@fAMn@{@l@O`@BbCJGI^AM]IW]OD{Ak@u@@QSqA?mAi@BOb@PDL|@TRGhA`@l@Mn@`@j@Dr@b@NIGGLn@d@ZBZTDVp@\PNb@RPU@Um@JHDjATx@?TOb@K?e@b@CEAJ}@JUMl@xACd@JHVv@LH@VVFVrAx@`Cl@lAF?\bAZ^Fh@d@h@@VbB`EJh@XL^xAb@nAHFGBp@tARpATTz@pC?Vf@|BJ`DMbBQh@]f@kAj@cA@u@QQRbCb@|AWbAm@BUTUdAyBnAa@r@jBv@dAXrAj@f@ZBPn@\TEVl@|AFAfBbBFb@PZ~@v@L\PNHE^`A\Z^Bz@dATBKHJGFRLAQS?KEDBWBB@ZGa@MPXC@NbAHTFh@TGDBF[GUa@M@c@XqAs@M@ENC|@`@DQUHALTOJOCCMDHEA?n@QtAQl@Hb@I^HfAj@rDVhFPfB?zCBlDMj@IdBg@fA_@f@On@q@^eAtBOx@c@Ti@d@W`@i@HUVEtBK\?x@c@`FWdBKJBN[|Ek@pAOn@BNJ?E?`@oAVMb@N\|@r@KJJ?J@SF@IDD?GKCJRJFKN{AIWDUEiAPe@^SRi@b@wB?}@\y@P_@\Qh@iAd@c@b@y@bAi@`@c@`ASx@i@d@u@Ps@PwBZsAHkBZm@?_@h@kBCm@FSd@iA~@_AhAs@nD_D|AeC~@_A\{AJaAEWJi@C_ARe@FiAKq@cByEg@u@m@QqAgB?]m@aAEYu@_AO_@A]SW_@S]k@{AuAcBuBo@O{A}@iAWk@m@{Au@cDyCyCcEy@u@K@s@}@cA{Bc@m@Io@eAcCDQQGUe@Qw@?_@OKUy@OQWeBeA}A_@oAq@kECq@_@}@Ds@OWGs@FOQc@BOI[?k@Pa@KmA?iAK]DK@mASg@C_@?cA[{A?eBFQQkAIKMuCQ_@N[AeDHaASQFuAMsBK{@TkA[mHL]GI?y@Pu@Ik@Fe@G}AGu@DQLkAPuBFuB
+  strava_url: https://www.strava.com/activities/18715971430
+- name: Night Rock Climb
+  type: RockClimbing
+  date: '2026-05-29T21:22:04Z'
+  distance_km: 0.0
+  moving_time_min: 80.3
+  elapsed_time_min: 80.3
+  elevation_gain_m: 0
+  average_speed_kmh: 0.0
+  max_speed_kmh: 0.0
+  average_heartrate: 107.7
+  max_heartrate: 149.0
+  kudos: 3
+  polyline: ''
+  strava_url: https://www.strava.com/activities/18706790309
+- name: Afternoon Swim
+  type: Swim
+  date: '2026-05-29T16:10:57Z'
+  distance_km: 2.2
+  moving_time_min: 63.4
+  elapsed_time_min: 90.8
+  elevation_gain_m: 0
+  average_speed_kmh: 2.1
+  max_speed_kmh: 12.0
+  average_heartrate: 112.2
+  max_heartrate: 161.0
+  kudos: 2
+  polyline: ''
+  strava_url: https://www.strava.com/activities/18703789941
+- name: Afternoon Swim
+  type: Swim
+  date: '2026-05-27T13:24:48Z'
+  distance_km: 1.55
+  moving_time_min: 48.3
+  elapsed_time_min: 50.1
+  elevation_gain_m: 0
+  average_speed_kmh: 1.9
+  max_speed_kmh: 27.7
+  average_heartrate: 112.1
+  max_heartrate: 140.0
+  kudos: 3
+  polyline: ''
+  strava_url: https://www.strava.com/activities/18674370222
+- name: Evening Swim
+  type: Swim
+  date: '2026-05-26T20:00:40Z'
+  distance_km: 1.1
+  moving_time_min: 26.8
+  elapsed_time_min: 42.5
+  elevation_gain_m: 0
+  average_speed_kmh: 2.5
+  max_speed_kmh: 36.0
+  average_heartrate: 111.8
+  max_heartrate: 148.0
+  kudos: 2
+  polyline: ''
+  strava_url: https://www.strava.com/activities/18665097590
+- name: Afternoon Hike
+  type: Hike
+  date: '2026-05-25T13:23:25Z'
+  distance_km: 7.8
+  moving_time_min: 126.1
+  elapsed_time_min: 262.8
+  elevation_gain_m: 430.0
+  average_speed_kmh: 3.7
+  max_speed_kmh: 40.7
+  average_heartrate: 96.2
+  max_heartrate: 134.0
+  kudos: 5
+  polyline: yergHig`q@]mCWsA?IJGIIMa@AKFIEGSGQw@]w@o@oBg@iAW?GGWAKIS?QHCPQLARB_A?^NHBHE\@d@BcAFAHRi@UNOECF??DGBi@ISIq@e@SAGGS_@[Ge@q@UA_@a@S?EJI?g@PIVI@[XS`@ECDFE?BACZ_@vABVARDFAJ@j@Jh@JG@TFLHJHRRLIA@MQOHJPBFXDE@OAT?CFVWSDPFDPAR^\Pb@?LJL@PEh@C\SJMf@WXYL@l@OR[F[AK@MK{@Ai@Qe@Ga@Jc@Q}@@YA_@BAAIALLv@Tj@HDCVKHF@Fj@EV@LERDPFx@BUDCHJBPDt@XF`@b@Zz@^tCA^D`@?~@Dh@ArAQjBAlAMlAWnAK\MPSx@Q^k@h@a@Nc@Hc@?WQCI@CM?QIUWCIg@k@O[E?GO?MOMe@o@m@e@Oa@E]QWAMIMCMg@_AOi@S]EM[_@AUo@k@So@GFUOIRYd@QHi@GKBe@Es@O}@F[EkA_@MMAE@cBe@qDy@k@LDPZ`@TFSXIf@FXQLMDM@QCA?JOCD?GFDCsAjDlAsBLCBMAKABACJKNB?OCBDDMDHWDCU^l@_@AFBDC@J@?GI@ADBDGC@ACIAAAHC?@HEAQWD@IGIY?u@KkA?_@HoA?wAKeAY_BIq@?[HaBBuCC_DGKa@T_@E[FYGOKGKEYBoDEiBF]JUr@q@Jg@RWvAOz@B^SBIDANWL]CECWGOD@NOf@y@hCgFJCBSN]B?KgAR}@ZYAIHBC?B[j@s@DALMHo@h@}A?ODGPgAP]BSJU?KNUPe@D]HSHCD]PMZeBHKTsAX{@H_@HMJc@HOFa@Ty@d@qAT[Ha@nAkAZQp@?Vb@Lj@LbBAdAB`AAh@L~A@`ANfCE^@RMh@Ij@KPOp@Qf@Gf@ITG`@Dn@Er@@T_@tE?tAMl@KTMn@Ih@IVK~@M\KH[~@Er@Ud@ANEFANOd@Kr@?f@Uh@Id@@z@CJBf@ENGp@Dd@Jd@z@~CZn@p@r@t@lAXv@f@vBLNRBHJECRO`@AZXv@fAv@rBd@fBl@lANl@Vj@v@xBh@zBDf@Pr@?XU~CDFUBB?O^EhBCPMVEBMe@AiAEa@YgAEWg@mB[}@[o@]g@[_@UaAAS_@y@
+  strava_url: https://www.strava.com/activities/18649643829
+- name: Afternoon Swim
+  type: Swim
+  date: '2026-05-23T15:08:28Z'
+  distance_km: 1.61
+  moving_time_min: 15.2
+  elapsed_time_min: 15.2
+  elevation_gain_m: 0.0
+  average_speed_kmh: 6.3
+  max_speed_kmh: 11.5
+  average_heartrate: 153.5
+  max_heartrate: 168.0
+  kudos: 4
+  polyline: ''
+  strava_url: https://www.strava.com/activities/18622899852
+- name: Afternoon Ride
+  type: Ride
+  date: '2026-05-23T13:42:41Z'
+  distance_km: 16.58
+  moving_time_min: 57.7
+  elapsed_time_min: 81.9
+  elevation_gain_m: 373.0
+  average_speed_kmh: 17.2
+  max_speed_kmh: 53.6
+  average_heartrate: 141.9
+  max_heartrate: 178.0
+  kudos: 6
+  polyline: i{yjHsfns@i@s@_Bw@w@i@IEUYw@WgAi@}HkE[Wa@UQEYO}@m@g@c@o@a@uEaC{AaA{@a@cEwBqAu@_Am@_Bw@cAq@eIoEsFcDyD_CuBcBe@YqDoB]WOYa@iB[wBGgABoEIaCUaBo@}CA}@xBeLFi@JcB@cBJ{CF{EFw@JeFR{FLwF]mL?mA`@W`FoAPCf@KhAIdAQT?XCRG~@C~AOjASd@KjCy@RK|Aa@TIDGJDNOH?PMH?FERGFILAFKL?FIJAJKPADIJ?LOJ?BIDCF?RMD@FEDMBGAG@AECFZEBwEvBcA^}HzBwAXiFd@wCXw@LoAZwCz@QRE`@ZfGLnD?hBm@lQ_@~RG|@Mz@oB|JE`@AZBX\bBh@nDHtBAlDD~AJ~@j@rCJXh@d@bBv@x@d@zA`A|AnAd@VdFxC|BlAv@f@`CrAvBpAlFxCFFHTJL|AhAHP@JEt@S^m@v@CHFPNPt@zANn@?`@MfC@fBNjBVvBj@dCpAtC\~@hCdGn@dB`@z@RX^ZjB~@nBhA~EbCfBbAPPRZGAA@AJBD`@\j@Zj@^jChAR@?AIIe@Si@Yc@OWHc@~@@VRz@TZj@Xb@XNR@T?TO`BMr@SbAQ~AG@QRKASM?BTNDTGbNCJGDeEk@]KqBcBkCqB_@Yq@UeBSiE_@C@Aj@In@DGFu@EMECYJCHUtAe@tB_ApF_ApEu@tEe@|B_ArFYvAEH_@`@MP_@r@AJCl@D`AA`@K`AyElWu@nES`A]nAWXSfBKf@M\B\Q|@MTAHAn@w@rESbBU~@WtACFWFATBNFL?`@YfBy@bEsBdLYrBsCdPg@|BwA|HSj@S`AiBhKCv@oAnHi@`Cm@|CKLMAEBADNp@Kr@G~@a@dB{A~IeD|Qu@lDIx@{@dFCx@YpBiApGKd@MNGNYxAy@xEYnBaKvk@}BzLy@~DG|@sAvGU|JMlC_@rFcAzKk@pEmArHcAvDKd@O\Gb@DRDBTAPD`@LjB~@xPbKZLOIC@Sh@c@xBG`@Sz@mA~GYhB_@xALo@HMD@?BA@CG?QpBkKFe@JYZIdFc@^Kh@ATKj@KLDBJD@
+  strava_url: https://www.strava.com/activities/18622899980
+- name: Lunch Ride
+  type: Ride
+  date: '2026-05-23T11:02:56Z'
+  distance_km: 62.37
+  moving_time_min: 192.8
+  elapsed_time_min: 356.1
+  elevation_gain_m: 210.0
+  average_speed_kmh: 19.4
+  max_speed_kmh: 51.5
+  average_heartrate: null
+  max_heartrate: null
+  kudos: 6
+  polyline: ajcjHatdr@BoMg@qAoWyAkGm@oHwBmGgD}DiDqDgEcCqDaBcDyGoSBUDf@_@eCe@sAwA}Ky@mMIeLp@{OfByMdC_KES{|AceAuwBizAoHyEiEyAk@uAq@o@m`@kX}r@oe@mIoGoxBezAcC_Ia@_CQ}DgAw\OqWg@_PLii@HaA{@kQoAqLEcER{As@cIXcPv@eEhB_FdAiF[mI@iC`BaMxB{MfB{ErEyHNcA{@sO|B{[TiHi@yEa@a@uBsImBgEsFwIyBeFDi@_@oADkBPq@rIuMLm@sC}CyJkEmJkGaFyGUZ_@~CoHsK{F}KaJmKSq@oCuAw@j@GMiAcP_AoH_BsHyXs_AsDsJ}D{HNuCa@mByLaa@{CiHbMeTmA}D}C}EFk@pCsGpDgL_[k_@XcCaCcHyBkFyAeCKcAyCuCL{@~AaEE]c]{Ul@uE{@iFq@iBo@aDs@}AqB_CkNuHQr@TrFYjAgBhBfCwEPgCIi@Z@c@w@HAjMzGn@bAj@RC`@fB|DaAvAf@tAvAw@`@Ld@WjAsCyAtDUd@IKaCwH_A{AkFkEwCiAed@cWm]eSmKaHgAwFE}JoAoHlCqOnA{g@_@mOzFiB`Q{BnGgBlGqCHWCRoF~BkJnCsOfByEnA]\d@bOqAfh@G~@aC~L@v@p@jDXzCFbI~@fFfKbH~[jRjCxBB~@eAhBrAzCCfHn@vFp@lCtH~Qr@t@hPzI^l@GHZXzEbCj@DoBeAQBKl@Jv@hAlBFj@gA~IUT[KT^ItNeFm@sHwFmIaAMxAH}@_@GIRqJfh@qApBO`FaGh\_AdEa@t@cAdGkA`Jo@bDWLDbAOhAuI|f@{Gh]oAbJ_BhI]NLb@_@bDmIzc@sAtKaBnJu@jC{UjtAWxB_@bM}@dLqC`TmBpIfDnAhR|KOKOX{DbUjCmOhKoAZRhAQL\nALoF{@hDWhFaCbG}AxHYxK~AZ`@PbR^zHfh@pDzFbAzJd@~DMfEsAtD_@|G\lFKp@Bf@^b@Y`Qv@hGAhJtDD^}@bFfK`KTt@hA|AeAxAHzAzDnCt@vAhA`HPjChApXP|Jh@F^p@zAlHtAtCfN|RdBbG`@vE@jCeBjd@pL[j@jFhArRI`Ge@bF?pFrRjMjgAdu@lfDh}BvSxNt@dB`BL~@d@raDvyBvGbE`t@bg@Ax@qC|MgAhKo@lNJ|MlAhSz@zGj@tBnG|QhEnIxD~EhFvEhH|DvJhChYrAtB^Rl@GdI
+  strava_url: https://www.strava.com/activities/18622868576
+- name: Lunch Ride
+  type: Ride
+  date: '2026-05-23T11:02:54Z'
+  distance_km: 25.87
+  moving_time_min: 85.6
+  elapsed_time_min: 94.7
+  elevation_gain_m: 315.0
+  average_speed_kmh: 18.1
+  max_speed_kmh: 34.0
+  average_heartrate: 139.8
+  max_heartrate: 166.0
+  kudos: 5
+  polyline: ajcjHotdr@D{EC{CDiA@BKe@a@o@g@OoAC_BS}B?cJm@sACw@UsDYqAOmBe@cE_B{@_@eDqBsB_BsBsBiC_Dw@iAiCwEs@yA_AaDmBsFqAgECYCJJ^B?YwAGm@Ui@Qw@q@wEu@mH[eEOgFCsHFkD`@{H^mEpAuIbAyEp@sCLYBMEGo@YcMwIaIiFcGkEgB{@yAsAqEcDqOaKq@i@qAq@iGyE_LkHgA}@}GqE_CeB_GyDeH_FmCcB}FkE{DgCmDeCyFqDwLsI}C}BaN}IqWuQcDsB{AkA{CqBe@a@uAy@wAMSKg@oAOS_CeBmD{BgM{ImNoJ{@e@wK}HkFiDgGmEoAu@yAkAoCoBcBcAkM_JuIwFaBsAmAs@uCsBu@_@kDmCcAq@y@c@sB{AwCoB{AkAkAs@kEyCwBqAkKsHsH_FoAeAmBiAw@q@wHgFuB{A{FwDmCmBaAk@aCcBu@o@}AcAIWE[]g@KYg@cBm@oDSqBe@aLQkGYsHEyFO}HAwABk@AyABiAKgA[uMAiCNcUBgJCqCJs@?MYeFM}AYwGiAoKGuENwAEg@QoA[oEDiEVgJTuA^{AlA_Dn@oBr@}D@oAYkECyA@eBVsCbAkGHq@xBqMNq@fAoCdFoIJ_@Ba@Au@WiCk@qHHqCxByXH_B@yBDe@A[Kg@UyCKc@SIEGiA}EyAaEiAeCeDaFaA_B_CsF@y@Se@EYDoBPu@dEcGpB}Cb@s@DW?MIU_@e@oAoAeAk@iAa@kEqBsKyGcA_AuCcEa@g@GDETShCGXE@cH_K_GiLaAwAs@{@sFaGMi@KSiAq@eA]QHW^Q?EUA}AYsEmAaLi@kDoBiImF{QkDcL_Moa@o@kBqAgDcBaDkAsBE[V{ACm@I]cEgNoA{EeE_N[{@mBuDEO^w@|DcH`BkCj@eA|@kA\m@EWaBkEs@kAcAuAGIC[Li@`@_At@{An@}Ap@yBdCoHAGgAyAiAkAsBgCeFaGuK}MZiB?YuBmGkBsE_AmBs@iAGWA[GS}CiC?]HWLSnA}CHMDMG]cA{@e@UuBsAgFkD}DwCmEsCYYg@Uw@o@ESBWPeAf@oB@[E[Se@e@iC]}@aA{CIo@g@oAc@g@CK}@_AUQkB_Ac@_@QWuBw@qDsBYKIJAVK^PF@CTVFNDVSlBK`@E~@O`@sAzAQHADEBDCFQv@eAd@ULq@BCAMToANeB@UOWHBJK?DAAB?CABGULa@OLa@TAlFlC
+  strava_url: https://www.strava.com/activities/18619816509
+- name: Evening Rock Climb
+  type: RockClimbing
+  date: '2026-05-22T19:26:44Z'
+  distance_km: 0.0
+  moving_time_min: 73.7
+  elapsed_time_min: 73.7
+  elevation_gain_m: 0
+  average_speed_kmh: 0.0
+  max_speed_kmh: 0.0
+  average_heartrate: 94.8
+  max_heartrate: 139.0
+  kudos: 3
+  polyline: ''
+  strava_url: https://www.strava.com/activities/18611886890
+- name: Game night together with Jörg
+  type: RockClimbing
+  date: '2026-05-21T18:15:40Z'
+  distance_km: 0.0
+  moving_time_min: 145.9
+  elapsed_time_min: 145.9
+  elevation_gain_m: 0
+  average_speed_kmh: 0.0
+  max_speed_kmh: 0.0
+  average_heartrate: 114.8
+  max_heartrate: 147.0
+  kudos: 4
+  polyline: ''
+  strava_url: https://www.strava.com/activities/18599299431
+- name: Afternoon Ride
+  type: Ride
+  date: '2026-05-21T17:24:40Z'
+  distance_km: 11.67
+  moving_time_min: 37.0
+  elapsed_time_min: 37.8
+  elevation_gain_m: 146.0
+  average_speed_kmh: 18.9
+  max_speed_kmh: 24.3
+  average_heartrate: 123.9
+  max_heartrate: 165.0
+  kudos: 5
+  polyline: emsjHakmr@RHNRRdBJVNNvAZl@`@pEzA`@P^VPKX?DG@Y?kFPwK@yBA{BO{FQaDSaCi@oF@UFEDANBdDlAzA\rFnB~A\NJb@FPLN@r@\bCr@d@HnCdAfA`@nAZjBj@rAXf@RjAZlBt@xC~@v@XfAVnDdA^Lb@Vh@JbBh@dC|@l@JbDhARBl@PZBTL|@TlAd@xDjA|Al@nC`AlA\n@Jh@Tx@Pn@ZjElAh@TJPd@bALJN?v@Q^@~@PhGpB~MfEd@RdF~AjAXrClA~CbA`FzAr@PXNh@FPJJ@`Ct@jElAhFnBj@NfDnAnF|AhC~@dAV~@`@lA\n@Vb@Bt@Zz@TlAd@lGpBh@LrA^jAf@bAZzInCZHlGvBbQlFfC|@~C~@lC|@pA^jBp@pF~Az@\zDnAdARf@ThAZfA`@fAXvCbA`B`@\NbBh@hBd@pEvAtHxBbLnDhDbAbA\pCt@tFhB|GpBfEvAr@LVPAb@a@xBSnBg@dHEPKDg@AGBOX@DDB~@@v@HhABHCb@_@VET?pDPbBLhABhBNnCLtCVzABfDNZF`@D`@@NEDGR_@DKLwAF[LUHEJ?lAb@TBRCz@WZCvChBl@XNJF?FE^eANYNFDHxA`DBLAl@F\L\D`@At@OdEOzJJh@Zz@Dj@GXg@xAGZCxCEF[PAD?p@@b@GbDIbBCpCBTz@PbABPBbAH^JF^PxEBJJLXGvAs@d@Ml@W
+  strava_url: https://www.strava.com/activities/18597039378
+- name: Morning Ride
+  type: Ride
+  date: '2026-05-21T08:41:45Z'
+  distance_km: 12.37
+  moving_time_min: 34.3
+  elapsed_time_min: 36.3
+  elevation_gain_m: 100.0
+  average_speed_kmh: 21.6
+  max_speed_kmh: 26.9
+  average_heartrate: 134.1
+  max_heartrate: 172.0
+  kudos: 4
+  polyline: micjHc{dr@?_ACo@EMC@BsBAQEOO]SSWKwBI}@I{BGeAGaAEgBAuAGiCSo@U_BIwBUkB]o@OaE_BuAs@mAq@aBiA}AoAaC{BcAeAcB}Ba@o@oAyB}@sBYu@UkAaBoEeAkDk@qBWeAGa@Ec@Qg@I_@]iB]yCu@iHYmEIeCGsE@}ETcHn@yILeAnA_IbAqEr@kC@EIMK?E@INUt@qBfJSrAEHGBOC{@YSEoCmAaAWUOk@K{Bs@sMsDgC{@k@MeC}@w@S{C}@i@UkA_@kBg@uC_Ae@K_@Qu@OyAk@iD_AmBo@wDcAmIoCmGeB}EcBwAa@s@Y{CeAmCu@kBq@m@M]SwC{@_@QwEwAsAa@a@QsA]c@QyC_AaAa@kH}B}@Q{@]sA]{CcA_@I_Bi@m@YaA]qA_@gDiASA_@Gu@[o@UkEoAuDuA_AWiBm@oA_@_EyA}Bu@gBa@aBm@iDeAi@SMA{@Y[Ga@SoA_@u@SsBq@oAYg@U_C{@a@Q_@OqA]{@QiCcAuAc@mA[iDiAk@UmA]wAg@s@YcEmAUCWBaAVGAQO_@aAIGUMs@Ui@MoAg@_AUSKw@QoCgAwC_AyAa@sGqB{A_@e@Us@U_AUkBk@aASw@[gBi@aC{@{DmAaAUKG]Cs@c@w@Q{@]iEoAwAg@oCy@mAa@yC{@qBs@sCu@}CcA{B}@wAc@}JkCE@EL|@nK^tHBxHS~HAxB@~EETA@EEUm@MM_Ac@{Bo@w@KsA[[OIGW_@QgAIWMWIEs@W
+  strava_url: https://www.strava.com/activities/18594246002
+- name: Evening Swim, 800m
+  type: Swim
+  date: '2026-05-20T19:55:44Z'
+  distance_km: 1.68
+  moving_time_min: 82.1
+  elapsed_time_min: 96.0
+  elevation_gain_m: 0
+  average_speed_kmh: 1.2
+  max_speed_kmh: 36.0
+  average_heartrate: 105.3
+  max_heartrate: 142.0
+  kudos: 4
+  polyline: ''
+  strava_url: https://www.strava.com/activities/18587104910
+- name: Afternoon Rock Climb
+  type: RockClimbing
+  date: '2026-05-17T15:05:42Z'
+  distance_km: 0.0
+  moving_time_min: 49.0
+  elapsed_time_min: 49.0
+  elevation_gain_m: 0
+  average_speed_kmh: 0.0
+  max_speed_kmh: 0.0
+  average_heartrate: 103.4
+  max_heartrate: 137.0
+  kudos: 6
+  polyline: ''
+  strava_url: https://www.strava.com/activities/18543561267
+- name: Trial Swim-test with Mo (My personal trainer) for Triathlon
+  type: Swim
+  date: '2026-05-16T11:03:35Z'
+  distance_km: 0.3
+  moving_time_min: 54.5
+  elapsed_time_min: 63.2
+  elevation_gain_m: 0
+  average_speed_kmh: 0.3
+  max_speed_kmh: 36.0
+  average_heartrate: 110.3
+  max_heartrate: 154.0
+  kudos: 5
+  polyline: ''
+  strava_url: https://www.strava.com/activities/18527469717
+- name: Night Rock Climb
+  type: RockClimbing
+  date: '2026-05-14T22:32:20Z'
+  distance_km: 0.0
+  moving_time_min: 25.6
+  elapsed_time_min: 25.6
+  elevation_gain_m: 0
+  average_speed_kmh: 0.0
+  max_speed_kmh: 0.0
+  average_heartrate: 108.2
+  max_heartrate: 163.0
+  kudos: 4
+  polyline: ''
+  strava_url: https://www.strava.com/activities/18509137946
+- name: Tennis
+  type: Tennis
+  date: '2026-05-14T12:43:53Z'
+  distance_km: 0.0
+  moving_time_min: 17.3
+  elapsed_time_min: 17.3
+  elevation_gain_m: 0
+  average_speed_kmh: 0.0
+  max_speed_kmh: 0.8
+  average_heartrate: 80.0
+  max_heartrate: 82.0
+  kudos: 5
+  polyline: ''
+  strava_url: https://www.strava.com/activities/18502327331
+- name: Morning Run
+  type: Run
+  date: '2026-05-14T09:20:26Z'
+  distance_km: 5.16
+  moving_time_min: 32.7
+  elapsed_time_min: 33.3
+  elevation_gain_m: 95.0
+  average_speed_kmh: 9.5
+  max_speed_kmh: 13.9
+  average_heartrate: 140.4
+  max_heartrate: 153.0
+  kudos: 7
+  polyline: '{icjH_udr@KiBJo@CG?o@MiA@OEo@MkAK]?EDCS?AGB_@DUTo@Au@G_A@UBGIs@QsCGa@?GCYE?UoAGMKg@?s@@EBy@Wq@Ge@?WGK?k@EW[q@SYAU@ME[c@oACSAuAMoAi@_D?MJSH_@SWGQIs@Me@ASO_AEc@Qe@O_CIc@IgASm@IOKi@AS|@c@`@g@`@YDBVOXi@Lk@j@iAF}@v@sAVWNIASKKOGAOKOIIIAMQB]L[TsAJc@LWn@aF?m@Ks@y@{BIIKG}@MkBa@{@k@]Y[e@[Qy@B@C]^]Vi@Vc@Gm@?}@ZSAOw@GS]k@Uk@i@cAe@kASUi@y@_@cASYSq@Ic@QWSe@CAIM]{@c@{@?SBCpA}APOJ[w@qCOy@s@kB]kAYyAe@}AMm@Wm@W}@O]Mo@MYgBeHo@uBaAmDw@eCg@oBOe@i@aCcAyCKSGYYe@Uu@M[Dm@C]Ui@]uAOe@[{AM[Io@KOM_A_@_AI]_@s@QoAKa@g@qAKq@Uk@I]e@mAWcAg@_BMgAQo@Wg@eAyCMu@Me@GME_@e@wAE]{@eC[}A{ByHm@gCGg@Om@Yw@q@gD'
+  strava_url: https://www.strava.com/activities/18500280203
+- name: Morning Hike
+  type: Hike
+  date: '2026-05-09T10:45:08Z'
+  distance_km: 9.26
+  moving_time_min: 132.0
+  elapsed_time_min: 181.9
+  elevation_gain_m: 373.0
+  average_speed_kmh: 4.2
+  max_speed_kmh: 14.2
+  average_heartrate: 109.3
+  max_heartrate: 150.0
+  kudos: 6
+  polyline: yihkH}bxo@QTCr@Yf@?n@@^URKZ?L]PLTSd@?Xe@VIb@sA~BGj@UPUlBKVyAtB{Af@Ob@}CdDg@v@g@hAQtAKPM~BBPKPE\_@rA[J}@|AIb@Zv@I|@FfA?lBXxCDbBJTFt@Lt@Xl@Bd@Vv@h@v@Lh@p@r@r@b@`@L|BJ\Qb@k@dAWpAJ`@h@Rl@Gt@FHC`@g@dBSjAC~APj@HdAzA~ARj@EhADLIp@BVs@fB^mAFBLUH]C[CJ`@w@LEIKUgBg@mA@OLQ\Rl@lAH|@EbADPITKr@?~@YbA@f@KKHg@Xa@l@yBTIAYNa@Do@f@w@Dg@MWEe@@O]{@?]EM?mAH}@C_@La@@o@HUIs@NoAIYPMOu@F_A_@m@EeAAy@Uo@PMAFFCOe@p@gA`Am@l@GlAaAz@a@bCf@p@j@DP\JHVT?p@l@V^h@F@LF?Z\t@Dn@VV`@lB^XVBVROJDRTTKR\H~@Ml@YH\AY^k@Mg@m@EHy@e@Y?CQq@Xw@CXEJXZFBXNGRj@h@\Fd@L?CdAc@rB@XiA~@s@t@c@Cg@Ri@?a@UIFc@iBBo@M{@bAs@FWf@XNPe@HELf@EAHjATr@Sd@DSJk@Ik@XIIFS]THNEHDIAGIVGKIB@WEDEFTCAJKLc@_@NCLZTEALaAk@AQLYWNg@Op@`@bADo@]QLR]b@IiACOJUnBFpAX`@xBHlA]|@o@j@kAMw@JiA]{@gAwAg@K]c@x@o@NLp@?z@Tj@^b@b@HRT?XYFTGIHKE[Zi@KIo@@Z?^d@@hAh@Lh@j@BLIn@OFM|BFUPQRv@Av@OnA@j@EDy@~D]x@jA_BVOAMJELaAL_@t@oAZDCIf@|@e@~BFRF?BXMvA]z@UvAURU~@g@p@Wf@a@fA[TIZW\Qz@WTk@nAq@r@oAn@a@j@Up@m@bAQ`AS~@WZIf@i@t@If@[n@]NK\e@b@BJg@h@YDmD~@w@t@IZaA`@aAYoBYyAj@g@l@}@pCA^Qj@[n@iAtAeCtAU^]H]ZYK@iA[g@G_@@Xu@hAWI_@TSGY^w@b@c@f@WbBFb@AXk@DUO_@kD
+  strava_url: https://www.strava.com/activities/18438272552
+- name: Morning Ride
+  type: Ride
+  date: '2026-05-08T09:34:50Z'
+  distance_km: 42.73
+  moving_time_min: 141.4
+  elapsed_time_min: 184.5
+  elevation_gain_m: 180.0
+  average_speed_kmh: 18.1
+  max_speed_kmh: 34.6
+  average_heartrate: null
+  max_heartrate: null
+  kudos: 7
+  polyline: ejcjHiwdr@H_KIYe@g@o@OqF?cHk@wBC}Bc@oCGoEs@iIqDoEaDsFyFcCoDaCaFqGgS{@AGe@]e@_I|AcJdAwgBzP}Gj@u@CKL@hAu@ZyBDiGp@UH_@l@}XdD_B?y@]}@RoEJy@z@eU{DmRuESL]jAsDrNKNwOyOcKcGGWHkBCSQIyEm@_Bc@G_@sVqIaD_AuGqC{EyAeB@_|@yXkN_EcBIY|@CdAwBhTs@bGIL}@SMl@IDoAM_DfCuEl@oEzAaPnKSf@iB`CF@|AqBCc@w@KcCp@a@IWYOFaAfBmAjAeM~[y@fBSPiALkAUeBp@kBT{NzEuRlHW?Sc@[`AgBrB{@jEe@|Me@h]n@vZQ`Bg@jBsP|XcCjDoAx@m@J{BEmAYYLgApVSRTpAEfAUtC_@~@k@XoCHm@GaCaAoAvAwRhQaGvEkCtAeG|Az@`Fh@~@r@nCi@|Ge@dEw@`MFVnAZHRoB~GPk@Ip@pAnArBrA\y@m@n@I[}@a@aBuAOCOXwH`WYjCoElKRh@b@rC?c@}@oC}@u@}A[c@o@]gAs@Xy@n@PbAbAjBfAdADEwAoAa@y@q@cC]gBGs@d@bDJDrBy@N~@\p@tBr@h@f@p@hB`AxD^VdBBH\M|Aa@rBu@hBoBbB_GnAcGdDmDzAsEjAkGbAwA|@kI~Gs@RqBDeKm@wBZkAb@{BlBkEnG_KnSe@pAc@|BqApMWNkCrFO@HGDLgChDW~@KtBLrDjB`Nt@tCQ`@}ExGo@hAcFjGsBrDwArE}K`e@kBtJkKrt@a@hBAfCMvJMjD_M|EcCtAAVd@vCJvFIVSLkDTw@n@]bB_@|E[x@Y\qAxDsIjE_EdCyeAzN}oAzNu^hEiAX}C|Nw@rBU`HMr@s@hP_@~ALdAm@fNYlT@bEh@lWmDCB|C\bHQfEkF_@Ih@MpEk@zFCfFMZz@jS`CbU`ArFdFtTUfJBdH^pExAtL@j@vA|Jj@zF`Lw@TNY`^h@pRJ~U|Afh@NzXKrSIdC_@dFKfF^tGj@pEvAnXCd@Yr@oH|@qFjBCvDLhIGrAo@dBFd@VXp@TnArBZtC~FxpAxB`i@wDf@oFdE{AxBqAtAaEzA}FpAsGCyBWQh@SvDgCfXu@nOArq@XpIZ~Fe@rTD`CZlDXzUF|s@?|HGj@HjARVt@`GxAxMNhBLhGy@FsFuAOFG\n@`F
+  strava_url: https://www.strava.com/activities/18423431110
+- name: B2Run
+  type: Run
+  date: '2026-05-07T19:05:48Z'
+  distance_km: 5.21
+  moving_time_min: 32.2
+  elapsed_time_min: 32.3
+  elevation_gain_m: 89.0
+  average_speed_kmh: 9.7
+  max_speed_kmh: 14.0
+  average_heartrate: 165.0
+  max_heartrate: 178.0
+  kudos: 6
+  polyline: _eejH_jir@QK_@a@_@KKKMASSe@S_@_@MU]IKSKIg@WuAuAa@]]Ie@SMUGEm@OKOE?IHQl@Eb@Mn@On@MZ[pAMfAk@vCCr@]pAMt@QjB?PIv@?v@Kr@KpAAr@Ch@E\?RKf@Ff@C^BNMzADB@r@?XG^BLEfBBfAJ\A^H@RAbAWj@GTIF?XMlBS^M`@ELB^Az@Yb@Gb@Id@Sl@GR?j@Mb@Mj@KX?pAQPK^GB?vAQx@GHBfAWb@ORKDI?WK}CLy@DGF@h@KNMVk@L_B@G\c@`@@b@Fb@ZVDTGn@YZCNBf@TJN@NAL[|@Qv@RpA?TMf@W`@c@Xo@RY@g@J]PEFKLI^Dh@Bp@P|@DH^Vj@FVTPjAALDV`@x@?b@Bx@r@pAJDVBj@ENERK`@_@BEAk@BYMc@Gm@M_@Bi@TCZRD`@B|@BPTX|@s@`@g@d@e@TuACgBBm@@}CCs@Mm@Ai@BYVy@L{C?s@JuBBcBFw@@g@Cg@Fi@He@As@HgBDqBEmBBcAUEW@UE_@BGAUFiANg@LIF[Fc@T{Ah@m@NS_@Ka@MUo@iCUkAs@uBYkAe@}AUkAUaAeAgDIg@Uk@g@oBIi@e@iAURERTt@Jn@u@v@i@`@
+  strava_url: https://www.strava.com/activities/18416058278
+- name: Evening Rock Climb
+  type: RockClimbing
+  date: '2026-05-03T18:54:41Z'
+  distance_km: 0.0
+  moving_time_min: 93.3
+  elapsed_time_min: 93.3
+  elevation_gain_m: 0
+  average_speed_kmh: 0.0
+  max_speed_kmh: 0.0
+  average_heartrate: 108.9
+  max_heartrate: 136.0
+  kudos: 5
+  polyline: ''
+  strava_url: https://www.strava.com/activities/18367991402
+- name: Morning Ride
+  type: Ride
+  date: '2026-05-03T10:26:26Z'
+  distance_km: 31.13
+  moving_time_min: 105.9
+  elapsed_time_min: 157.3
+  elevation_gain_m: 285.0
+  average_speed_kmh: 17.6
+  max_speed_kmh: 30.7
+  average_heartrate: 129.3
+  max_heartrate: 156.0
+  kudos: 8
+  polyline: _pcjHafer@kIe@{GQUKAMaH_@oD_AoHkDuB{AyCgCsCgDgBgC{BaEm@_BWiAqAmDsCmJu@BOo@Sc@s@{FeA{NSaHC{F@{BPuFt@uJdA{H^oBhAiFzAiFp@mBl@uAdAoB^cAxCkFnBsCFc@_Yyk@{@iBSm@q@iA_FcKyEaKkGcMgC_EqAgAeA_@}@M{AD{Bh@eFpBcBf@mATcA?cAQaAg@y@s@oKmMEW@sMAwCE[IY_@g@gDkBS_@Ii@BiAf@kFCUG`@MAOjAAZ`@mEBKLCNw@x@{KAa@COmEiBc@c@KUKk@?k@N}AZeB@{ALmAEMy@o@r@RP\OfAAp@Q`B]rBKfB?jA]lBQnDJd@AtCBVZvAl@vA?JaATe@v@DfCCtLEt@QDwLaOKBSnAmAbDStATb@hCxCBd@wBxH_CdHqDlMeBhFw@vCeBjFI@}KuHKFApAX~GThENrGTnEy@vOu@~OQv@Gl@q@rKQjBQbAa@`B_BfTmA~QmCdTOdBg@`Dm@lFOz@c@pAgEzGi@JcLsAU@O\G|@@lAdAva@RzGVrB?^Gf@?zAIB_@IuDPOFo@v@{@QkDvEgCbEETzApA@ReAfCI`@sFjNsAfEcBlEmAjHk@lCMNmCtAqCXSx@a@dE_@pCs@T_AlEaClI[r@a@l@s@l@eCjAc@v@WfAe@jOm@xEk@zBQb@Wb@MhCWtC}@`FcB~Fc@v@u@j@[l@cDhM_A`Da@bASAu@]eDoBmAaAOAe@TiGpGq@~@QdAe@rGY`AwDvEw@rAcHjQcBvEmBtEwBfGkBtGu@zBmApCsBzDc@^oB\o@BaAYi@c@_I}LkAyBw@gBqNw]iMeX[o@QQQLw@fA[NeCCc@TwIbLWPSG{HoH_AgAkAk@}GsFaKgGmHsD{@k@iDeESe@OaA@sAXkI?gAgB}AaGiEqOeMc@e@IHW`AaApCqFnQg@jASHILf@|@rrEoiKPi@z@mAhCyCz@u@vAgB~DkE`FgFXe@xCyDpC{CrCkDdAcAfA}@tDaClR_KJUEH@J~@BXHpJnGt\pU`HpEzFfErFxDpX~QbVpPlErChHdFjDzBrB|A~Q~Lf@d@dGzDrh@n^hLtHnBzA?XqAzE}@jE[lBu@xGm@~IIbCG`GFfGJrDl@~Ih@pFj@bEDNNPFf@VbA`GjQbBpDvBlDhCdDtCvC`BrALThEbCbAd@bFdBpCp@bDVb@LpAIvR`AxAVNRDZIfG
+  strava_url: https://www.strava.com/activities/18357846213
 - name: Evening Rock Climb
   type: RockClimbing
   date: '2026-04-30T20:15:05Z'
@@ -40,7 +412,7 @@ activities:
   max_speed_kmh: 0.0
   average_heartrate: 108.7
   max_heartrate: 139.0
-  kudos: 1
+  kudos: 5
   polyline: ''
   strava_url: https://www.strava.com/activities/18323127317
 - name: Evening Rock Climb
@@ -54,7 +426,7 @@ activities:
   max_speed_kmh: 0.0
   average_heartrate: 116.7
   max_heartrate: 154.0
-  kudos: 1
+  kudos: 4
   polyline: ''
   strava_url: https://www.strava.com/activities/18315258094
 - name: Evening Rock Climb
@@ -365,367 +737,3 @@ activities:
   kudos: 3
   polyline: ''
   strava_url: https://www.strava.com/activities/17313898968
-- name: Evening Rock Climb
-  type: RockClimbing
-  date: '2026-02-05T20:19:40Z'
-  distance_km: 0.0
-  moving_time_min: 95.0
-  elapsed_time_min: 95.0
-  elevation_gain_m: 0
-  average_speed_kmh: 0.0
-  max_speed_kmh: 0.0
-  average_heartrate: 113.4
-  max_heartrate: 139.0
-  kudos: 2
-  polyline: ''
-  strava_url: https://www.strava.com/activities/17303549301
-- name: Evening Rock Climb
-  type: RockClimbing
-  date: '2026-02-03T20:22:56Z'
-  distance_km: 0.0
-  moving_time_min: 130.6
-  elapsed_time_min: 130.6
-  elevation_gain_m: 0
-  average_speed_kmh: 0.0
-  max_speed_kmh: 0.0
-  average_heartrate: 111.5
-  max_heartrate: 150.0
-  kudos: 3
-  polyline: ''
-  strava_url: https://www.strava.com/activities/17276814337
-- name: Evening Run
-  type: Run
-  date: '2026-02-03T18:25:09Z'
-  distance_km: 2.21
-  moving_time_min: 14.4
-  elapsed_time_min: 14.4
-  elevation_gain_m: 0
-  average_speed_kmh: 9.2
-  max_speed_kmh: 9.9
-  average_heartrate: 144.0
-  max_heartrate: 154.0
-  kudos: 0
-  polyline: ''
-  strava_url: https://www.strava.com/activities/17274228763
-- name: Evening Rock Climb
-  type: RockClimbing
-  date: '2026-02-01T20:20:43Z'
-  distance_km: 0.0
-  moving_time_min: 47.8
-  elapsed_time_min: 47.8
-  elevation_gain_m: 0
-  average_speed_kmh: 0.0
-  max_speed_kmh: 0.0
-  average_heartrate: 101.5
-  max_heartrate: 130.0
-  kudos: 1
-  polyline: ''
-  strava_url: https://www.strava.com/activities/17274228571
-- name: Afternoon Rock Climb
-  type: RockClimbing
-  date: '2026-01-31T13:57:10Z'
-  distance_km: 0.0
-  moving_time_min: 203.3
-  elapsed_time_min: 203.3
-  elevation_gain_m: 0
-  average_speed_kmh: 0.0
-  max_speed_kmh: 0.0
-  average_heartrate: 107.2
-  max_heartrate: 141.0
-  kudos: 0
-  polyline: ''
-  strava_url: https://www.strava.com/activities/17274222220
-- name: Evening Rock Climb
-  type: RockClimbing
-  date: '2026-01-29T18:27:58Z'
-  distance_km: 0.0
-  moving_time_min: 183.7
-  elapsed_time_min: 183.7
-  elevation_gain_m: 0
-  average_speed_kmh: 0.0
-  max_speed_kmh: 0.0
-  average_heartrate: 115.8
-  max_heartrate: 159.0
-  kudos: 0
-  polyline: ''
-  strava_url: https://www.strava.com/activities/17274215668
-- name: Evening Run
-  type: Run
-  date: '2026-01-27T18:44:35Z'
-  distance_km: 6.34
-  moving_time_min: 41.9
-  elapsed_time_min: 65.6
-  elevation_gain_m: 59.0
-  average_speed_kmh: 9.1
-  max_speed_kmh: 19.4
-  average_heartrate: 146.1
-  max_heartrate: 180.0
-  kudos: 2
-  polyline: gx`jHu|br@HFTJn@FXLZ`@HB`BHRD`@XPNL?PK~@eAxA{BjA}AlAqDT_AEcAPo@ReB@c@Cu@Ie@Ce@HuAA[Gq@]{AUg@eBmBe@c@g@o@_@]YSSHADYpAa@pAQz@aAlEw@pCKf@KdBGzHADSB[Mk@Ma@AELIHe@HI`AMd@AT?IACBC@DFBBHCAEEEWM@Qq@MOe@EGRBlATBPANIDm@AYGMCA_@AWREh@@LFHb@@^KP@JXAB@c@@LAJC@@_@DTARI@@C@i@B@?ZADE?Bg@DRAJEJCCAGAWDBBP?LCFAg@DBCZADAUDDGL@c@A@Fb@AHCGBc@BA@PALCB@a@BGB?Ad@C?AMCC@BBXC?Ac@@^E@DSCIADBHO?ETF^JRPRbAp@HDfAJh@d@RFlAB\HX^BR?DORuAdAc@d@aAr@QHyAbAsB~@}CjA}BjAkAv@w@v@{CnE[Zy@hA_Ar@o@b@mBv@I@?iBD_@BqAYs@@M\k@^]NKFDfA|BPh@AnAEd@C@eAl@eA^B@EAE}@F}@BkACMSe@AQ\q@^a@VOhAzBL^BXCjACTi@b@gAf@e@NEIAk@D_AF_A?_@Qg@E[BKVa@X_@LKH?`@p@^x@Xr@BT@n@Ix@_@V}Ap@SBGe@?e@@g@FeAMw@ACAi@f@m@`@_@FB\h@t@rALn@AnAITmAv@]NMHaBh@ZIZ]LEJA@HILC?ACH?A?b@]nBcAx@k@x@}@z@iAx@sAjAgBj@s@^Uf@Qt@c@x@[p@c@`A]|Aw@r@WjAo@lBoA^]|@m@`Ay@FSEUY[o@ImAEs@k@eAOg@a@
-  strava_url: https://www.strava.com/activities/17200389728
-- name: Afternoon Rock Climb
-  type: RockClimbing
-  date: '2026-01-25T16:38:40Z'
-  distance_km: 0.0
-  moving_time_min: 153.7
-  elapsed_time_min: 153.7
-  elevation_gain_m: 0
-  average_speed_kmh: 0.0
-  max_speed_kmh: 0.0
-  average_heartrate: 112.2
-  max_heartrate: 140.0
-  kudos: 3
-  polyline: ''
-  strava_url: https://www.strava.com/activities/17176788913
-- name: Afternoon Rock Climb
-  type: RockClimbing
-  date: '2026-01-24T14:43:47Z'
-  distance_km: 0.0
-  moving_time_min: 125.0
-  elapsed_time_min: 125.0
-  elevation_gain_m: 0
-  average_speed_kmh: 0.0
-  max_speed_kmh: 0.0
-  average_heartrate: 109.4
-  max_heartrate: 143.0
-  kudos: 2
-  polyline: ''
-  strava_url: https://www.strava.com/activities/17173851529
-- name: Lunch Run
-  type: Run
-  date: '2026-01-24T11:36:26Z'
-  distance_km: 6.8
-  moving_time_min: 45.9
-  elapsed_time_min: 46.0
-  elevation_gain_m: 130.0
-  average_speed_kmh: 8.9
-  max_speed_kmh: 16.1
-  average_heartrate: 145.1
-  max_heartrate: 163.0
-  kudos: 2
-  polyline: wccjHqtcr@r@f@XBx@CdADZF`@ZBd@GpAB^IbAJfBKjBBd@Hd@CvAGn@?p@HL?FUf@Mz@MVCNYh@Qn@Ab@\n@?VUnAOh@OTIb@b@bAKVIl@CXIb@S`@EhA?\ELMz@Yz@QnA]`AE\`@d@?JW`@_@|@St@K|@[jAGt@@Lf@R@JCJIFGNMf@ITSbAGj@Pp@_@dCChAM`@?h@BBh@NZPl@Lf@Pt@r@TL`@D^NFH|@n@LT\NNP?AXEHEFIHYR]?EPg@dA_BJa@LUjA_BNKT[pA}BDS\_@LWLCXJNL`@d@ZMZ_@Dq@FMdAiAb@s@PORWLGTUhAo@NGRMv@_@PSPEFENWh@Yt@q@Vu@d@o@z@e@`AaA`@W\c@XQd@STY\YnAq@r@e@Tg@`AO`Ag@PWxAuAb@sALM~@u@X_@GGa@@KEDMt@a@~BiAh@SZQb@c@p@[HOjAaAtAqA~@cApBmChAaBFO^yAFGLGRA?GISMJ_@`AUv@M\Wb@{ClEgBdBOJsAhAUXIBk@Xc@Z]XYLs@b@yAh@iAn@wEtBoAr@[TWX]j@]^GPqB~CMPKJMR]Zu@h@gAn@iBt@OLGPC~AG^INq@t@U^UP_Ad@s@p@aBdAoBnCOXURa@p@OL]Kw@c@OFuBhDq@r@{AxBo@hAk@r@{@tBWCURGCoAaAkFeCmAy@CGDa@@_AN{AZgCX_BBqBFa@\GDEG{@LgATwDXaBFkAN}@LsCNy@Bm@FWAe@L{AFO?a@F_@NQNs@@UHk@@o@FWDk@Ja@@KDUBc@Je@Do@Fc@@eA
-  strava_url: https://www.strava.com/activities/17173845009
-- name: Evening Rock Climb
-  type: RockClimbing
-  date: '2026-01-22T18:39:26Z'
-  distance_km: 0.0
-  moving_time_min: 137.0
-  elapsed_time_min: 137.0
-  elevation_gain_m: 0
-  average_speed_kmh: 0.0
-  max_speed_kmh: 0.0
-  average_heartrate: 108.8
-  max_heartrate: 137.0
-  kudos: 2
-  polyline: ''
-  strava_url: https://www.strava.com/activities/17173838152
-- name: Evening Rock Climb
-  type: RockClimbing
-  date: '2026-01-21T18:53:14Z'
-  distance_km: 0.0
-  moving_time_min: 118.1
-  elapsed_time_min: 118.1
-  elevation_gain_m: 0
-  average_speed_kmh: 0.0
-  max_speed_kmh: 0.0
-  average_heartrate: 106.1
-  max_heartrate: 138.0
-  kudos: 2
-  polyline: ''
-  strava_url: https://www.strava.com/activities/17173838189
-- name: Evening Rock Climb
-  type: RockClimbing
-  date: '2026-01-20T20:26:36Z'
-  distance_km: 0.0
-  moving_time_min: 104.8
-  elapsed_time_min: 104.8
-  elevation_gain_m: 0
-  average_speed_kmh: 0.0
-  max_speed_kmh: 0.0
-  average_heartrate: 107.9
-  max_heartrate: 147.0
-  kudos: 1
-  polyline: ''
-  strava_url: https://www.strava.com/activities/17125373867
-- name: Evening Run
-  type: Run
-  date: '2026-01-20T18:50:57Z'
-  distance_km: 6.42
-  moving_time_min: 41.8
-  elapsed_time_min: 51.7
-  elevation_gain_m: 119.0
-  average_speed_kmh: 9.2
-  max_speed_kmh: 17.2
-  average_heartrate: 142.5
-  max_heartrate: 170.0
-  kudos: 2
-  polyline: _y`jHo}br@`Af@t@Fr@l@~@Hr@B^\DN?LERmAnA[PUVc@\kAt@yCxAaA\oBz@kAl@s@X_Af@e@^{@`AyBfDyAnBmA~@g@\gAd@e@PM@AIBmBFcBWy@?ENY^e@VUJ?DFlAdCHVElBs@l@cAb@UDQ@CSHsBFo@?i@[w@f@y@h@e@B@`@`Ax@zADVC`BGPMJmBz@_@LAGAF?CAA?UPwD?WQa@CQ?Gl@{@RQJAZ`@v@xAPf@?r@Ct@KRk@`@w@\m@PKKDuBDwAIc@Ce@JUd@m@ZIvApCBV?tACP[XWRg@Ta@NM@KAEIBqAAe@FmAI]KW@OT]t@w@H?B@Ph@`AtBBl@E`AGVEDCEUPgBp@O@CE@sAHyBEQC@K[AQ@G\i@XY\KNTVp@HHBRZr@Fr@At@CRCFw@f@qA`@KAAM?eBDiAEpAEv@?HNoDWy@@I\e@NQROJBz@bB\z@@`AAd@IXYT_A`@o@LKEAUBeADq@@?Bu@CMUi@AQr@cA^KDDrAbCDL@pBALMJg@Xs@Zk@HIu@Au@F_BIg@K]@On@}@VKNTTf@t@vAFX@R?n@Ef@GHq@`@e@POJc@FPCHCtBgA|@s@d@c@z@iA~C{EZ_@p@k@\Kl@]pBmAj@MnAk@bA_@vBgApA{@z@u@\]bAs@JKHUAIQWc@QqAGa@Gm@c@{@MWM
-  strava_url: https://www.strava.com/activities/17125373815
-- name: Evening Rock Climb
-  type: RockClimbing
-  date: '2026-01-18T18:45:56Z'
-  distance_km: 0.0
-  moving_time_min: 128.4
-  elapsed_time_min: 128.4
-  elevation_gain_m: 0
-  average_speed_kmh: 0.0
-  max_speed_kmh: 0.0
-  average_heartrate: 110.7
-  max_heartrate: 149.0
-  kudos: 1
-  polyline: ''
-  strava_url: https://www.strava.com/activities/17125369152
-- name: Morning Run
-  type: Run
-  date: '2026-01-17T09:05:10Z'
-  distance_km: 4.42
-  moving_time_min: 50.9
-  elapsed_time_min: 50.9
-  elevation_gain_m: 78.0
-  average_speed_kmh: 5.2
-  max_speed_kmh: 16.0
-  average_heartrate: 141.5
-  max_heartrate: 172.0
-  kudos: 3
-  polyline: '{ffjHaehr@J|AAH@f@LlAH^Rl@P`A\jADV`@rARrAPj@~@fEX|@JPFl@R`AVlBJJBHNbAOr@_@JKHIb@FxARfBW\E?FBHFC?@E@@@RLl@y@iB|@dBQi@_@y@n@tACAS]Yq@d@|@LZo@}AN`@d@`Ai@cAM_@FD?@O[e@iAUWMCM@YLMHUf@Mx@@RFPvB`FDFRJ^CJEX]Rq@@[G_@mBqEWa@_@Oe@JMVWx@An@BN|@hBt@bBZl@DB^AVOXg@Nw@Eq@qAqCr@tARb@DTa@aAGQFJAGGG?E?B@AABy@iBUa@MKSAQ@WLGJUj@CPAt@Rf@rBnETNN?JCHKACA@PMRWHUDa@Ac@Yu@?Ic@w@DXuAuCOGOBYPOPSf@C\Hp@Td@Ph@hA~BTVVFVSX]Pg@D_@AUE]O_@m@eAs@_BU[SKE?a@FW\FD`@]RGNDVXb@r@NZ@JAA@@^M?KMs@A]KiA?a@BGV[XGBCJm@AQU{@KSWsASkBa@eAk@}BGa@c@}AG_@c@uB_@uAMs@UcAM_@Km@A]'
-  strava_url: https://www.strava.com/activities/17079248391
-- name: Afternoon Rock Climb
-  type: RockClimbing
-  date: '2026-01-13T17:46:43Z'
-  distance_km: 0.0
-  moving_time_min: 105.7
-  elapsed_time_min: 105.7
-  elevation_gain_m: 0
-  average_speed_kmh: 0.0
-  max_speed_kmh: 0.0
-  average_heartrate: 109.4
-  max_heartrate: 145.0
-  kudos: 1
-  polyline: ''
-  strava_url: https://www.strava.com/activities/17055298919
-- name: Evening Rock Climb
-  type: RockClimbing
-  date: '2026-01-12T20:33:54Z'
-  distance_km: 0.0
-  moving_time_min: 29.8
-  elapsed_time_min: 29.8
-  elevation_gain_m: 0
-  average_speed_kmh: 0.0
-  max_speed_kmh: 0.0
-  average_heartrate: 107.2
-  max_heartrate: 138.0
-  kudos: 3
-  polyline: ''
-  strava_url: https://www.strava.com/activities/17055298688
-- name: Afternoon Rock Climb
-  type: RockClimbing
-  date: '2026-01-11T17:51:40Z'
-  distance_km: 0.0
-  moving_time_min: 110.0
-  elapsed_time_min: 110.0
-  elevation_gain_m: 0
-  average_speed_kmh: 0.0
-  max_speed_kmh: 0.0
-  average_heartrate: 111.9
-  max_heartrate: 145.0
-  kudos: 2
-  polyline: ''
-  strava_url: https://www.strava.com/activities/17055296102
-- name: Morning Rock Climb
-  type: RockClimbing
-  date: '2025-12-24T10:42:29Z'
-  distance_km: 0.0
-  moving_time_min: 401.1
-  elapsed_time_min: 401.1
-  elevation_gain_m: 0
-  average_speed_kmh: 0.0
-  max_speed_kmh: 0.0
-  average_heartrate: 75.2
-  max_heartrate: 147.0
-  kudos: 0
-  polyline: ''
-  strava_url: https://www.strava.com/activities/17055296244
-- name: Afternoon Rock Climb
-  type: RockClimbing
-  date: '2025-12-23T14:57:15Z'
-  distance_km: 0.0
-  moving_time_min: 52.0
-  elapsed_time_min: 52.0
-  elevation_gain_m: 0
-  average_speed_kmh: 0.0
-  max_speed_kmh: 0.0
-  average_heartrate: 103.8
-  max_heartrate: 136.0
-  kudos: 2
-  polyline: ''
-  strava_url: https://www.strava.com/activities/16826422100
-- name: Evening Rock Climb
-  type: RockClimbing
-  date: '2025-12-22T19:49:46Z'
-  distance_km: 0.0
-  moving_time_min: 164.0
-  elapsed_time_min: 164.0
-  elevation_gain_m: 0
-  average_speed_kmh: 0.0
-  max_speed_kmh: 0.0
-  average_heartrate: 111.2
-  max_heartrate: 140.0
-  kudos: 3
-  polyline: ''
-  strava_url: https://www.strava.com/activities/16815048496
-- name: Evening Rock Climb
-  type: RockClimbing
-  date: '2025-12-20T18:44:32Z'
-  distance_km: 0.0
-  moving_time_min: 71.0
-  elapsed_time_min: 71.0
-  elevation_gain_m: 0
-  average_speed_kmh: 0.0
-  max_speed_kmh: 0.0
-  average_heartrate: 119.0
-  max_heartrate: 150.0
-  kudos: 2
-  polyline: ''
-  strava_url: https://www.strava.com/activities/16815048002
-- name: Evening Rock Climb
-  type: RockClimbing
-  date: '2025-12-16T20:16:51Z'
-  distance_km: 0.0
-  moving_time_min: 125.3
-  elapsed_time_min: 125.3
-  elevation_gain_m: 0
-  average_speed_kmh: 0.0
-  max_speed_kmh: 0.0
-  average_heartrate: 114.2
-  max_heartrate: 166.0
-  kudos: 2
-  polyline: ''
-  strava_url: https://www.strava.com/activities/16761978710
-- name: Evening HIIT
-  type: HighIntensityIntervalTraining
-  date: '2025-12-15T18:18:35Z'
-  distance_km: 0.0
-  moving_time_min: 50.7
-  elapsed_time_min: 50.7
-  elevation_gain_m: 0
-  average_speed_kmh: 0.0
-  max_speed_kmh: 0.0
-  average_heartrate: 144.1
-  max_heartrate: 174.0
-  kudos: 3
-  polyline: ''
-  strava_url: https://www.strava.com/activities/16750866592
-- name: Afternoon Rock Climb
-  type: RockClimbing
-  date: '2025-12-13T15:51:43Z'
-  distance_km: 0.0
-  moving_time_min: 66.0
-  elapsed_time_min: 66.0
-  elevation_gain_m: 0
-  average_speed_kmh: 0.0
-  max_speed_kmh: 0.0
-  average_heartrate: 114.7
-  max_heartrate: 145.0
-  kudos: 3
-  polyline: ''
-  strava_url: https://www.strava.com/activities/16739206583
