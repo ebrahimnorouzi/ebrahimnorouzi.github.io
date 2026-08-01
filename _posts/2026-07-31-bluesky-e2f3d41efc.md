@@ -1,0 +1,13 @@
+---
+layout: "single"
+title: "🎧 Today&#39;s training playlist: Running: 170 - 180 bpm —…"
+date: "2026-07-31T12:01:59.630524+00:00"
+categories: "bluesky"
+tags: "bluesky"
+excerpt: "🎧 Today&#39;s training playlist: Running: 170 - 180 bpm — https://open.spotify.com/playlist/4wy0yhEY64Yb0AohEdSAE4 #triathlon #swimbikerun"
+source: "bluesky"
+source_url: "https://bsky.app/profile/norouzi-iut.bsky.social/post/3mrwvufjqfn2j"
+---
+🎧 Today's training playlist: Running: 170 - 180 bpm — https://open.spotify.com/playlist/4wy0yhEY64Yb0AohEdSAE4 #triathlon #swimbikerun
+
+[View original post](https://bsky.app/profile/norouzi-iut.bsky.social/post/3mrwvufjqfn2j){:target="_blank"}
