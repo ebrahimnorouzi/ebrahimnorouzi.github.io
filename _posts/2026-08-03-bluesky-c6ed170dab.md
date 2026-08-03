@@ -1,0 +1,13 @@
+---
+layout: "single"
+title: "🏅 Legend of the day — Jonas Vingegaard (cycling): The Danish climbing…"
+date: "2026-08-03T11:27:17.895968+00:00"
+categories: "bluesky"
+tags: "bluesky"
+excerpt: "🏅 Legend of the day — Jonas Vingegaard (cycling): The Danish climbing genius who rose from a fish-factory job to win the Tour de France twice, anchoring one of cycling&#39;s greatest modern rivalries…"
+source: "bluesky"
+source_url: "https://bsky.app/profile/norouzi-iut.bsky.social/post/3ms6fd4cwef2n"
+---
+🏅 Legend of the day — Jonas Vingegaard (cycling): The Danish climbing genius who rose from a fish-factory job to win the Tour de France twice, anchoring one of cycling's greatest modern rivalries with Pogacar. https://en.wikipedia.org/wiki/Jonas_Vingegaard
+
+[View original post](https://bsky.app/profile/norouzi-iut.bsky.social/post/3ms6fd4cwef2n){:target="_blank"}
