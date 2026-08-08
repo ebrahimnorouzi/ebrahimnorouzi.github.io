@@ -1,0 +1,13 @@
+---
+layout: "single"
+title: "💬 “If you don&#39;t have answers to your problems after a four-hour run,…"
+date: "2026-08-07T17:00:48.644616+00:00"
+categories: "bluesky"
+tags: "bluesky"
+excerpt: "💬 “If you don&#39;t have answers to your problems after a four-hour run, you ain&#39;t getting them.” — Christopher McDougall https://ebrahimnorouzi.github.io/ThreeTri"
+source: "bluesky"
+source_url: "https://bsky.app/profile/norouzi-iut.bsky.social/post/3msizt5vbqf2u"
+---
+💬 “If you don't have answers to your problems after a four-hour run, you ain't getting them.” — Christopher McDougall https://ebrahimnorouzi.github.io/ThreeTri
+
+[View original post](https://bsky.app/profile/norouzi-iut.bsky.social/post/3msizt5vbqf2u){:target="_blank"}
