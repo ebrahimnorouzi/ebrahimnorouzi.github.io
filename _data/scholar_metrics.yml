@@ -1,26 +1,27 @@
-total_citations: 128
-h_index: 6
-i10_index: 5
+total_citations: 163
+h_index: 8
+i10_index: 8
 name: Ebrahim Norouzi
-paper_count: 20
+paper_count: 25
 top_papers:
 - title: In situ correlation between metastable phase-transformation mechanism and
     kinetics in a metallic glass
-  citations: 45
+  citations: 49
   year: 2021
 - title: 'The landscape of ontologies in materials science and engineering: A survey
     and evaluation'
-  citations: 14
+  citations: 18
   year: 2024
-- title: 'From floppy disks to 5-Star LOD: FAIR research infrastructure for NFDI4Culture'
-  citations: 12
+- title: Enhancing entity alignment between wikidata and artgraph using llms
+  citations: 15
   year: 2023
 - title: Optimizing Grain Selection Design in the Single‐Crystal Solidification of
     Ni‐Based Superalloys
-  citations: 12
+  citations: 14
   year: 2018
-- title: Enhancing entity alignment between wikidata and artgraph using llms
-  citations: 11
-  year: 2023
-last_updated: '2026-04-10'
+- title: Performance Evaluation of Upper‐Level Ontologies in Developing Materials
+    Science Ontologies and Knowledge Graphs
+  citations: 12
+  year: 2025
+last_updated: '2026-10-01'
 source: google_scholar
